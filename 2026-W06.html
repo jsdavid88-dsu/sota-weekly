@@ -96,6 +96,40 @@
             margin: 1rem 0;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
         footer {
             margin-top: 3rem;
             padding-top: 1.5rem;
@@ -127,139 +161,79 @@ AI·XR·영상 기술 최신 동향 리포트</p>
 </blockquote>
 <hr />
 <h2 id="3">📌 이번 주 핵심 3선</h2>
-<h3 id="1-multi-agent-collaboration-via-evolving-orchestration">1. 🎯 Multi-Agent Collaboration via Evolving Orchestration</h3>
-<p><strong>RL 기반 멀티에이전트 오케스트레이션</strong></p>
-<p>LLM 에이전트들을 '인형극(Puppeteer)'처럼 중앙에서 동적 지휘하는 새로운 패러다임. 강화학습으로 훈련된 오케스트레이터가 태스크 상태에 따라 에이전트 순서와 우선순위를 적응적으로 조정한다.</p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>내용</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>📄 논문</td>
-<td><a href="https://arxiv.org/abs/2505.19591">arXiv:2505.19591</a></td>
-</tr>
-<tr>
-<td>💻 코드</td>
-<td><a href="https://github.com/OpenBMB/ChatDev/tree/puppeteer">GitHub - ChatDev/puppeteer</a></td>
-</tr>
-<tr>
-<td>🏭 적용 대상</td>
-<td>AI 에이전트 개발사, 자동화 솔루션 기업</td>
-</tr>
-<tr>
-<td>🔧 파이프라인</td>
-<td>복잡한 워크플로우 자동화, 멀티스텝 태스크</td>
-</tr>
-<tr>
-<td>✨ 기대 효과</td>
-<td>조율 비용 50% 절감, 태스크 완료율 향상</td>
-</tr>
-<tr>
-<td>🚀 실증 난이도</td>
-<td>✅ 바로 테스트 가능</td>
-</tr>
-</tbody>
-</table>
-<p><strong>💡 우리 연구소 적용 제안</strong>: OMC(Orchestrated Multi-model Collaboration) 스킬 고도화에 직접 참고 가능. ChatDev 코드베이스 분석 후 아르카 오케스트레이션 로직 개선.</p>
-<hr />
-<h3 id="2-kimi-k25-visual-agentic-intelligence">2. 🎯 Kimi K2.5: Visual Agentic Intelligence</h3>
-<p><strong>오픈소스 멀티모달 에이전트</strong></p>
-<p>텍스트+비전 동시 처리가 가능한 에이전트 모델. <strong>Agent Swarm</strong> 기법으로 여러 에이전트가 병렬로 태스크를 수행할 수 있어 처리 속도가 크게 향상된다.</p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>내용</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>📄 논문</td>
-<td><a href="https://arxiv.org/abs/2602.02276">arXiv:2602.02276</a></td>
-</tr>
-<tr>
-<td>💻 코드</td>
-<td>오픈소스 예정</td>
-</tr>
-<tr>
-<td>🏭 적용 대상</td>
-<td>비전 AI 개발, QA 자동화, 콘텐츠 분석</td>
-</tr>
-<tr>
-<td>🔧 파이프라인</td>
-<td>이미지/비디오 분석 → 자동 리포트</td>
-</tr>
-<tr>
-<td>✨ 기대 효과</td>
-<td>시각 자료 분석 자동화</td>
-</tr>
-<tr>
-<td>🚀 실증 난이도</td>
-<td>✅ 바로 가능 (출시 후)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>💡 우리 연구소 적용 제안</strong>: ComfyUI 워크플로우 결과물 자동 QA에 활용 가능. 생성 이미지 품질 자동 평가 파이프라인 구축.</p>
-<hr />
-<h3 id="3-mem0-ai">3. 🎯 Mem0: 프로덕션 AI 에이전트를 위한 장기 메모리</h3>
-<p><strong>그래프 기반 메모리 시스템</strong></p>
-<p>LLM 에이전트의 장기 대화 일관성을 획기적으로 향상시키는 메모리 아키텍처. 정보 추출→통합→검색의 전 과정이 최적화되어 있으며, 프로덕션 환경에서 바로 사용 가능.</p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>내용</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>📄 논문</td>
-<td><a href="https://arxiv.org/abs/2504.19413">arXiv:2504.19413</a></td>
-</tr>
-<tr>
-<td>💻 코드</td>
-<td><a href="https://github.com/mem0ai/mem0">GitHub - mem0ai/mem0</a> ⭐ 오픈소스</td>
-</tr>
-<tr>
-<td>🏭 적용 대상</td>
-<td>챗봇 개발, AI 비서, 고객 상담 자동화</td>
-</tr>
-<tr>
-<td>🔧 파이프라인</td>
-<td>대화 시스템 → 메모리 레이어 추가</td>
-</tr>
-<tr>
-<td>✨ 기대 효과</td>
-<td>장기 대화 일관성 향상, 사용자 맞춤화</td>
-</tr>
-<tr>
-<td>🚀 실증 난이도</td>
-<td>✅ 바로 테스트 가능</td>
-</tr>
-</tbody>
-</table>
-<p><strong>💡 우리 연구소 적용 제안</strong>: 아르카의 MEMORY.md 시스템을 Mem0 아키텍처로 업그레이드 검토. 시맨틱 검색 + 그래프 구조 도입.</p>
+<details>
+<summary><strong>1. Multi-Agent Collaboration via Evolving Orchestration</strong> — RL 기반 멀티에이전트 오케스트레이션</summary>
+
+LLM 에이전트들을 '인형극(Puppeteer)'처럼 중앙에서 동적 지휘하는 새로운 패러다임. 강화학습으로 훈련된 오케스트레이터가 태스크 상태에 따라 에이전트 순서와 우선순위를 적응적으로 조정.
+
+| 항목 | 내용 |
+|------|------|
+| 📄 논문 | [arXiv:2505.19591](https://arxiv.org/abs/2505.19591) |
+| 💻 코드 | [GitHub - ChatDev/puppeteer](https://github.com/OpenBMB/ChatDev/tree/puppeteer) |
+| 🏭 적용 대상 | AI 에이전트 개발사, 자동화 솔루션 기업 |
+| 🔧 파이프라인 | 복잡한 워크플로우 자동화, 멀티스텝 태스크 |
+| ✨ 기대 효과 | 조율 비용 50% 절감, 태스크 완료율 향상 |
+| 🚀 실증 난이도 | ✅ 바로 테스트 가능 |
+
+</details>
+
+<details>
+<summary><strong>2. Kimi K2.5: Visual Agentic Intelligence</strong> — 오픈소스 멀티모달 에이전트</summary>
+
+텍스트+비전 동시 처리가 가능한 에이전트 모델. **Agent Swarm** 기법으로 여러 에이전트가 병렬로 태스크를 수행할 수 있어 처리 속도가 크게 향상.
+
+| 항목 | 내용 |
+|------|------|
+| 📄 논문 | [arXiv:2602.02276](https://arxiv.org/abs/2602.02276) |
+| 💻 코드 | 오픈소스 예정 |
+| 🏭 적용 대상 | 비전 AI 개발, QA 자동화, 콘텐츠 분석 |
+| 🔧 파이프라인 | 이미지/비디오 분석 → 자동 리포트 |
+| ✨ 기대 효과 | 시각 자료 분석 자동화 |
+| 🚀 실증 난이도 | ✅ 바로 가능 (출시 후) |
+
+</details>
+
+<details>
+<summary><strong>3. Mem0: 프로덕션 AI 에이전트를 위한 장기 메모리</strong> — 그래프 기반 메모리 시스템</summary>
+
+LLM 에이전트의 장기 대화 일관성을 획기적으로 향상시키는 메모리 아키텍처. 정보 추출→통합→검색의 전 과정이 최적화되어 있으며, 프로덕션 환경에서 바로 사용 가능.
+
+| 항목 | 내용 |
+|------|------|
+| 📄 논문 | [arXiv:2504.19413](https://arxiv.org/abs/2504.19413) |
+| 💻 코드 | [GitHub - mem0ai/mem0](https://github.com/mem0ai/mem0) ⭐ 오픈소스 |
+| 🏭 적용 대상 | 챗봇 개발, AI 비서, 고객 상담 자동화 |
+| 🔧 파이프라인 | 대화 시스템 → 메모리 레이어 추가 |
+| ✨ 기대 효과 | 장기 대화 일관성 향상, 사용자 맞춤화 |
+| 🚀 실증 난이도 | ✅ 바로 테스트 가능 |
+
+</details>
+
 <hr />
 <h2 id="_1">🤝 에이전트/자동화</h2>
-<h3 id="agent-readmes">Agent READMEs: 에이전트 컨텍스트 파일 연구</h3>
-<ul>
-<li><strong>요약</strong>: CLAUDE.md 같은 에이전트 컨텍스트 파일 2,303개 분석. 개발자들이 보안(14.5%)과 성능(14.5%) 요구사항을 거의 명시하지 않는 문제 발견.</li>
-<li><strong>시사점</strong>: 우리 AGENTS.md에 보안 체크리스트 추가 필요</li>
-<li><strong>링크</strong>: <a href="https://arxiv.org/abs/2511.12884">arXiv:2511.12884</a></li>
-</ul>
+<details>
+<summary><strong>Agent READMEs</strong> — 에이전트 컨텍스트 파일 2,303개 분석 연구</summary>
+
+CLAUDE.md 같은 에이전트 컨텍스트 파일의 최초 대규모 실증 연구. 개발자들이 기능적 컨텍스트(빌드 명령 62.3%, 구현 세부사항 69.9%)는 잘 작성하지만, 보안(14.5%)과 성능(14.5%) 요구사항은 거의 명시하지 않는 문제 발견.
+
+- **시사점**: 에이전트 컨텍스트 파일에 보안 체크리스트 추가 권장
+- **링크**: [arXiv:2511.12884](https://arxiv.org/abs/2511.12884)
+
+</details>
+
 <hr />
 <h2 id="_2">🔊 오디오/음성</h2>
-<h3 id="qwen3-tts">Qwen3-TTS: 다국어 음성 합성 + 음성 클로닝</h3>
-<ul>
-<li><strong>요약</strong>: 다국어 TTS + 음성 클로닝 + 스트리밍 합성 지원</li>
-<li><strong>적용</strong>: 더빙 스튜디오, 다국어 콘텐츠 제작</li>
-<li><strong>주의</strong>: 상용 라이선스 확인 필요</li>
-<li><strong>링크</strong>: <a href="https://arxiv.org/abs/2601.15621">arXiv:2601.15621</a></li>
-</ul>
+<details>
+<summary><strong>Qwen3-TTS</strong> — 다국어 음성 합성 + 음성 클로닝</summary>
+
+다국어 TTS + 음성 클로닝 + 스트리밍 합성 지원. Dual-track LM 아키텍처로 효율적인 실시간 합성 가능.
+
+- **적용**: 더빙 스튜디오, 다국어 콘텐츠 제작
+- **주의**: 상용 라이선스 확인 필요
+- **링크**: [arXiv:2601.15621](https://arxiv.org/abs/2601.15621)
+
+</details>
+
 <hr />
 <h2 id="_3">📊 이번 주 통계</h2>
 <table>
@@ -294,22 +268,21 @@ AI·XR·영상 기술 최신 동향 리포트</p>
 </table>
 <hr />
 <h2 id="_4">🔬 실증 권장 항목</h2>
-<p>다음 항목들은 코드가 공개되어 있어 <strong>이번 주 내 테스트 가능</strong>합니다:</p>
+<p>코드가 공개되어 <strong>이번 주 내 테스트 가능</strong>한 항목:</p>
 <ol>
-<li><strong>Multi-Agent Orchestration</strong> (ChatDev) → OMC 스킬 개선</li>
-<li><strong>Mem0</strong> → 아르카 메모리 시스템 업그레이드</li>
-<li><strong>Kimi K2.5</strong> → 출시 후 ComfyUI QA 파이프라인</li>
+<li><strong>Multi-Agent Orchestration</strong> (ChatDev)</li>
+<li><strong>Mem0</strong> — 장기 메모리 시스템</li>
+<li><strong>Kimi K2.5</strong> — 출시 대기</li>
 </ol>
 <hr />
 <h2 id="_5">🔗 전체 데이터베이스</h2>
 <p><a href="https://www.notion.so/2f8f02707d88803da78fd90dce7379b6">→ Notion SOTA Database 바로가기</a></p>
 <hr />
 <p><strong>발행</strong>: 동서대학교 글로컬30 가상융합기술연구원<br />
-<strong>편집</strong>: AI 리서치 어시스턴트 아르카<br />
 <strong>발행일</strong>: 2026년 2월 6일<br />
 <strong>문의</strong>: jsdavid88@g.dongseo.ac.kr</p>
 <hr />
-<p><em>© 2026 동서대학교 가상융합기술연구원. AI 기술 동향 리포트.</em></p>
+<p><em>© 2026 동서대학교 가상융합기술연구원</em></p>
         </main>
         <footer>
             <p>© 2026 동서대학교 가상융합기술연구원</p>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔬 가상융합기술연구원 SOTA Weekly</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-weekly">🔬 가상융합기술연구원 SOTA Weekly</h1>
+<h2 id="2026-2-8-216-222">2026년 2월 8주차 (2/16 ~ 2/22)</h2>
+<blockquote>
+<p><strong>동서대학교 글로컬30 가상융합기술연구원</strong>
+AI·XR·영상 기술 최신 동향 리포트</p>
+</blockquote>
+<hr />
+<h2 id="10">📌 이번 주 핵심 10선</h2>
+<details>
+<summary><strong>1. [3D재구성] 희소 오토인코더의 건전성 검증: SAE는 랜덤 베이스라인을 이기는가?</strong> — ⬆️55</summary>
+<p><strong>원제:</strong> Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?</p>
+<p><strong>한줄요약:</strong> 신경망 해석 도구로 주목받는 희소 오토인코더(SAE)가 실제로 의미 있는 특징을 추출하는지 랜덤 베이스라인과 비교 검증한 결과, 합성 데이터에서는 우수하나 실제 LLM에서는 랜덤 방향도 해석 가능해 보이는 문제를 발견</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📄 링크</td>
+<td><a href="https://huggingface.co/papers/2602.14111">https://huggingface.co/papers/2602.14111</a></td>
+</tr>
+<tr>
+<td>🏷️ 카테고리</td>
+<td>3D재구성</td>
+</tr>
+<tr>
+<td>🎯 관련성</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>🏷️ 태그</td>
+<td>HuggingFace, AutoCollect, 한글</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary><strong>2. [에이전트] GLM-5: 바이브 코딩에서 에이전틱 엔지니어링으로</strong> — ⬆️53</summary>
+<p><strong>원제:</strong> GLM-5: from Vibe Coding to Agentic Engineering</p>
+<p><strong>한줄요약:</strong> 차세대 기반 모델 GLM-5를 발표. 에이전틱·추론·코딩(ARC) 역량을 강화하고, DSA로 학습·추론 비용을 대폭 절감하며, 비동기 강화학습 인프라로 사후 학습 효율을 극적으로 향상시킨 모델</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📄 링크</td>
+<td><a href="https://huggingface.co/papers/2602.15763">https://huggingface.co/papers/2602.15763</a></td>
+</tr>
+<tr>
+<td>🏷️ 카테고리</td>
+<td>에이전트</td>
+</tr>
+<tr>
+<td>🎯 관련성</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>🏷️ 태그</td>
+<td>HuggingFace, AutoCollect, 한글</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary><strong>3. [에이전트] SkillsBench: 에이전트 스킬이 다양한 태스크에서 얼마나 잘 작동하는지 벤치마킹</strong> — ⬆️45</summary>
+<p><strong>원제:</strong> SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks</p>
+<p><strong>한줄요약:</strong> LLM 에이전트에 절차적 지식(스킬)을 제공하면 실제 성능이 향상되는지 측정하는 벤치마크. 11개 도메인 86개 태스크에서 큐레이션된 스킬이 평균 성능을 높이지만, 자가생성 스킬은 효과가 제한적</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📄 링크</td>
+<td><a href="https://huggingface.co/papers/2602.12670">https://huggingface.co/papers/2602.12670</a></td>
+</tr>
+<tr>
+<td>🏷️ 카테고리</td>
+<td>에이전트</td>
+</tr>
+<tr>
+<td>🎯 관련성</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>🏷️ 태그</td>
+<td>HuggingFace, AutoCollect, 한글</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary><strong>4. [영상] SLA2: 학습 가능한 라우팅과 QAT를 적용한 희소-선형 어텐션</strong> — ⬆️42</summary>
+<p><strong>원제:</strong> SLA2: Sparse-Linear Attention with Learnable Routing and QAT</p>
+<p><strong>한줄요약:</strong> 디퓨전 모델 가속을 위한 희소-선형 어텐션(SLA)의 한계를 분석하고, 학습 가능한 라우팅과 양자화 인지 학습(QAT)을 결합한 SLA2를 제안. 영상 생성 품질 유지하면서 추론 속도를 크게 향상</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📄 링크</td>
+<td><a href="https://huggingface.co/papers/2602.12675">https://huggingface.co/papers/2602.12675</a></td>
+</tr>
+<tr>
+<td>🏷️ 카테고리</td>
+<td>영상</td>
+</tr>
+<tr>
+<td>🎯 관련성</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>🏷️ 태그</td>
+<td>HuggingFace, AutoCollect, 한글</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary><strong>5. [영상] RynnBrain: 오픈 구현체 기반 기초 모델</strong> — ⬆️26</summary>
+<p><strong>원제:</strong> RynnBrain: Open Embodied Foundation Models</p>
+<p><strong>한줄요약:</strong> 인식·추론·계획을 실세계 시공간 역학 안에서 통합하는 오픈소스 체화지능 기초 모델. 자아중심 이해, 시공간 로컬라이제이션, 물리 기반 추론, 행동 계획 4가지 핵심 역량을 하나의 프레임워크로 구현</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📄 링크</td>
+<td><a href="https://huggingface.co/papers/2602.14979">https://huggingface.co/papers/2602.14979</a></td>
+</tr>
+<tr>
+<td>🏷️ 카테고리</td>
+<td>영상</td>
+</tr>
+<tr>
+<td>🎯 관련성</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>🏷️ 태그</td>
+<td>HuggingFace, AutoCollect, 한글</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary><strong>6. [AI생성] 오픈 어휘 시각 이동-조작을 위한 휴머노이드 엔드이펙터 제어 학습</strong> — ⬆️25</summary>
+<p><strong>원제:</strong> Learning Humanoid End-Effector Control for Open-Vocabulary Visual Loco-Manipulation</p>
+<p><strong>한줄요약:</strong> 휴머노이드 로봇의 임의 물체 조작을 위한 HERO 패러다임 제안. 비전 파운데이션 모델의 일반화 능력과 시뮬레이션 기반 RL을 결합해 대규모 실데이터 수집 없이도 범용적 로코-매니퓰레이션 달성</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📄 링크</td>
+<td><a href="https://huggingface.co/papers/2602.16705">https://huggingface.co/papers/2602.16705</a></td>
+</tr>
+<tr>
+<td>🏷️ 카테고리</td>
+<td>AI생성</td>
+</tr>
+<tr>
+<td>🎯 관련성</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>🏷️ 태그</td>
+<td>HuggingFace, AutoCollect, 한글</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary><strong>7. [에이전트] AI 에이전트 사회에서 사회화가 출현하는가? Moltbook 사례 연구</strong> — ⬆️24</summary>
+<p><strong>원제:</strong> Does Socialization Emerge in AI Agent Society? A Case Study of Moltbook</p>
+<p><strong>한줄요약:</strong> LLM 에이전트들이 네트워크 환경에서 인간 사회와 유사한 수렴 역학을 보이는지 최초 대규모 체계적 진단. Moltbook 플랫폼에서 자율 에이전트들의 사회화 패턴을 정량적으로 분석</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📄 링크</td>
+<td><a href="https://huggingface.co/papers/2602.14299">https://huggingface.co/papers/2602.14299</a></td>
+</tr>
+<tr>
+<td>🏷️ 카테고리</td>
+<td>에이전트</td>
+</tr>
+<tr>
+<td>🎯 관련성</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>🏷️ 태그</td>
+<td>HuggingFace, AutoCollect, 한글</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary><strong>8. [3D재구성] CADEvolve: 프로그램 진화를 통한 사실적 CAD 생성</strong> — ⬆️19</summary>
+<p><strong>원제:</strong> CADEvolve: Creating Realistic CAD via Program Evolution</p>
+<p><strong>한줄요약:</strong> 공개 CAD 데이터셋의 한계(단순 스케치-익스트루드만 포함)를 극복하기 위해 프로그램 진화 방식으로 복잡한 연산 조합과 설계 의도를 포함한 사실적 CAD 모델을 자동 생성하는 방법 제안</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📄 링크</td>
+<td><a href="https://huggingface.co/papers/2602.16317">https://huggingface.co/papers/2602.16317</a></td>
+</tr>
+<tr>
+<td>🏷️ 카테고리</td>
+<td>3D재구성</td>
+</tr>
+<tr>
+<td>🎯 관련성</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>🏷️ 태그</td>
+<td>HuggingFace, AutoCollect, 한글</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary><strong>9. [에이전트] UniT: 통합 멀티모달 사고연쇄 테스트 시점 스케일링</strong> — ⬆️19</summary>
+<p><strong>원제:</strong> UniT: Unified Multimodal Chain-of-Thought Test-time Scaling</p>
+<p><strong>한줄요약:</strong> 멀티모달 이해와 생성을 단일 아키텍처에서 처리하되, 복잡한 공간 구성·다중 객체 상호작용 태스크를 위해 테스트 시점에서 반복적으로 출력을 검증·교정하는 사고연쇄 스케일링 방법 제안</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📄 링크</td>
+<td><a href="https://huggingface.co/papers/2602.12279">https://huggingface.co/papers/2602.12279</a></td>
+</tr>
+<tr>
+<td>🏷️ 카테고리</td>
+<td>에이전트</td>
+</tr>
+<tr>
+<td>🎯 관련성</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>🏷️ 태그</td>
+<td>HuggingFace, AutoCollect, 한글</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary><strong>10. [AI생성] STATe-of-Thoughts: 트리 오브 소츠를 위한 구조화된 행동 템플릿</strong> — ⬆️19</summary>
+<p><strong>원제:</strong> STATe-of-Thoughts: Structured Action Templates for Tree-of-Thoughts</p>
+<p><strong>한줄요약:</strong> 고온 샘플링에 의존하는 기존 추론 시점 계산(ITC) 방법의 다양성 부족 문제를 해결. 고수준 추론 패턴을 구조화된 템플릿으로 탐색하여 해석 가능성과 출력 품질을 동시에 향상</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📄 링크</td>
+<td><a href="https://huggingface.co/papers/2602.14265">https://huggingface.co/papers/2602.14265</a></td>
+</tr>
+<tr>
+<td>🏷️ 카테고리</td>
+<td>AI생성</td>
+</tr>
+<tr>
+<td>🎯 관련성</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>🏷️ 태그</td>
+<td>HuggingFace, AutoCollect, 한글</td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<blockquote>
+<p>🤖 자동 수집 by SOTA Researcher | 📅 2026-02-20 08:00 KST
+번역: 아르카 (Claude Opus 4.6)</p>
+</blockquote>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

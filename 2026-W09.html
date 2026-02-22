@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTA Weekly Report - 2026 W09</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-weekly-report-2026-w09">SOTA Weekly Report - 2026 W09</h1>
+<blockquote>
+<p>생성일: 2026-02-23 (월)<br />
+수집 논문: 10개 (HuggingFace Daily Papers)</p>
+</blockquote>
+<hr />
+<h2 id="_1">📊 주간 하이라이트</h2>
+<p><strong>핵심 트렌드:</strong>
+- <strong>영상 생성 최적화</strong>: Sparse Attention 기반 효율화 기법 3편 (SLA2, SpargeAttention2, RynnBrain)
+- <strong>GUI 에이전트</strong>: 멀티 플랫폼 지원 에이전트 및 무한 검증 가능한 웹 환경 합성
+- <strong>3D 재구성</strong>: Latent 표현 학습과 CAD 프로그램 자동 생성
+- <strong>AI 안전성</strong>: Frontier AI 리스크 관리 및 Clawdbot 안전성 감사</p>
+<hr />
+<h2 id="_2">📑 논문 목록</h2>
+<h3 id="1-sla2-">1. [영상] SLA2: 학습 가능한 라우팅과 양자화를 통한 희소-선형 어텐션</h3>
+<p><strong>Upvotes:</strong> 49 ⭐ | <strong>관심도:</strong> ⭐관심<br />
+<strong>URL:</strong> https://huggingface.co/papers/2602.12675</p>
+<p><strong>한글 요약:</strong><br />
+희소-선형 어텐션(SLA)은 희소 어텐션과 선형 어텐션을 결합하여 확산 모델을 가속화하며, 비디오 생성에서 우수한 성능을 보였습니다. 하지만 (i) SLA는 어텐션 가중치 크기에 따라 희소/선형 브랜치에 계산을 할당하는 휴리스틱 방식에 의존하여 최적이 아닐 수 있으며, (ii) 어텐션 오류를 분석한 결과 SLA와 희소/선형 어텐션으로의 직접 분해 간 불일치를 발견했습니다. SLA2는 학습 가능한 라우팅과 양자화 인식 학습을 통해 이러한 문제를 해결합니다.</p>
+<p><strong>한줄 요약:</strong> 비디오 생성 모델의 어텐션 메커니즘을 학습 가능한 라우팅으로 최적화하여 성능과 속도를 개선</p>
+<hr />
+<h3 id="2-autowebworld">2. [에이전트] AutoWebWorld: 유한 상태 머신을 통한 무한 검증 가능한 웹 환경 합성</h3>
+<p><strong>Upvotes:</strong> 42 ⭐ | <strong>관심도:</strong> ⭐관심<br />
+<strong>URL:</strong> https://huggingface.co/papers/2602.14296</p>
+<p><strong>한글 요약:</strong><br />
+자율 웹 GUI 에이전트의 성능은 학습 데이터의 품질과 양에 크게 의존합니다. 하지만 실제 웹사이트에서 상호작용 궤적을 수집하는 것은 비용이 많이 들고 검증이 어렵습니다. 상태 전이가 숨겨져 있어 단계별 정확성 평가에 불일치하고 비용이 많이 드는 외부 검증기에 의존해야 합니다. 이를 해결하기 위해 AutoWebWorld는 제어 가능하고 검증 가능한 웹 환경을 합성하는 프레임워크를 제안합니다.</p>
+<p><strong>한줄 요약:</strong> 웹 에이전트 학습을 위한 무한한 검증 가능한 합성 환경을 유한 상태 머신으로 자동 생성</p>
+<hr />
+<h3 id="3-spargeattention2-top-ktop-p">3. [영상] SpargeAttention2: 하이브리드 Top-k+Top-p 마스킹과 증류를 통한 학습 가능한 희소 어텐션</h3>
+<p><strong>Upvotes:</strong> 39 ⭐ | <strong>관심도:</strong> ⭐관심<br />
+<strong>URL:</strong> https://huggingface.co/papers/2602.13515</p>
+<p><strong>한글 요약:</strong><br />
+많은 학습 없는 희소 어텐션 방법이 확산 모델 가속화에 효과적입니다. 최근 연구들은 희소 어텐션을 학습 가능하게 만들면 생성 품질을 유지하면서도 더 높은 희소성을 달성할 수 있다고 제안합니다. 본 연구는 세 가지 핵심 질문을 다룹니다: (1) Top-k와 Top-p 마스킹 규칙은 언제 실패하며 어떻게 피할 수 있는가? (2) 학습 가능한 희소 어텐션이 왜 학습 없는 방법보다 높은 희소성에 도달할 수 있는가? (3) 파인튜닝의 한계는 무엇인가?</p>
+<p><strong>한줄 요약:</strong> 하이브리드 마스킹과 증류 학습으로 확산 모델의 어텐션 희소성을 극대화하면서 품질 유지</p>
+<hr />
+<h3 id="4-rynnbrain">4. [영상] RynnBrain: 오픈 소스 체화 지능 기반 모델</h3>
+<p><strong>Upvotes:</strong> 36 ⭐ | <strong>관심도:</strong> ⭐관심<br />
+<strong>URL:</strong> https://huggingface.co/papers/2602.14979</p>
+<p><strong>한글 요약:</strong><br />
+다중모달 기반 모델의 빠른 발전에도 불구하고, 체화 지능 커뮤니티는 여전히 실제 시공간 역학 내에서 인식, 추론, 계획을 통합하는 통합되고 물리적으로 근거한 기반 모델이 부족합니다. RynnBrain은 체화 지능을 위한 오픈소스 시공간 기반 모델입니다. RynnBrain은 통합 프레임워크에서 네 가지 핵심 능력을 강화합니다: 포괄적인 자기중심적 이해, 다양한 시공간 위치 파악, 물리적으로 근거한 행동 계획, 그리고 실제 환경에서의 일반화.</p>
+<p><strong>한줄 요약:</strong> 로봇의 인식-추론-계획을 통합한 오픈소스 시공간 기반 모델로 실제 환경 일반화 능력 강화</p>
+<hr />
+<h3 id="5-mobile-agent-v35-gui">5. [에이전트] Mobile-Agent-v3.5: 멀티 플랫폼 기본 GUI 에이전트</h3>
+<p><strong>Upvotes:</strong> 34 🔥 | <strong>관심도:</strong> 🔥핵심<br />
+<strong>URL:</strong> https://huggingface.co/papers/2602.16855</p>
+<p><strong>한글 요약:</strong><br />
+GUI-Owl-1.5는 다양한 크기(2B/4B/8B/32B/235B)의 instruct/thinking 변형을 갖춘 최신 네이티브 GUI 에이전트 모델로, 클라우드-엣지 협업과 실시간 상호작용을 가능하게 하는 다중 플랫폼(데스크톱, 모바일, 브라우저 등)을 지원합니다. GUI-Owl-1.5는 20개 이상의 GUI 벤치마크에서 오픈소스 모델 중 최고 성능을 달성했습니다: (1) GUI 자동화 작업에서 OSWorld 56.5, AndroidWorld 71.6, WebArena 48.4를 기록했으며, (2) grounding 작업에서도 우수한 성능을 보였습니다.</p>
+<p><strong>한줄 요약:</strong> 데스크톱-모바일-브라우저를 통합 지원하는 멀티 플랫폼 GUI 에이전트, 20+ 벤치마크 SOTA</p>
+<hr />
+<h3 id="6-3d-unified-latents-ul-latent">6. [3D재구성] Unified Latents (UL): Latent 표현 학습 방법</h3>
+<p><strong>Upvotes:</strong> 31 ⭐ | <strong>관심도:</strong> ⭐관심<br />
+<strong>URL:</strong> https://huggingface.co/papers/2602.17270</p>
+<p><strong>한글 요약:</strong><br />
+Unified Latents(UL)는 확산 사전에 의해 공동으로 정규화되고 확산 모델에 의해 디코딩되는 latent 표현을 학습하는 프레임워크입니다. 인코더의 출력 노이즈를 사전의 최소 노이즈 레벨에 연결함으로써, latent 비트율의 엄격한 상한을 제공하는 간단한 학습 목표를 얻습니다. ImageNet-512에서 FID 1.4의 경쟁력 있는 성능과 높은 재구성 품질(PSNR)을 달성하면서도 Stable Diffusion으로 학습된 모델보다 적은 학습 FLOPs를 요구합니다.</p>
+<p><strong>한줄 요약:</strong> 확산 모델 기반 latent 표현 학습으로 효율적인 학습과 높은 재구성 품질을 동시에 달성</p>
+<hr />
+<h3 id="7-frontier-ai-v15">7. [에이전트] Frontier AI 리스크 관리 프레임워크 실천: 리스크 분석 기술 보고서 v1.5</h3>
+<p><strong>Upvotes:</strong> 26 ⭐ | <strong>관심도:</strong> ⭐관심<br />
+<strong>URL:</strong> https://huggingface.co/papers/2602.14457</p>
+<p><strong>한글 요약:</strong><br />
+급속히 발전하는 인공지능(AI) 모델이 제기하는 전례 없는 위험을 이해하고 식별하기 위해, Frontier AI 리스크 관리 프레임워크는 frontier 리스크에 대한 포괄적인 평가를 제시합니다. 대형 언어 모델(LLM)의 일반 능력이 빠르게 진화하고 에이전트형 AI가 확산됨에 따라, 본 리스크 분석 기술 보고서는 다섯 가지 중요한 차원에 대한 업데이트되고 세분화된 평가를 제시합니다: 사이버 공격, 설득 및 조작, 자율성, 지식 확산, 그리고 생물학적 위협.</p>
+<p><strong>한줄 요약:</strong> Frontier AI의 5대 리스크 차원(사이버, 조작, 자율성, 지식 확산, 생물학적 위협)에 대한 실전 관리 프레임워크</p>
+<hr />
+<h3 id="8-ai-">8. [AI생성] 개방형 어휘 시각 이동-조작을 위한 휴머노이드 말단 제어 학습</h3>
+<p><strong>Upvotes:</strong> 26 ⭐ | <strong>관심도:</strong> ⭐관심<br />
+<strong>URL:</strong> https://huggingface.co/papers/2602.16705</p>
+<p><strong>한글 요약:</strong><br />
+휴머노이드 로봇을 사용한 야생의 임의 객체에 대한 시각적 이동-조작은 정확한 말단 장치(EE) 제어와 시각 입력(예: RGB-D 이미지)을 통한 장면의 일반화 가능한 이해를 요구합니다. 기존 접근 방식은 실제 모방 학습에 기반하며 대규모 학습 데이터셋 수집의 어려움으로 인해 일반화가 제한적입니다. 본 논문은 휴머노이드 로봇의 객체 이동-조작을 위한 새로운 패러다임인 HERO를 제시하며, 시뮬레이션 학습의 강력한 일반화 능력과 실제 세계 적응을 결합합니다.</p>
+<p><strong>한줄 요약:</strong> 시뮬레이션 학습과 실제 적응을 결합하여 휴머노이드 로봇의 개방형 객체 조작 능력 향상</p>
+<hr />
+<h3 id="9-3d-cadevolve-cad">9. [3D재구성] CADEvolve: 프로그램 진화를 통한 현실적 CAD 생성</h3>
+<p><strong>Upvotes:</strong> 24 ⭐ | <strong>관심도:</strong> ⭐관심<br />
+<strong>URL:</strong> https://huggingface.co/papers/2602.16317</p>
+<p><strong>한글 요약:</strong><br />
+컴퓨터 지원 설계(CAD)는 엔지니어링 및 제조를 위한 빠르고 편집 가능한 모델링을 제공합니다. 최근 AI 발전으로 다양한 CAD 작업의 완전 자동화가 가능해졌습니다. 하지만 데이터 부족이 진행을 저해합니다: 공개 데이터는 대부분 스케치-압출 시퀀스만 포함하고, 복잡한 작업, 다중 작업 구성, 설계 의도가 부족하여 효과적인 파인튜닝을 방해합니다. 동결된 VLM으로 이를 우회하려는 시도는 현재 모델의 제한된 3D grounding으로 인해 단순하거나 유효하지 않은 프로그램을 생성합니다.</p>
+<p><strong>한줄 요약:</strong> 프로그램 진화를 통해 복잡하고 현실적인 CAD 모델을 자동 생성, 데이터 부족 문제 해결</p>
+<hr />
+<h3 id="10-clawdbotopenclaw">10. [에이전트] Clawdbot(OpenClaw)의 궤적 기반 안전성 감사</h3>
+<p><strong>Upvotes:</strong> 21 ⭐ | <strong>관심도:</strong> ⭐관심<br />
+<strong>URL:</strong> https://huggingface.co/papers/2602.14364</p>
+<p><strong>한글 요약:</strong><br />
+Clawdbot은 로컬 실행과 웹 기반 워크플로우를 포괄하는 광범위한 행동 공간을 가진 자체 호스팅 도구 사용 개인 AI 에이전트로, 모호성과 적대적 조종 하에서 높아진 안전성 및 보안 우려를 제기합니다. 본 연구는 6가지 리스크 차원에 걸쳐 Clawdbot의 궤적 중심 평가를 제시합니다. 테스트 스위트는 이전 에이전트 안전성 벤치마크(ATBench, LPS-Bench 포함)에서 시나리오를 샘플링하고 가볍게 적응하며, Clawdbot의 독특한 능력에 맞춘 수작업 설계 케이스로 보완합니다.</p>
+<p><strong>한줄 요약:</strong> OpenClaw 에이전트의 로컬 실행 및 웹 워크플로우 안전성을 6가지 리스크 차원으로 감사한 보고서</p>
+<hr />
+<h2 id="_3">🎯 핵심 논문</h2>
+<p><strong>Mobile-Agent-v3.5</strong> (🔥핵심, 34 upvotes)
+- 데스크톱, 모바일, 브라우저를 통합 지원하는 멀티 플랫폼 GUI 에이전트
+- 2B~235B까지 다양한 크기 제공, 클라우드-엣지 협업 가능
+- OSWorld 56.5, AndroidWorld 71.6, WebArena 48.4로 SOTA 달성</p>
+<hr />
+<h2 id="_4">📈 카테고리별 분포</h2>
+<ul>
+<li><strong>영상</strong>: 3편 (SLA2, SpargeAttention2, RynnBrain)</li>
+<li><strong>에이전트</strong>: 4편 (AutoWebWorld, Mobile-Agent-v3.5, Frontier AI, Clawdbot 감사)</li>
+<li><strong>3D재구성</strong>: 2편 (Unified Latents, CADEvolve)</li>
+<li><strong>AI생성</strong>: 1편 (휴머노이드 말단 제어)</li>
+</ul>
+<hr />
+<p><em>Generated by 아르카 - SOTA Weekly Automation</em></p>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

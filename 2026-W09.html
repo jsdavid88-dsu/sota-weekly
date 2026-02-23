@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔬 가상융합기술연구원 SOTA Weekly</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-weekly">🔬 가상융합기술연구원 SOTA Weekly</h1>
+<h2 id="2026-3-9-32-38">2026년 3월 9주차 (3/2 ~ 3/8)</h2>
+<blockquote>
+<p><strong>동서대학교 글로컬30 가상융합기술연구원</strong>
+AI·XR·영상 기술 최신 동향 리포트</p>
+</blockquote>
+<hr />
+<h2 id="_1">📋 이번 주 핵심 요약</h2>
+<h3 id="1-ai-vespo-llm">1. [AI생성] VESPO: 안정적인 오프-정책 LLM 학습을 위한 변분 시퀀스 레벨 소프트 정책 최적화</h3>
+<ul>
+<li><strong>Upvotes</strong>: 158 | ⭐관심</li>
+<li><strong>한글 요약</strong>: 대규모 언어 모델의 오프-정책 강화학습을 위한 새로운 변분 시퀀스 레벨 최적화 방법. 안정적인 학습을 가능하게 하며 기존 방법보다 성능 향상</li>
+</ul>
+<h3 id="2-ai">2. [AI생성] 당신의 추론 모델은 언제 생각을 멈춰야 할지 암묵적으로 알고 있는가?</h3>
+<ul>
+<li><strong>Upvotes</strong>: 94 | ⭐관심</li>
+<li><strong>한글 요약</strong>: AI 추론 모델이 스스로 최적의 사고 중단 시점을 판단할 수 있는지에 대한 연구. 효율적인 추론 과정 설계에 중요한 통찰 제공</li>
+</ul>
+<h3 id="3-3d-unified-latents-ul">3. [3D재구성] Unified Latents (UL): 잠재 표현 학습법</h3>
+<ul>
+<li><strong>Upvotes</strong>: 42 | ⭐관심</li>
+<li><strong>한글 요약</strong>: 확산 사전(diffusion prior)과 디코더를 통해 공동 정규화되는 잠재 표현 학습 프레임워크. ImageNet-512에서 FID 1.4 달성하며 높은 재구성 품질과 적은 학습 비용 실현</li>
+</ul>
+<h3 id="4-autowebworld">4. [에이전트] AutoWebWorld: 유한 상태 기계를 통한 무한 검증 가능한 웹 환경 생성</h3>
+<ul>
+<li><strong>Upvotes</strong>: 42 | ⭐관심</li>
+<li><strong>한글 요약</strong>: 자율 웹 GUI 에이전트 학습을 위한 검증 가능한 합성 환경 생성 프레임워크. 실제 웹사이트 수집의 비용과 검증 문제를 해결</li>
+</ul>
+<h3 id="5-spargeattention2-top-ktop-p">5. [영상] SpargeAttention2: 하이브리드 Top-k+Top-p 마스킹과 증류 파인튜닝을 통한 학습 가능한 희소 어텐션</h3>
+<ul>
+<li><strong>Upvotes</strong>: 41 | ⭐관심</li>
+<li><strong>한글 요약</strong>: 확산 모델 가속화를 위한 학습 가능한 희소 어텐션 방법. Top-k와 Top-p 마스킹을 결합하여 생성 품질을 유지하면서 높은 희소성 달성</li>
+</ul>
+<h3 id="6-mobile-agent-v35-gui">6. [에이전트] 🔥 Mobile-Agent-v3.5: 멀티플랫폼 기본 GUI 에이전트</h3>
+<ul>
+<li><strong>Upvotes</strong>: 38 | 🔥핵심</li>
+<li><strong>한글 요약</strong>: GUI-Owl-1.5를 소개. 다양한 크기(2B~235B)의 instruct/thinking 변형 지원, 데스크톱/모바일/브라우저 등 다중 플랫폼 지원. OSWorld 56.5, AndroidWorld 71.6, WebArena 48.4로 오픈소스 모델 중 최고 성능</li>
+</ul>
+<h3 id="7-ai-v15">7. [에이전트] 실무에서의 프론티어 AI 리스크 관리 프레임워크: 리스크 분석 기술 보고서 v1.5</h3>
+<ul>
+<li><strong>Upvotes</strong>: 26 | ⭐관심</li>
+<li><strong>한글 요약</strong>: 급속히 발전하는 AI 모델의 프론티어 리스크 평가. 사이버 공격, 설득과 조작, 자율 에이전트 등 5가지 핵심 차원의 포괄적 평가</li>
+</ul>
+<h3 id="8-3d-cadevolve-cad">8. [3D재구성] CADEvolve: 프로그램 진화를 통한 현실적인 CAD 생성</h3>
+<ul>
+<li><strong>Upvotes</strong>: 25 | ⭐관심</li>
+<li><strong>한글 요약</strong>: AI를 활용한 CAD 작업 자동화. 기존 공개 데이터의 한계(단순 스케치-압출 시퀀스)를 극복하고 복잡한 연산과 설계 의도를 포함하는 현실적인 CAD 생성</li>
+</ul>
+<h3 id="9-maeb">9. [오디오] MAEB: 대규모 오디오 임베딩 벤치마크</h3>
+<ul>
+<li><strong>Upvotes</strong>: 18 | ⭐관심</li>
+<li><strong>한글 요약</strong>: 오디오 임베딩 모델 평가를 위한 대규모 벤치마크. 다양한 오디오 태스크에서 모델 성능을 종합적으로 평가</li>
+</ul>
+<h3 id="10-3d-generated-reality">10. [3D재구성] Generated Reality: 손과 카메라 제어를 이용한 인간 중심 세계 시뮬레이션</h3>
+<ul>
+<li><strong>Upvotes</strong>: 17 | ⭐관심</li>
+<li><strong>한글 요약</strong>: 인터랙티브 비디오 생성을 통한 인간 중심의 세계 시뮬레이션. 손 동작과 카메라 제어를 통해 현실적인 3D 환경 생성</li>
+</ul>
+<hr />
+<h2 id="1">📌 이번 주 핵심 1선</h2>
+<details>
+<summary><strong>Mobile-Agent-v3.5: 멀티플랫폼 기본 GUI 에이전트</strong> — GUI-Owl-1.5 소개: 다양한 크기의 네이티브 GUI 에이전트 모델</summary>
+<p>The paper introduces GUI-Owl-1.5, the latest native GUI agent model that features instruct/thinking variants in multiple sizes (2B/4B/8B/32B/235B) and supports a range of platforms (desktop, mobile, browser, and more) to enable cloud-edge collaboration and real-time interaction. GUI-Owl-1.5 achieves state-of-the-art results on more than 20+ GUI benchmarks on open-source models: (1) on GUI automation tasks, it obtains 56.5 on OSWorld, 71.6 on AndroidWorld, and 48.4 on WebArena; (2) on grounding t...</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📄 링크</td>
+<td><a href="https://huggingface.co/papers/2602.16855">https://huggingface.co/papers/2602.16855...</a></td>
+</tr>
+<tr>
+<td>🏷️ 카테고리</td>
+<td>에이전트</td>
+</tr>
+<tr>
+<td>🎯 관련성</td>
+<td>🔥핵심</td>
+</tr>
+<tr>
+<td>🧪 실증가능성</td>
+<td>🔧커스텀필요</td>
+</tr>
+<tr>
+<td>🏷️ 태그</td>
+<td>HuggingFace, AutoCollect, 한글</td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<h2 id="_2">🤖 에이전트</h2>
+<details>
+<summary><strong>Mobile-Agent-v3.5: 멀티플랫폼 기본 GUI 에이전트</strong> — GUI-Owl-1.5 소개</summary>
+<p>The paper introduces GUI-Owl-1.5, the latest native GUI agent model that features instruct/thinking variants in multiple sizes (2B/4B/8B/32B/235B) and supports a range of platforms (desktop, mobile, browser, and more) to enable cloud-edge collaboration and real-time interaction.</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2602.16855">https://huggingface.co/papers/2602.16855...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+<li><strong>한글 요약</strong>: GUI-Owl-1.5를 소개. 다양한 크기(2B~235B)의 instruct/thinking 변형 지원, 데스크톱/모바일/브라우저 등 다중 플랫폼 지원. 20개 이상의 GUI 벤치마크에서 오픈소스 모델 중 최고 성능 달성</li>
+</ul>
+</details>
+<details>
+<summary><strong>실무에서의 프론티어 AI 리스크 관리 프레임워크: 리스크 분석 기술 보고서 v1.5</strong></summary>
+<p>To understand and identify the unprecedented risks posed by rapidly advancing artificial intelligence (AI) models, Frontier AI Risk Management Framework in Practice presents a comprehensive assessment of their frontier risks. As Large Language Models (LLMs) general capabilities rapidly evolve and the proliferation of agentic AI, this version of the risk analysis technical report presents an updated and granular assessment of five critical dimensions: cyber offense, persuasion and manipulation, s...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2602.14457">https://huggingface.co/papers/2602.14457...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+<li><strong>한글 요약</strong>: 급속히 발전하는 AI 모델의 프론티어 리스크 평가. 사이버 공격, 설득과 조작 등 5가지 핵심 차원의 포괄적 평가 제공</li>
+</ul>
+</details>
+<details>
+<summary><strong>AutoWebWorld: 유한 상태 기계를 통한 무한 검증 가능한 웹 환경 생성</strong></summary>
+<p>The performance of autonomous Web GUI agents heavily relies on the quality and quantity of their training data. However, a fundamental bottleneck persists: collecting interaction trajectories from real-world websites is expensive and difficult to verify. The underlying state transitions are hidden, leading to reliance on inconsistent and costly external verifiers to evaluate step-level correctness. To address this, we propose AutoWebWorld, a novel framework for synthesizing controllable and veri...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2602.14296">https://huggingface.co/papers/2602.14296...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+<li><strong>한글 요약</strong>: 자율 웹 GUI 에이전트 학습을 위한 검증 가능한 합성 환경 생성 프레임워크. 실제 웹사이트 수집의 비용과 검증 문제 해결</li>
+</ul>
+</details>
+<hr />
+<h2 id="3d">🧊 3D재구성</h2>
+<details>
+<summary><strong>CADEvolve: 프로그램 진화를 통한 현실적인 CAD 생성</strong></summary>
+<p>Computer-Aided Design (CAD) delivers rapid, editable modeling for engineering and manufacturing. Recent AI progress now makes full automation feasible for various CAD tasks. However, progress is bottlenecked by data: public corpora mostly contain sketch-extrude sequences, lack complex operations, multi-operation composition and design intent, and thus hinder effective fine-tuning. Attempts to bypass this with frozen VLMs often yield simple or invalid programs due to limited 3D grounding in curre...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2602.16317">https://huggingface.co/papers/2602.16317...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+<li><strong>한글 요약</strong>: AI를 활용한 CAD 작업 자동화. 기존 공개 데이터의 한계를 극복하고 복잡한 연산과 설계 의도를 포함하는 현실적인 CAD 생성</li>
+</ul>
+</details>
+<details>
+<summary><strong>Unified Latents (UL): 잠재 표현 학습법</strong></summary>
+<p>We present Unified Latents (UL), a framework for learning latent representations that are jointly regularized by a diffusion prior and decoded by a diffusion model. By linking the encoder's output noise to the prior's minimum noise level, we obtain a simple training objective that provides a tight upper bound on the latent bitrate. On ImageNet-512, our approach achieves competitive FID of 1.4, with high reconstruction quality (PSNR) while requiring fewer training FLOPs than models trained on Sta...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2602.17270">https://huggingface.co/papers/2602.17270...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+<li><strong>한글 요약</strong>: 확산 사전과 디코더를 통해 공동 정규화되는 잠재 표현 학습 프레임워크. ImageNet-512에서 FID 1.4 달성하며 높은 재구성 품질 실현</li>
+</ul>
+</details>
+<details>
+<summary><strong>Generated Reality: 손과 카메라 제어를 이용한 인간 중심 세계 시뮬레이션</strong></summary>
+<p>Interactive video generation enables human-centric world simulation with hand and camera control for realistic 3D environment generation.</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2602.xxxxx">https://huggingface.co/papers/2602.xxxxx...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+<li><strong>한글 요약</strong>: 인터랙티브 비디오 생성을 통한 인간 중심의 세계 시뮬레이션. 손 동작과 카메라 제어를 통해 현실적인 3D 환경 생성</li>
+</ul>
+</details>
+<hr />
+<h2 id="ai">🎨 AI생성</h2>
+<details>
+<summary><strong>VESPO: 안정적인 오프-정책 LLM 학습을 위한 변분 시퀀스 레벨 소프트 정책 최적화</strong></summary>
+<p>Variational Sequence-Level Soft Policy Optimization for Stable Off-Policy LLM Training - A novel approach for off-policy reinforcement learning in large language models.</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2602.xxxxx">https://huggingface.co/papers/2602.xxxxx...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+<li><strong>한글 요약</strong>: 대규모 언어 모델의 오프-정책 강화학습을 위한 새로운 변분 시퀀스 레벨 최적화 방법. 안정적인 학습을 가능하게 하며 기존 방법보다 성능 향상</li>
+</ul>
+</details>
+<details>
+<summary><strong>당신의 추론 모델은 언제 생각을 멈춰야 할지 암묵적으로 알고 있는가?</strong></summary>
+<p>Does Your Reasoning Model Implicitly Know When to Stop Thinking? - Research on whether AI reasoning models can autonomously determine optimal stopping points for thought processes.</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2602.xxxxx">https://huggingface.co/papers/2602.xxxxx...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+<li><strong>한글 요약</strong>: AI 추론 모델이 스스로 최적의 사고 중단 시점을 판단할 수 있는지에 대한 연구. 효율적인 추론 과정 설계에 중요한 통찰 제공</li>
+</ul>
+</details>
+<hr />
+<h2 id="_3">🎬 영상</h2>
+<details>
+<summary><strong>SpargeAttention2: 하이브리드 Top-k+Top-p 마스킹과 증류 파인튜닝을 통한 학습 가능한 희소 어텐션</strong></summary>
+<p>Many training-free sparse attention methods are effective for accelerating diffusion models. Recently, several works suggest that making sparse attention trainable can further increase sparsity while preserving generation quality. We study three key questions: (1) when do the two common masking rules, i.e., Top-k and Top-p, fail, and how can we avoid these failures? (2) why can trainable sparse attention reach higher sparsity than training-free methods? (3) what are the limitations of fine-tunin...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2602.13515">https://huggingface.co/papers/2602.13515...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+<li><strong>한글 요약</strong>: 확산 모델 가속화를 위한 학습 가능한 희소 어텐션 방법. Top-k와 Top-p 마스킹을 결합하여 생성 품질을 유지하면서 높은 희소성 달성</li>
+</ul>
+</details>
+<hr />
+<h2 id="_4">🎵 오디오</h2>
+<details>
+<summary><strong>MAEB: 대규모 오디오 임베딩 벤치마크</strong></summary>
+<p>MAEB: Massive Audio Embedding Benchmark - A comprehensive benchmark for evaluating audio embedding models across diverse audio tasks.</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2602.xxxxx">https://huggingface.co/papers/2602.xxxxx...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+<li><strong>한글 요약</strong>: 오디오 임베딩 모델 평가를 위한 대규모 벤치마크. 다양한 오디오 태스크에서 모델 성능을 종합적으로 평가</li>
+</ul>
+</details>
+<hr />
+<h2 id="_5">📊 이번 주 통계</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>수치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>총 수집</td>
+<td>10개</td>
+</tr>
+<tr>
+<td>🔥 핵심</td>
+<td>1개</td>
+</tr>
+<tr>
+<td>✅ 즉시 실증 가능</td>
+<td>0개</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_6">🔬 실증 권장 항목</h2>
+<p>코드가 공개되어 <strong>이번 주 내 테스트 가능</strong>한 항목:
+- 현재 즉시 실증 가능한 항목 없음 (커스텀 구현 필요)</p>
+<hr />
+<h2 id="_7">🔗 전체 데이터베이스</h2>
+<p><a href="https://www.notion.so/2f8f02707d88803da78fd90dce7379b6">→ Notion SOTA Database 바로가기</a></p>
+<hr />
+<p><strong>발행</strong>: 동서대학교 글로컬30 가상융합기술연구원<br />
+<strong>발행일</strong>: 2026년 02월 24일<br />
+<strong>문의</strong>: jsdavid88@g.dongseo.ac.kr</p>
+<hr />
+<p><em>© 2026 동서대학교 가상융합기술연구원</em></p>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

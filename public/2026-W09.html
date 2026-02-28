@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTA Weekly Report — 2026-W09</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-weekly-report-2026-w09">SOTA Weekly Report — 2026-W09</h1>
+<blockquote>
+<p>수집일: 2026년 3월 1일 (일) 08:00 KST<br />
+출처: HuggingFace Daily Papers | Notion 저장 완료 ✅</p>
+</blockquote>
+<hr />
+<h2 id="top-10">📊 이번 주 Top 10 논문</h2>
+<h3 id="1">1. 🌍 [영상/세계모델] 일반 세계 모델을 정의하는 일관성의 삼위일체</h3>
+<p><strong>The Trinity of Consistency as a Defining Principle for General World Models</strong><br />
+⬆️ 184 upvotes | arXiv: 2602.23152</p>
+<blockquote>
+<p>범용 AI를 위한 세계 모델은 <strong>양식 일관성(modal)·공간 일관성(spatial)·시간 일관성(temporal)</strong> 세 가지 원칙을 갖춰야 한다고 주장. 이를 평가하는 CoW-Bench 벤치마크를 제안, 다중모달 학습 시스템을 종합 평가한다.</p>
+</blockquote>
+<hr />
+<h3 id="2">2. 🤖 [에이전트/멀티모달] 맹점에서 이득으로: 대형 멀티모달 모델을 위한 진단 기반 반복 학습</h3>
+<p><strong>From Blind Spots to Gains: Diagnostic-Driven Iterative Training for Large Multimodal Models</strong><br />
+⬆️ 143 upvotes | arXiv: 2602.22859</p>
+<blockquote>
+<p>대형 멀티모달 모델의 약점을 진단하고 타깃 데이터 생성으로 반복 개선하는 <strong>진단 기반 점진적 진화(DPE)</strong> 프레임워크. 지속적 학습과 품질 제어를 통한 자동 성능 향상.</p>
+</blockquote>
+<hr />
+<h3 id="3-mobilitybench">3. 🗺️ [에이전트/벤치마크] MobilityBench: 실세계 이동 시나리오에서 경로 계획 에이전트 평가 벤치마크</h3>
+<p><strong>MobilityBench: A Benchmark for Evaluating Route-Planning Agents in Real-World Mobility Scenarios</strong><br />
+⬆️ 94 upvotes | arXiv: 2602.22638</p>
+<blockquote>
+<p>LLM 기반 경로 계획 에이전트를 실제 이동 시나리오에서 평가하는 확장형 벤치마크. 익명화된 사용자 질의와 결정론적 API-리플레이 샌드박스로 재현 가능한 테스트 환경 제공.</p>
+</blockquote>
+<hr />
+<h3 id="4-hytrec">4. 📈 [영상/추천시스템] HyTRec: 긴 행동 순서 추천을 위한 하이브리드 시간 인식 어텐션 아키텍처</h3>
+<p><strong>HyTRec: A Hybrid Temporal-Aware Attention Architecture for Long Behavior Sequential Recommendation</strong><br />
+⬆️ 53 upvotes | arXiv: 2602.18283</p>
+<blockquote>
+<p>선형 어텐션과 소프트맥스 어텐션을 결합하고 시간 인식 델타 네트워크(TADN)를 적용, 긴 사용자 행동 시퀀스에서 장기 선호와 단기 의도를 동시에 효율적으로 모델링.</p>
+</blockquote>
+<hr />
+<h3 id="5-ai-molhit">5. 🧬 [AI생성/분자설계] MolHIT: 계층적 이산 확산 모델로 분자 그래프 생성 발전</h3>
+<p><strong>MolHIT: Advancing Molecular-Graph Generation with Hierarchical Discrete Diffusion Models</strong><br />
+⬆️ 52 upvotes | arXiv: 2602.17602</p>
+<blockquote>
+<p>화학 사전 지식을 활용한 계층적 이산 확산 모델로 분자 그래프 생성의 화학적 유효성과 다중 속성 유도 합성 성능을 기존 1D·그래프 방식 대비 향상.</p>
+</blockquote>
+<hr />
+<h3 id="6-omnigaia-ai">6. 🌐 [에이전트/멀티모달] OmniGAIA: 네이티브 전 양식 AI 에이전트를 향해</h3>
+<p><strong>OmniGAIA: Towards Native Omni-Modal AI Agents</strong><br />
+⬆️ 49 upvotes | arXiv: 2602.22897</p>
+<blockquote>
+<p>영상·오디오·이미지 복합 추론을 평가하는 OmniGAIA 벤치마크 제안. 회고 기반 트리 탐색(hindsight-guided tree exploration)과 OmniDPO 파인튜닝으로 도구 활용 능력을 향상시킨 OmniAtlas 에이전트 공개.</p>
+</blockquote>
+<hr />
+<h3 id="7-dreamid-omni-">7. 🎬 [영상/생성] DreamID-Omni: 제어 가능한 인간 중심 오디오-비디오 생성 통합 프레임워크</h3>
+<p><strong>DreamID-Omni: Unified Framework for Controllable Human-Centric Audio-Video Generation</strong><br />
+⬆️ 37 upvotes | arXiv: 2602.12160</p>
+<blockquote>
+<p>대칭적 조건부 주입과 이중 수준 분리(dual-level disentanglement), 다중 작업 점진적 학습을 적용한 확산 트랜스포머로 아이덴티티·음색 결합 제어 가능한 오디오-비디오 생성 SOTA 달성.</p>
+</blockquote>
+<hr />
+<h3 id="8">8. 🧠 [에이전트/추론] 상상은 시각 추론에 도움이 되지만, 아직 잠재 공간에서는 아니다</h3>
+<p><strong>Imagination Helps Visual Reasoning, But Not Yet in Latent Space</strong><br />
+⬆️ 34 upvotes | arXiv: 2602.22766</p>
+<blockquote>
+<p>멀티모달 LLM의 잠재적 시각 추론이 입력-잠재 단절과 잠재-응답 단절로 인해 실패함을 인과 매개 분석으로 규명. 텍스트 기반 CapImagine 방식이 복잡한 잠재 공간 방법보다 우수함을 입증.</p>
+</blockquote>
+<hr />
+<h3 id="9-llm">9. 🔍 [에이전트/강화학습] 하이브리드 온/오프 정책 최적화를 통한 탐색적 메모리 증강 LLM 에이전트</h3>
+<p><strong>Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization</strong><br />
+⬆️ 29 upvotes | arXiv: 2602.23008</p>
+<blockquote>
+<p>메모리 메커니즘과 온/오프 정책 강화학습을 통합한 EMPO² 프레임워크. 복잡한 환경(ScienceWorld, WebShop)에서 LLM 에이전트의 탐색 능력과 적응성 향상.</p>
+</blockquote>
+<hr />
+<h3 id="10-agentdropoutv2-">10. 🔧 [에이전트/시스템] AgentDropoutV2: 테스트 시간 수정-거부 가지치기로 멀티 에이전트 정보 흐름 최적화</h3>
+<p><strong>AgentDropoutV2: Optimizing Information Flow in Multi-Agent Systems via Test-Time Rectify-or-Reject Pruning</strong><br />
+⬆️ 24 upvotes | arXiv: 2602.23258</p>
+<blockquote>
+<p>재학습 없이 멀티 에이전트 시스템의 오류 전파를 억제하는 테스트 타임 프레임워크. 검색 증강 수정기와 실패 패턴 풀로 동적 정보 흐름 최적화.</p>
+</blockquote>
+<hr />
+<h2 id="_1">🔑 이번 주 키트렌드</h2>
+<ul>
+<li><strong>세계 모델의 일관성 원칙화</strong> — 단순 생성 넘어 공간·시간·양식 정합성 요구</li>
+<li><strong>진단 기반 자동 개선</strong> — LMM 스스로 약점 파악 후 타깃 데이터 생성</li>
+<li><strong>실세계 에이전트 벤치마크</strong> — 이동 계획, 과학, 쇼핑 등 실용 도메인 평가 확장</li>
+<li><strong>멀티모달 통합 생성</strong> — 오디오-비디오 동시 제어 프레임워크 성숙화</li>
+</ul>
+<hr />
+<p><em>Generated by SOTA-Researcher Auto-Collect | Notion 저장: 10/10 ✅</em></p>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

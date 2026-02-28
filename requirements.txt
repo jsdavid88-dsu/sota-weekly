@@ -1,0 +1,15 @@
+# SOTA Researcher - Minimal Dependencies
+# LLM 없이 URL 추출 + Notion 저장만 지원
+
+# URL 추출
+youtube-transcript-api>=0.6.0
+newspaper3k>=0.2.8
+arxiv>=2.0.0
+httpx>=0.25.0
+
+# 환경설정
+python-dotenv>=1.0.0
+
+# 유틸리티 (newspaper3k 의존성)
+lxml>=4.9.0
+lxml_html_clean>=0.1.0

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTA Weekly Report — 2026-W10</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-weekly-report-2026-w10">SOTA Weekly Report — 2026-W10</h1>
+<blockquote>
+<p>수집일: 2026-03-02 (월) | 출처: HuggingFace Daily Papers | 수집: 10편</p>
+</blockquote>
+<hr />
+<h2 id="_1">논문 목록</h2>
+<h3 id="1">1. [영상] 일관성의 삼위일체: 범용 월드 모델의 정의 원칙</h3>
+<p><strong>원제:</strong> The Trinity of Consistency as a Defining Principle for General World Models
+<strong>Upvotes:</strong> 188 ⭐관심
+<strong>한줄 요약:</strong> 범용 월드 모델이 갖춰야 할 핵심 원칙으로 "물리적 일관성 · 인과적 일관성 · 다중 관점 일관성"의 삼위일체 프레임워크를 제안하며, 현존 모델들의 한계를 진단함.</p>
+<hr />
+<h3 id="2">2. [에이전트] 사각지대에서 성과로: 대형 멀티모달 모델을 위한 진단 기반 반복 학습</h3>
+<p><strong>원제:</strong> From Blind Spots to Gains: Diagnostic-Driven Iterative Training for Large Multimodal Models
+<strong>Upvotes:</strong> 147 ⭐관심
+<strong>한줄 요약:</strong> LMM의 약점을 자동 진단한 뒤 해당 영역을 집중 학습하는 반복 파인튜닝 파이프라인을 제시, 다양한 멀티모달 벤치마크에서 성능을 체계적으로 향상시킴.</p>
+<hr />
+<h3 id="3-mobilitybench">3. [에이전트] MobilityBench: 현실 이동 시나리오에서 경로 계획 에이전트 평가 벤치마크</h3>
+<p><strong>원제:</strong> MobilityBench: A Benchmark for Evaluating Route-Planning Agents in Real-World Mobility Scenarios
+<strong>Upvotes:</strong> 99 ⭐관심
+<strong>한줄 요약:</strong> 대중교통·도보·환승 등 복잡한 실세계 이동 경로 계획 능력을 측정하는 최초의 에이전트 벤치마크로, 기존 LLM들의 공간 추론 한계를 정량적으로 드러냄.</p>
+<hr />
+<h3 id="4-ai-molhit">4. [AI생성] MolHIT: 계층적 이산 확산 모델로 분자 그래프 생성 고도화</h3>
+<p><strong>원제:</strong> MolHIT: Advancing Molecular-Graph Generation with Hierarchical Discrete Diffusion Models
+<strong>Upvotes:</strong> 53 ⭐관심
+<strong>한줄 요약:</strong> 분자 구조를 계층적으로 분해하는 이산 확산 모델을 통해 약물 후보 분자 그래프를 더 정확하고 다양하게 생성하는 새 방법론을 제안함.</p>
+<hr />
+<h3 id="5-hytrec">5. [영상] HyTRec: 장기 행동 시퀀스 추천을 위한 하이브리드 시간 인식 어텐션 아키텍처</h3>
+<p><strong>원제:</strong> HyTRec: A Hybrid Temporal-Aware Attention Architecture for Long Behavior Sequential Recommendation
+<strong>Upvotes:</strong> 53 ⭐관심
+<strong>한줄 요약:</strong> 장기 사용자 행동 이력을 효율적으로 처리하기 위해 시간 인식 지역·전역 어텐션을 결합한 하이브리드 트랜스포머 구조를 제안, 추천 정확도를 향상시킴.</p>
+<hr />
+<h3 id="6-omnigaia-ai">6. [에이전트] OmniGAIA: 네이티브 전방위 모달 AI 에이전트를 향하여</h3>
+<p><strong>원제:</strong> OmniGAIA: Towards Native Omni-Modal AI Agents
+<strong>Upvotes:</strong> 49 ⭐관심
+<strong>한줄 요약:</strong> 텍스트·이미지·음성·비디오를 단일 네이티브 아키텍처에서 처리하는 전방위 멀티모달 에이전트 프레임워크 OmniGAIA를 소개함.</p>
+<hr />
+<h3 id="7-dreamid-omni-">7. [영상] DreamID-Omni: 제어 가능한 인간 중심 오디오-비디오 생성 통합 프레임워크</h3>
+<p><strong>원제:</strong> DreamID-Omni: Unified Framework for Controllable Human-Centric Audio-Video Generation
+<strong>Upvotes:</strong> 37 ⭐관심
+<strong>한줄 요약:</strong> 인물 정체성·감정·제스처·음성을 동시에 제어하며 사람 중심 영상을 생성하는 통합 프레임워크로, 아바타·디지털 휴먼 제작에 직접 응용 가능.</p>
+<hr />
+<h3 id="8-llm">8. [에이전트] 하이브리드 온/오프 폴리시 최적화를 통한 탐색적 메모리 증강 LLM 에이전트</h3>
+<p><strong>원제:</strong> Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization
+<strong>Upvotes:</strong> 30 ⭐관심
+<strong>한줄 요약:</strong> 온·오프 폴리시 강화학습을 결합해 외부 메모리를 탐색·활용하는 LLM 에이전트를 훈련, 복잡한 장기 과제에서 메모리 활용 효율을 크게 높임.</p>
+<hr />
+<h3 id="9-dualpath-llm">9. [에이전트] DualPath: 에이전틱 LLM 추론의 스토리지 대역폭 병목 해소</h3>
+<p><strong>원제:</strong> DualPath: Breaking the Storage Bandwidth Bottleneck in Agentic LLM Inference
+<strong>Upvotes:</strong> 28 ⭐관심
+<strong>한줄 요약:</strong> KV 캐시 접근 시 발생하는 스토리지 병목을 이중 경로 아키텍처로 해소해 에이전틱 LLM 추론 처리량을 대폭 개선하는 시스템 최적화 기법을 제시.</p>
+<hr />
+<h3 id="10-agentdropoutv2">10. [에이전트] AgentDropoutV2: 테스트 타임 수정·거부 정책으로 멀티에이전트 정보 흐름 최적화</h3>
+<p><strong>원제:</strong> AgentDropoutV2: Optimizing Information Flow in Multi-Agent Systems via Test-Time Rectify or Reject Policy
+<strong>Upvotes:</strong> 25 🔥핵심
+<strong>한줄 요약:</strong> 추론 시점에 불필요하거나 오류 있는 에이전트 출력을 동적으로 수정·거부하는 정책을 통해 멀티에이전트 시스템의 신뢰성과 정확도를 높임.</p>
+<hr />
+<h2 id="_2">이번 주 트렌드 요약</h2>
+<ul>
+<li><strong>에이전트 연구 강세</strong>: 10편 중 6편이 에이전트 관련 — 멀티에이전트, 메모리, 경로 계획, 추론 최적화</li>
+<li><strong>월드 모델 부상</strong>: 일관성 원칙 기반 범용 월드 모델 논의가 최다 upvote 획득 (188)</li>
+<li><strong>멀티모달 통합</strong>: 텍스트+이미지+음성+비디오를 단일 아키텍처로 처리하는 흐름 (OmniGAIA, DreamID-Omni)</li>
+<li><strong>시스템 최적화</strong>: LLM 추론 인프라 병목 해소 연구(DualPath)도 주목</li>
+<li><strong>준석 관련 관심 논문</strong>: DreamID-Omni — 인간 중심 영상 생성 → 부산마법소녀 파이프라인에 직접 응용 가능성 있음 🦊</li>
+</ul>
+<hr />
+<p><em>Generated by 아르카 | SOTA Researcher v2 | 2026-W10</em></p>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

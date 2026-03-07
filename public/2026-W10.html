@@ -155,186 +155,97 @@
         <main>
             <h1 id="sota-weekly-report-2026-w10">SOTA Weekly Report — 2026-W10</h1>
 <blockquote>
-<p>수집일: 2026-03-07 (토) | 출처: HuggingFace Daily Papers | 수집: 10편</p>
+<p>수집일: 2026-03-08 (일) | 출처: HuggingFace Daily Papers | 총 10편</p>
 </blockquote>
 <hr />
 <h2 id="_1">📊 이번 주 요약</h2>
 <table>
 <thead>
 <tr>
-<th>#</th>
 <th>카테고리</th>
-<th>한글 제목</th>
-<th>Upvotes</th>
-<th>중요도</th>
+<th>논문 수</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
 <td>에이전트</td>
-<td>이종 에이전트 협력 강화학습 (HACRL)</td>
-<td>136</td>
-<td>🔥핵심</td>
+<td>4편</td>
 </tr>
 <tr>
-<td>2</td>
+<td>AI생성</td>
+<td>4편</td>
+</tr>
+<tr>
 <td>영상</td>
-<td>Helios: 실시간 장편 영상 생성 모델</td>
-<td>127</td>
-<td>⭐관심</td>
-</tr>
-<tr>
-<td>3</td>
-<td>AI생성</td>
-<td>T2S-Bench &amp; 사고 구조화(SoT): 텍스트→구조 추론 벤치마크</td>
-<td>105</td>
-<td>⭐관심</td>
-</tr>
-<tr>
-<td>4</td>
-<td>AI생성</td>
-<td>MOOSE-Star: 과학적 발견을 위한 효율적 LLM 학습</td>
-<td>74</td>
-<td>⭐관심</td>
-</tr>
-<tr>
-<td>5</td>
-<td>에이전트</td>
-<td>SkillNet: AI 스킬 생성·평가·연결 오픈 인프라</td>
-<td>43</td>
-<td>⭐관심</td>
-</tr>
-<tr>
-<td>6</td>
-<td>에이전트</td>
-<td>DARE: 분포 인식 검색으로 R 통계 생태계에 LLM 적용</td>
-<td>41</td>
-<td>⭐관심</td>
-</tr>
-<tr>
-<td>7</td>
-<td>영상</td>
-<td>RoboPocket: 스마트폰으로 즉시 로봇 정책 개선</td>
-<td>28</td>
-<td>⭐관심</td>
-</tr>
-<tr>
-<td>8</td>
-<td>에이전트</td>
-<td>AgentVista: 현실적 시각 시나리오에서 멀티모달 에이전트 평가</td>
-<td>28</td>
-<td>⭐관심</td>
-</tr>
-<tr>
-<td>9</td>
-<td>AI생성</td>
-<td>HiFi-Inpaint: 고품질 참조 기반 인페인팅 (인물·제품 이미지)</td>
-<td>24</td>
-<td>⭐관심</td>
-</tr>
-<tr>
-<td>10</td>
-<td>AI생성</td>
-<td>MemSifter: 프록시 추론으로 LLM 장기 메모리 오프로딩</td>
-<td>24</td>
-<td>⭐관심</td>
+<td>2편</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="_2">📄 논문별 상세</h2>
-<h3 id="1-hacrl">1. 🔥 [에이전트] 이종 에이전트 협력 강화학습 (HACRL)</h3>
-<ul>
-<li><strong>원제:</strong> Heterogeneous Agent Collaborative Reinforcement Learning</li>
-<li><strong>Upvotes:</strong> 136</li>
-<li><strong>링크:</strong> https://huggingface.co/papers/2603.02604</li>
-<li><strong>한줄 요약:</strong> 서로 다른 구조의 에이전트들이 학습 시에는 검증된 롤아웃을 공유해 상호 개선하고, 추론 시에는 독립 실행하는 새로운 협력 강화학습 패러다임.</li>
-<li><strong>상세:</strong> 기존 온-폴리시 최적화의 비효율을 해결. LLM 기반 MARL처럼 배포 단계에서 조율이 필요 없고, 오프-폴리시처럼 분포 불일치 문제도 없음. 이종 에이전트 간 롤아웃 공유로 샘플 효율 극대화.</li>
-</ul>
+<h2 id="_2">🔥 핵심 논문</h2>
+<h3 id="1-hacrl">1. [에이전트] 이종 에이전트 협력 강화학습 (HACRL)</h3>
+<p><strong>원제:</strong> Heterogeneous Agent Collaborative Reinforcement Learning
+<strong>Upvotes:</strong> 139 ⭐⭐⭐
+<strong>arXiv:</strong> https://huggingface.co/papers/2603.02604</p>
+<p><strong>한줄 요약:</strong> 서로 다른 구조의 에이전트들이 훈련 중엔 검증된 롤아웃을 공유해 함께 성장하고, 추론 시엔 독립적으로 동작하는 새로운 강화학습 패러다임.</p>
+<p><strong>상세:</strong> 기존 온-폴리시 최적화의 비효율을 해결. LLM 기반 멀티에이전트 강화학습(MARL)과 달리 협조적 배포가 불필요하며, 이종 에이전트 간 상호 개선이 핵심.</p>
 <hr />
-<h3 id="2-helios">2. ⭐ [영상] Helios: 실시간 장편 영상 생성 모델</h3>
-<ul>
-<li><strong>원제:</strong> Helios: Real Real-Time Long Video Generation Model</li>
-<li><strong>Upvotes:</strong> 127</li>
-<li><strong>링크:</strong> https://huggingface.co/papers/2603.04379</li>
-<li><strong>한줄 요약:</strong> H100 단일 GPU에서 19.5 FPS로 분 단위 장편 영상을 실시간 생성하는 14B 파라미터 모델.</li>
-<li><strong>상세:</strong> 셀프-포싱·KV-캐시·스파스 어텐션 등 일반적 기법 없이도 긴 영상 드리프트 없이 안정적 생성. 실시간 + 장편 동시 달성이라는 두 마리 토끼를 잡은 첫 사례.</li>
-</ul>
+<h2 id="_3">⭐ 주목 논문</h2>
+<h3 id="2-helios">2. [영상] Helios — 실시간 장편 영상 생성 모델</h3>
+<p><strong>원제:</strong> Helios: Real Real-Time Long Video Generation Model
+<strong>Upvotes:</strong> 133
+<strong>arXiv:</strong> https://huggingface.co/papers/2603.04379</p>
+<p><strong>한줄 요약:</strong> H100 GPU 1장에서 19.5 FPS로 구동되는 최초의 14B 영상 생성 모델 — 분 단위 생성도 품질 저하 없이 지원.</p>
 <hr />
-<h3 id="3-ai-t2s-bench-sot">3. ⭐ [AI생성] T2S-Bench &amp; 사고 구조화(SoT): 텍스트→구조 추론 벤치마크</h3>
-<ul>
-<li><strong>원제:</strong> T2S-Bench &amp; Structure-of-Thought: Benchmarking and Prompting Comprehensive Text-to-Structure Reasoning</li>
-<li><strong>Upvotes:</strong> 105</li>
-<li><strong>링크:</strong> https://huggingface.co/papers/2603.03790</li>
-<li><strong>한줄 요약:</strong> LLM이 복잡한 텍스트를 처리할 때 중간 구조(텍스트 트리, 그래프 등)를 명시적으로 구성하도록 유도하는 프롬프팅 기법 + 종합 벤치마크 제안.</li>
-<li><strong>상세:</strong> 8개 과제에서 일관되게 성능 향상. 사람이 글을 읽을 때 핵심 포인트를 표시하고 관계를 추론하는 방식을 LLM에 적용.</li>
-</ul>
+<h3 id="3-ai-t2s-bench-structure-of-thought-">3. [AI생성] T2S-Bench &amp; Structure-of-Thought — 텍스트-구조 추론 벤치마크</h3>
+<p><strong>원제:</strong> T2S-Bench &amp; Structure-of-Thought: Benchmarking and Prompting Comprehensive Text-to-Structure Reasoning
+<strong>Upvotes:</strong> 105
+<strong>arXiv:</strong> https://huggingface.co/papers/2603.03790</p>
+<p><strong>한줄 요약:</strong> LLM이 텍스트에서 중간 구조(그래프·표·트리 등)를 명시적으로 구성하도록 유도하는 "생각의 구조(SoT)" 프롬프팅 기법 + 8개 태스크 벤치마크 제안.</p>
 <hr />
-<h3 id="4-ai-moose-star-llm">4. ⭐ [AI생성] MOOSE-Star: 과학적 발견을 위한 효율적 LLM 학습</h3>
-<ul>
-<li><strong>원제:</strong> MOOSE-Star: Unlocking Tractable Training for Scientific Discovery by Breaking the Complexity Barrier</li>
-<li><strong>Upvotes:</strong> 74</li>
-<li><strong>링크:</strong> https://huggingface.co/papers/2603.03756</li>
-<li><strong>한줄 요약:</strong> 방대한 지식 베이스에서 영감을 조합해 가설을 생성하는 P(h|b) 학습의 조합론적 복잡도(O(N^k))를 극복하는 새로운 프레임워크.</li>
-<li><strong>상세:</strong> 과학적 발견 과정의 생성적 추론을 직접 모델링하는 첫 시도. 추론 단계나 피드백 기반 학습에 집중하던 기존 연구의 공백을 메움.</li>
-</ul>
+<h3 id="4-ai-moose-star">4. [AI생성] MOOSE-Star — 과학적 발견을 위한 학습 복잡도 장벽 돌파</h3>
+<p><strong>원제:</strong> MOOSE-Star: Unlocking Tractable Training for Scientific Discovery by Breaking the Complexity Barrier
+<strong>Upvotes:</strong> 77
+<strong>arXiv:</strong> https://huggingface.co/papers/2603.03756</p>
+<p><strong>한줄 요약:</strong> 방대한 지식 베이스에서 영감을 조합하는 과학적 가설 생성의 조합론적 복잡도(O(N^k)) 장벽을 깨는 학습 가능한 프레임워크 MOOSE-Star 제안.</p>
 <hr />
-<h3 id="5-skillnet-ai">5. ⭐ [에이전트] SkillNet: AI 스킬 생성·평가·연결 오픈 인프라</h3>
-<ul>
-<li><strong>원제:</strong> SkillNet: Create, Evaluate, and Connect AI Skills</li>
-<li><strong>Upvotes:</strong> 43</li>
-<li><strong>링크:</strong> https://huggingface.co/papers/2603.04448</li>
-<li><strong>한줄 요약:</strong> AI 에이전트가 "바퀴를 재발명"하지 않도록 스킬을 체계적으로 축적·전이하는 오픈 인프라.</li>
-<li><strong>상세:</strong> 현재 에이전트들은 각 맥락에서 해결책을 독립적으로 재발견하는 비효율이 있음. SkillNet은 스킬 생성·평가·연결을 통합 관리해 장기적 에이전트 발전을 지원.</li>
-</ul>
+<h3 id="5-skillnet-ai">5. [에이전트] SkillNet — AI 스킬 생성·평가·연결 인프라</h3>
+<p><strong>원제:</strong> SkillNet: Create, Evaluate, and Connect AI Skills
+<strong>Upvotes:</strong> 55
+<strong>arXiv:</strong> https://huggingface.co/papers/2603.04448</p>
+<p><strong>한줄 요약:</strong> AI 에이전트가 스킬을 재발명하지 않고 축적·공유·재활용할 수 있는 오픈 인프라 — "바퀴 재발명" 문제를 시스템 차원에서 해결.</p>
 <hr />
-<h3 id="6-dare-r-llm">6. ⭐ [에이전트] DARE: 분포 인식 검색으로 R 통계 생태계에 LLM 적용</h3>
-<ul>
-<li><strong>원제:</strong> DARE: Aligning LLM Agents with the R Statistical Ecosystem via Distribution-Aware Retrieval</li>
-<li><strong>Upvotes:</strong> 41</li>
-<li><strong>링크:</strong> https://huggingface.co/papers/2603.04743</li>
-<li><strong>한줄 요약:</strong> 함수 의미론만이 아닌 데이터 분포 정보까지 반영하는 검색 임베딩으로 LLM의 R 통계 도구 선택 정확도 향상.</li>
-<li><strong>상세:</strong> 기존 RAG는 함수 레벨 시맨틱만 보고 데이터 분포를 무시해 차선의 매칭 결과를 냄. DARE는 경량 플러그-앤-플레이 방식으로 R 생태계 통계 방법 활용도를 높임.</li>
-</ul>
+<h3 id="6-dare-r-llm">6. [에이전트] DARE — R 통계 생태계와 LLM 에이전트 연결</h3>
+<p><strong>원제:</strong> DARE: Aligning LLM Agents with the R Statistical Ecosystem via Distribution-Aware Retrieval
+<strong>Upvotes:</strong> 42
+<strong>arXiv:</strong> https://huggingface.co/papers/2603.04743</p>
+<p><strong>한줄 요약:</strong> 데이터 분포 정보를 임베딩에 통합한 경량 RAG 모델로, LLM 에이전트가 R 통계 패키지를 더 정확하게 검색·활용할 수 있게 함.</p>
 <hr />
-<h3 id="7-robopocket">7. ⭐ [영상] RoboPocket: 스마트폰으로 즉시 로봇 정책 개선</h3>
-<ul>
-<li><strong>원제:</strong> RoboPocket: Improve Robot Policies Instantly with Your Phone</li>
-<li><strong>Upvotes:</strong> 28</li>
-<li><strong>링크:</strong> https://huggingface.co/papers/2603.05504</li>
-<li><strong>한줄 요약:</strong> 스마트폰을 이용해 로봇 정책의 약점을 파악하고 즉각 데모 데이터를 수집해 실시간으로 정책을 개선하는 상호작용형 모방 학습 프레임워크.</li>
-<li><strong>상세:</strong> 기존 핸드헬드 데이터 수집은 오픈루프 방식으로 정책 약점을 모름. DAgger처럼 공변량 이동을 효과적으로 해결하면서도 물리적 로봇 착용 필요 없음.</li>
-</ul>
+<h3 id="7-agentvista">7. [에이전트] AgentVista — 초난도 실사 시각 시나리오 에이전트 평가</h3>
+<p><strong>원제:</strong> AgentVista: Evaluating Multimodal Agents in Ultra-Challenging Realistic Visual Scenarios
+<strong>Upvotes:</strong> 31
+<strong>arXiv:</strong> https://huggingface.co/papers/2602.23166</p>
+<p><strong>한줄 요약:</strong> 배선 사진→회로도→온라인 문서 연계처럼 현실적 멀티스텝 시각 추론이 필요한 초난도 멀티모달 에이전트 벤치마크.</p>
 <hr />
-<h3 id="8-agentvista">8. ⭐ [에이전트] AgentVista: 현실적 시각 시나리오에서 멀티모달 에이전트 평가</h3>
-<ul>
-<li><strong>원제:</strong> AgentVista: Evaluating Multimodal Agents in Ultra-Challenging Realistic Visual Scenarios</li>
-<li><strong>Upvotes:</strong> 28</li>
-<li><strong>링크:</strong> https://huggingface.co/papers/2602.23166</li>
-<li><strong>한줄 요약:</strong> 배선 사진+회로도 매칭, 교통 지도+일정 조합 등 실제 멀티스텝 시각 워크플로우를 평가하는 현실적 멀티모달 벤치마크.</li>
-<li><strong>상세:</strong> 기존 벤치마크는 단일 턴 시각 추론이나 특정 도구 스킬만 평가. AgentVista는 현실감·시각적 미묘함·장기 계획 능력을 통합 평가.</li>
-</ul>
+<h3 id="8-robopocket">8. [영상] RoboPocket — 스마트폰으로 로봇 정책 즉시 개선</h3>
+<p><strong>원제:</strong> RoboPocket: Improve Robot Policies Instantly with Your Phone
+<strong>Upvotes:</strong> 30
+<strong>arXiv:</strong> https://huggingface.co/papers/2603.05504</p>
+<p><strong>한줄 요약:</strong> 핸드헬드 인터페이스로 로봇 정책의 약점을 파악하며 타겟 시연 데이터를 수집, 피지컬 로봇 없이도 공변량 편이를 효과적으로 해결하는 방법론.</p>
 <hr />
-<h3 id="9-ai-hifi-inpaint">9. ⭐ [AI생성] HiFi-Inpaint: 고품질 참조 기반 인페인팅 (인물·제품 이미지)</h3>
-<ul>
-<li><strong>원제:</strong> HiFi-Inpaint: Towards High-Fidelity Reference-Based Inpainting for Generating Detail-Preserving Human-Product Images</li>
-<li><strong>Upvotes:</strong> 24</li>
-<li><strong>링크:</strong> https://huggingface.co/papers/2603.02210</li>
-<li><strong>한줄 요약:</strong> 광고·이커머스용 인물-제품 합성 이미지에서 제품 디테일을 고충실도로 보존하는 참조 기반 인페인팅 방법론.</li>
-<li><strong>상세:</strong> 다양한 대규모 학습 데이터 부족, 세밀한 디테일 보존, 현실적 인물-제품 조화 세 가지 핵심 문제를 동시 해결.</li>
-</ul>
+<h3 id="9-ai-hifi-inpaint">9. [AI생성] HiFi-Inpaint — 고충실도 레퍼런스 기반 인페인팅</h3>
+<p><strong>원제:</strong> HiFi-Inpaint: Towards High-Fidelity Reference-Based Inpainting for Generating Detail-Preserving Human-Product Images
+<strong>Upvotes:</strong> 25
+<strong>arXiv:</strong> https://huggingface.co/papers/2603.02210</p>
+<p><strong>한줄 요약:</strong> 광고·이커머스용 인물-제품 합성 이미지에서 제품 디테일을 고충실도로 보존하는 레퍼런스 기반 인페인팅 모델.</p>
 <hr />
-<h3 id="10-ai-memsifter-llm">10. ⭐ [AI생성] MemSifter: 프록시 추론으로 LLM 장기 메모리 오프로딩</h3>
-<ul>
-<li><strong>원제:</strong> MemSifter: Offloading LLM Memory Retrieval via Outcome-Driven Proxy Reasoning</li>
-<li><strong>Upvotes:</strong> 24</li>
-<li><strong>링크:</strong> https://huggingface.co/papers/2603.03379</li>
-<li><strong>한줄 요약:</strong> 장기 작업 수행 LLM의 메모리 검색을 결과 지향 프록시 추론으로 오프로딩해 비용-정확도 트레이드오프를 개선.</li>
-<li><strong>상세:</strong> 단순 저장은 검색 실패, 메모리 그래프는 연산 과중이라는 기존 딜레마를 해결. 워킹 LLM이 모든 메모리를 직접 처리하는 부담을 경량 프록시로 분산.</li>
-</ul>
+<h3 id="10-ai-memsifter-llm">10. [AI생성] MemSifter — 결과 기반 프록시 추론으로 LLM 메모리 검색 오프로드</h3>
+<p><strong>원제:</strong> MemSifter: Offloading LLM Memory Retrieval via Outcome-Driven Proxy Reasoning
+<strong>Upvotes:</strong> 25
+<strong>arXiv:</strong> https://huggingface.co/papers/2603.03379</p>
+<p><strong>한줄 요약:</strong> 경량 프록시 모델이 결과 중심 추론으로 관련 기억을 사전 선별해 주력 LLM의 장기 메모리 처리 비용과 지연을 대폭 줄이는 프레임워크.</p>
 <hr />
-<p><em>Generated by Arca · SOTA-Researcher v2 · 2026-W10</em></p>
+<p><em>Generated by SOTA Researcher Auto-Collect | 2026-W10</em></p>
         </main>
         <footer>
             <p>© 2026 동서대학교 가상융합기술연구원</p>

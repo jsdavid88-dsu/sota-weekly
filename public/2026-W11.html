@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTA Weekly Report — 2026-W11 (2026-03-09)</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-weekly-report-2026-w11-2026-03-09">SOTA Weekly Report — 2026-W11 (2026-03-09)</h1>
+<blockquote>
+<p>HuggingFace Daily Papers 상위 10선 | 자동 수집 + 아르카 한글 번역</p>
+</blockquote>
+<hr />
+<h2 id="_1">📊 이번 주 요약</h2>
+<ul>
+<li><strong>수집</strong>: 50개 → <strong>필터링</strong>: 44개 → <strong>선정</strong>: 10개</li>
+<li><strong>주요 트렌드</strong>: 에이전트 협업 학습, 실시간 영상 생성, 구조화된 추론</li>
+</ul>
+<hr />
+<h2 id="_2">📄 논문 목록</h2>
+<h3 id="1-hacrl">1. [에이전트] 이질적 에이전트 협업 강화학습 (HACRL)</h3>
+<p><strong>원제</strong>: Heterogeneous Agent Collaborative Reinforcement Learning
+<strong>Upvotes</strong>: ⭐ 146 (🔥 핵심)</p>
+<p>서로 다른 정책을 가진 이질적 에이전트들이 학습 중에는 검증된 롤아웃을 공유하고, 추론 시에는 독립적으로 동작하는 협업 RL 패러다임. 기존 단독 온-폴리시 최적화의 비효율성을 해결하며, LLM 기반 멀티에이전트와 달리 순수 RL 방식으로 설계됨.</p>
+<hr />
+<h3 id="2-helios">2. [영상] Helios: 실시간 장편 비디오 생성 모델</h3>
+<p><strong>원제</strong>: Helios: Real Real-Time Long Video Generation Model
+<strong>Upvotes</strong>: ⭐ 136 (⭐ 관심)</p>
+<p>단일 H100 GPU에서 19.5 FPS로 동작하는 최초의 14B 영상 생성 모델. 셀프-포싱, 에러뱅크 등 기존 안티드리프팅 기법 없이도 장편 영상 품질을 유지. 분 단위 영상 생성을 실시간으로 지원하는 돌파구.</p>
+<hr />
+<h3 id="3-ai-t2s-bench-sot">3. [AI생성] T2S-Bench &amp; 구조적 사고(SoT): 텍스트→구조 추론 벤치마크</h3>
+<p><strong>원제</strong>: T2S-Bench &amp; Structure-of-Thought: Benchmarking and Prompting Comprehensive Text-to-Structure Reasoning
+<strong>Upvotes</strong>: ⭐ 109 (⭐ 관심)</p>
+<p>LLM이 텍스트를 처리할 때 핵심 포인트 마킹 → 관계 추론 → 구조화 순서로 사고하도록 유도하는 Structure of Thought(SoT) 기법 제안. 텍스트→구조 변환 태스크의 종합 벤치마크도 함께 소개.</p>
+<hr />
+<h3 id="4-ai-moose-star">4. [AI생성] MOOSE-Star: 과학적 발견을 위한 효율적 훈련</h3>
+<p><strong>원제</strong>: MOOSE-Star: Unlocking Tractable Training for Scientific Discovery by Breaking the Complexity Barrier
+<strong>Upvotes</strong>: ⭐ 82 (⭐ 관심)</p>
+<p>가설 생성 확률 P(h|b)의 직접 학습이 O(N^k) 조합 복잡도로 인해 수학적으로 불가능하다는 문제를 해결. 과학적 발견 과정의 생성적 추론 모델링을 실용화하는 복잡도 장벽 극복 방법 제시.</p>
+<hr />
+<h3 id="5-skillnet-ai">5. [에이전트] SkillNet: AI 스킬 생성·평가·연결 프레임워크</h3>
+<p><strong>원제</strong>: SkillNet: Create, Evaluate, and Connect AI Skills
+<strong>Upvotes</strong>: ⭐ 64 (⭐ 관심)</p>
+<p>AI 에이전트가 획득한 스킬을 체계적으로 축적·전이하는 메커니즘 부재 문제 해결. 에이전트가 새로운 컨텍스트에서 기존 전략을 재활용하지 못하고 "바퀴를 재발명"하는 현상을 막는 스킬 통합 플랫폼.</p>
+<hr />
+<h3 id="6-dare-r-llm">6. [에이전트] DARE: R 통계 생태계에 정렬된 LLM 에이전트</h3>
+<p><strong>원제</strong>: DARE: Aligning LLM Agents with the R Statistical Ecosystem via Distribution-Aware Retrieval
+<strong>Upvotes</strong>: ⭐ 44 (⭐ 관심)</p>
+<p>LLM이 R 언어의 정교한 통계 기법을 잘 활용하지 못하는 문제 해결. 기존 RAG가 함수 시맨틱만 보는 것과 달리, 데이터 분포까지 고려한 분포-인식 검색 임베딩(DARE)으로 최적 통계 도구 매칭.</p>
+<hr />
+<h3 id="7-agentvista">7. [에이전트] AgentVista: 초난이도 현실 시각 시나리오 에이전트 평가</h3>
+<p><strong>원제</strong>: AgentVista: Evaluating Multimodal Agents in Ultra-Challenging Realistic Visual Scenarios
+<strong>Upvotes</strong>: ⭐ 33 (⭐ 관심)</p>
+<p>배선 사진→회로도 매핑, 지하철 노선 해석→일정 확인처럼 다단계 시각적 추론이 필요한 실제 시나리오에서 멀티모달 에이전트를 평가하는 벤치마크. 기존 단일턴 평가의 한계 극복.</p>
+<hr />
+<h3 id="8-robopocket">8. [영상] RoboPocket: 스마트폰으로 로봇 정책 즉시 개선</h3>
+<p><strong>원제</strong>: RoboPocket: Improve Robot Policies Instantly with Your Phone
+<strong>Upvotes</strong>: ⭐ 30 (⭐ 관심)</p>
+<p>모방학습 데이터 수집의 병목인 오픈루프 방식을 개선. 스마트폰으로 로봇 정책의 약점을 실시간 파악하며 클로즈드루프 시연 수집. 핵심 상태 분포를 효율적으로 커버하는 확장 가능한 in-the-wild 데이터 수집법.</p>
+<hr />
+<h3 id="9-ai-hifi-inpaint">9. [AI생성] HiFi-Inpaint: 고충실도 참조 기반 인페인팅</h3>
+<p><strong>원제</strong>: HiFi-Inpaint: Towards High-Fidelity Reference-Based Inpainting for Generating Detail-Preserving Human-Product Images
+<strong>Upvotes</strong>: ⭐ 26 (⭐ 관심)</p>
+<p>광고·이커머스용 인물-제품 합성 이미지 생성에서 제품 디테일의 고충실도 보존 문제 해결. 참조 이미지를 활용한 인페인팅으로 제품 세부사항을 정밀하게 유지하는 방법론.</p>
+<hr />
+<h3 id="10-ai-memsifter-llm">10. [AI생성] MemSifter: 아웃컴 기반 프록시 추론으로 LLM 메모리 오프로딩</h3>
+<p><strong>원제</strong>: MemSifter: Offloading LLM Memory Retrieval via Outcome-Driven Proxy Reasoning
+<strong>Upvotes</strong>: ⭐ 26 (⭐ 관심)</p>
+<p>장기 태스크에서 LLM 장기 메모리 유지의 비용-정확도 트레이드오프 해결. 단순 저장은 검색 실패, 복잡한 메모리 그래프는 연산 과부하 문제를 결과 기반 프록시 추론으로 오프로딩하여 극복.</p>
+<hr />
+<h2 id="notion-db">🔗 Notion DB</h2>
+<p>자동 저장 완료: <a href="https://www.notion.so/">SOTA Weekly Notion DB</a></p>
+<hr />
+<p><em>생성: 2026-03-09 08:00 KST | 수집: auto_collect.py | 번역: 아르카</em></p>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

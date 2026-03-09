@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔬 가상융합기술연구원 SOTA Weekly</title>
+    <title>SOTA Weekly Report — 2026-W11 (2026-03-10)</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -153,162 +153,97 @@
             <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
         </header>
         <main>
-            <h1 id="sota-weekly">🔬 가상융합기술연구원 SOTA Weekly</h1>
-<h2 id="2026-3-11-316-322">2026년 3월 11주차 (3/16 ~ 3/22)</h2>
+            <h1 id="sota-weekly-report-2026-w11-2026-03-10">SOTA Weekly Report — 2026-W11 (2026-03-10)</h1>
 <blockquote>
-<p><strong>동서대학교 글로컬30 가상융합기술연구원</strong>
-AI·XR·영상 기술 최신 동향 리포트</p>
+<p>HuggingFace Daily Papers 자동 수집 | 상위 10편 | 아르카 한글 번역</p>
 </blockquote>
 <hr />
-<h2 id="1">📌 이번 주 핵심 1선</h2>
-<details>
-<summary><strong>1. Heterogeneous Agent Collaborative Reinforcement Learning</strong> — We introduce Heterogeneous Agent Collaborative Reinforcement</summary>
-<p>We introduce Heterogeneous Agent Collaborative Reinforcement Learning (HACRL), a new learning paradigm that addresses the inefficiencies of isolated on-policy optimization. HACRL enables collaborative optimization with independent execution: heterogeneous agents share verified rollouts during training to mutually improve, while operating independently at inference time. Unlike LLM-based multi-agent reinforcement learning (MARL), HACRL does not require coordinated deployment, and unlike on-/off-p...</p>
+<h2 id="top-10">📊 이번 주 논문 TOP 10</h2>
+<h3 id="1-ai-moose-star">1. [AI생성] MOOSE-Star: 복잡도 장벽을 깨는 과학적 발견을 위한 훈련 방법론</h3>
+<p><strong>원제:</strong> MOOSE-Star: Unlocking Tractable Training for Scientific Discovery by Breaking the Complexity Barrier<br />
+<strong>Upvotes:</strong> 83 ⭐<br />
+<strong>한줄 요약:</strong> 과학적 발견 AI 훈련의 계산 복잡도 장벽을 돌파하는 새로운 최적화 프레임워크로, 기존 대비 훈련 효율을 대폭 개선함.</p>
+<hr />
+<h3 id="2-penguin-vl-llm-vlm">2. [영상] Penguin-VL: LLM 기반 비전 인코더로 구현하는 VLM 효율 한계 탐구</h3>
+<p><strong>원제:</strong> Penguin-VL: Exploring the Efficiency Limits of VLMs with LLM-based Vision Encoders<br />
+<strong>Upvotes:</strong> 73 ⭐<br />
+<strong>한줄 요약:</strong> 별도 비전 인코더 없이 LLM 자체를 비전 인코더로 활용해 멀티모달 모델의 효율 극한을 탐색한 경량 VLM 연구.</p>
+<hr />
+<h3 id="3-skillnet-ai">3. [에이전트] SkillNet: AI 스킬 생성·평가·연결 통합 프레임워크</h3>
+<p><strong>원제:</strong> SkillNet: Create, Evaluate, and Connect AI Skills<br />
+<strong>Upvotes:</strong> 68 ⭐<br />
+<strong>한줄 요약:</strong> AI 에이전트가 재사용 가능한 스킬을 자율 생성하고 평가·조합할 수 있는 모듈형 스킬 네트워크 구조 제안.</p>
+<hr />
+<h3 id="4-ai-bandpo-llm">4. [AI생성] BandPO: 확률 인식 경계로 LLM 강화학습 신뢰 영역과 비율 클리핑 통합</h3>
+<p><strong>원제:</strong> BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning<br />
+<strong>Upvotes:</strong> 50 ⭐<br />
+<strong>한줄 요약:</strong> TRPO의 신뢰 영역과 PPO의 비율 클리핑을 확률 인식 경계로 통합, LLM RLHF 훈련 안정성과 성능을 동시에 향상.</p>
+<hr />
+<h3 id="5-dare-llm-r">5. [에이전트] DARE: 분포 인식 검색으로 LLM 에이전트와 R 통계 생태계 정렬</h3>
+<p><strong>원제:</strong> DARE: Aligning LLM Agents with the R Statistical Ecosystem via Distribution-Aware Retrieval<br />
+<strong>Upvotes:</strong> 45 ⭐<br />
+<strong>한줄 요약:</strong> LLM 에이전트가 R 패키지와 통계 함수를 정확히 활용할 수 있도록 분포 인식 RAG 기법으로 통계 도메인 정렬 달성.</p>
+<hr />
+<h3 id="6-agentvista">6. [에이전트] AgentVista: 초고난도 현실적 시각 시나리오에서의 멀티모달 에이전트 평가</h3>
+<p><strong>원제:</strong> AgentVista: Evaluating Multimodal Agents in Ultra-Challenging Realistic Visual Scenarios<br />
+<strong>Upvotes:</strong> 36 ⭐<br />
+<strong>한줄 요약:</strong> 기존 벤치마크보다 훨씬 까다로운 현실 환경 시각 과제로 멀티모달 에이전트의 한계를 체계적으로 측정하는 새 평가 스위트.</p>
+<hr />
+<h3 id="7-robopocket">7. [영상] RoboPocket: 스마트폰으로 로봇 정책 즉시 개선</h3>
+<p><strong>원제:</strong> RoboPocket: Improve Robot Policies Instantly with Your Phone<br />
+<strong>Upvotes:</strong> 30 ⭐<br />
+<strong>한줄 요약:</strong> 일반 스마트폰 카메라로 촬영한 데이터만으로 로봇 조작 정책을 실시간 개선하는 모바일 퍼스트 로보틱스 파이프라인.</p>
+<hr />
+<h3 id="8-ai-hifi-inpaint">8. [AI생성] HiFi-Inpaint: 세부 묘사 보존 인물 이미지를 위한 고품질 참조 기반 인페인팅</h3>
+<p><strong>원제:</strong> HiFi-Inpaint: Towards High-Fidelity Reference-Based Inpainting for Generating Detail-Preserving Human Images<br />
+<strong>Upvotes:</strong> 26 ⭐<br />
+<strong>한줄 요약:</strong> 참조 이미지의 세밀한 의상·피부 디테일을 훼손 없이 보존하면서 인페인팅하는 고충실도 인물 이미지 생성 기법.</p>
+<hr />
+<h3 id="9-ai-8">9. [AI생성] 8개 토큰으로 계획하기: 잠재 월드 모델을 위한 컴팩트 이산 토크나이저</h3>
+<p><strong>원제:</strong> Planning in 8 Tokens: A Compact Discrete Tokenizer for Latent World Model<br />
+<strong>Upvotes:</strong> 22 ⭐<br />
+<strong>한줄 요약:</strong> 월드 모델 기반 계획 작업을 단 8개의 이산 토큰으로 압축 표현, 강화학습 에이전트의 장기 계획 효율을 극적으로 향상.</p>
+<hr />
+<h3 id="10-wildactor">10. [영상] WildActor: 제약 없는 신원 보존 비디오 생성</h3>
+<p><strong>원제:</strong> WildActor: Unconstrained Identity-Preserving Video Generation<br />
+<strong>Upvotes:</strong> 16 ⭐<br />
+<strong>한줄 요약:</strong> 임의의 동작과 배경에서도 특정 인물의 정체성을 일관되게 유지하는 비디오 생성 모델, 실사 콘텐츠 제작에 활용 가능.</p>
+<hr />
+<h2 id="_1">🔍 분야별 동향</h2>
 <table>
 <thead>
 <tr>
-<th>항목</th>
-<th>내용</th>
+<th>분야</th>
+<th>논문 수</th>
+<th>주목 포인트</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>📄 링크</td>
-<td><a href="https://huggingface.co/papers/2603.02604">https://huggingface.co/papers/2603.02604...</a></td>
+<td>AI생성</td>
+<td>4편</td>
+<td>훈련 효율화·인페인팅·토크나이징</td>
 </tr>
 <tr>
-<td>🏷️ 카테고리</td>
 <td>에이전트</td>
+<td>3편</td>
+<td>스킬 모듈화·통계 도메인 정렬·평가</td>
 </tr>
 <tr>
-<td>🎯 관련성</td>
-<td>🔥핵심</td>
-</tr>
-<tr>
-<td>🧪 실증가능성</td>
-<td>🔧커스텀필요</td>
-</tr>
-<tr>
-<td>🏷️ 태그</td>
-<td>HuggingFace, AutoCollect, 한글</td>
-</tr>
-</tbody>
-</table>
-</details>
-<hr />
-<h2 id="_1">🤖 에이전트</h2>
-<details>
-<summary><strong>AgentVista: Evaluating Multimodal Agents in Ultra-Challenging Realistic Visual Scenarios</strong> — Real-world multimodal agents solve multi-step workflows grounded in visual evide</summary>
-<p>Real-world multimodal agents solve multi-step workflows grounded in visual evidence. For example, an agent can troubleshoot a device by linking a wiring photo to a schematic and validating the fix with online documentation, or plan a trip by interpreting a transit map and checking schedules under routing constraints. However, existing multimodal benchmarks mainly evaluate single-turn visual reasoning or specific tool skills, and they do not fully capture the realism, visual subtlety, and long-ho...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2602.23166">https://huggingface.co/papers/2602.23166...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
-<details>
-<summary><strong>DARE: Aligning LLM Agents with the R Statistical Ecosystem via Distribution-Aware Retrieval</strong> — Large Language Model (LLM) agents can automate data-science workflows, but many </summary>
-<p>Large Language Model (LLM) agents can automate data-science workflows, but many rigorous statistical methods implemented in R remain underused because LLMs struggle with statistical knowledge and tool retrieval. Existing retrieval-augmented approaches focus on function-level semantics and ignore data distribution, producing suboptimal matches. We propose DARE (Distribution-Aware Retrieval Embedding), a lightweight, plug-and-play retrieval model that incorporates data distribution information int...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.04743">https://huggingface.co/papers/2603.04743...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
-<details>
-<summary><strong>SkillNet: Create, Evaluate, and Connect AI Skills</strong> — Current AI agents can flexibly invoke tools and execute complex tasks, yet their</summary>
-<p>Current AI agents can flexibly invoke tools and execute complex tasks, yet their long-term advancement is hindered by the lack of systematic accumulation and transfer of skills. Without a unified mechanism for skill consolidation, agents frequently ``reinvent the wheel'', rediscovering solutions in isolated contexts without leveraging prior strategies. To overcome this limitation, we introduce SkillNet, an open infrastructure designed to create, evaluate, and organize AI skills at scale. SkillNe...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.04448">https://huggingface.co/papers/2603.04448...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
-<hr />
-<h2 id="ai">🎨 AI생성</h2>
-<details>
-<summary><strong>MemSifter: Offloading LLM Memory Retrieval via Outcome-Driven Proxy Reasoning</strong> — As Large Language Models (LLMs) are increasingly used for long-duration tasks, m</summary>
-<p>As Large Language Models (LLMs) are increasingly used for long-duration tasks, maintaining effective long-term memory has become a critical challenge. Current methods often face a trade-off between cost and accuracy. Simple storage methods often fail to retrieve relevant information, while complex indexing methods (such as memory graphs) require heavy computation and can cause information loss. Furthermore, relying on the working LLM to process all memories is computationally expensive and slow....</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.03379">https://huggingface.co/papers/2603.03379...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
-<details>
-<summary><strong>HiFi-Inpaint: Towards High-Fidelity Reference-Based Inpainting for Generating Detail-Preserving Huma</strong> — Human-product images, which showcase the integration of humans and products, pla</summary>
-<p>Human-product images, which showcase the integration of humans and products, play a vital role in advertising, e-commerce, and digital marketing. The essential challenge of generating such images lies in ensuring the high-fidelity preservation of product details. Among existing paradigms, reference-based inpainting offers a targeted solution by leveraging product reference images to guide the inpainting process. However, limitations remain in three key aspects: the lack of diverse large-scale tr...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.02210">https://huggingface.co/papers/2603.02210...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
-<details>
-<summary><strong>MOOSE-Star: Unlocking Tractable Training for Scientific Discovery by Breaking the Complexity Barrier</strong> — While large language models (LLMs) show promise in scientific discovery, existin</summary>
-<p>While large language models (LLMs) show promise in scientific discovery, existing research focuses on inference or feedback-driven training, leaving the direct modeling of the generative reasoning process, P(hypothesis|background) (P(h|b)), unexplored. We demonstrate that directly training P(h|b) is mathematically intractable due to the combinatorial complexity (O(N^k)) inherent in retrieving and composing inspirations from a vast knowledge base. To break this barrier, we introduce MOOSE-Star, a...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.03756">https://huggingface.co/papers/2603.03756...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
-<details>
-<summary><strong>T2S-Bench &amp; Structure-of-Thought: Benchmarking and Prompting Comprehensive Text-to-Structure Reasoni</strong> — Think about how human handles complex reading tasks: marking key points, inferri</summary>
-<p>Think about how human handles complex reading tasks: marking key points, inferring their relationships, and structuring information to guide understanding and responses. Likewise, can a large language model benefit from text structure to enhance text-processing performance? To explore it, in this work, we first introduce Structure of Thought (SoT), a prompting technique that explicitly guides models to construct intermediate text structures, consistently boosting performance across eight tasks a...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.03790">https://huggingface.co/papers/2603.03790...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
-<hr />
-<h2 id="_2">🎬 영상</h2>
-<details>
-<summary><strong>RoboPocket: Improve Robot Policies Instantly with Your Phone</strong> — Scaling imitation learning is fundamentally constrained by the efficiency of dat</summary>
-<p>Scaling imitation learning is fundamentally constrained by the efficiency of data collection. While handheld interfaces have emerged as a scalable solution for in-the-wild data acquisition, they predominantly operate in an open-loop manner: operators blindly collect demonstrations without knowing the underlying policy's weaknesses, leading to inefficient coverage of critical state distributions. Conversely, interactive methods like DAgger effectively address covariate shift but rely on physical ...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.05504">https://huggingface.co/papers/2603.05504...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
-<details>
-<summary><strong>Helios: Real Real-Time Long Video Generation Model</strong> — We introduce Helios, the first 14B video generation model that runs at 19.</summary>
-<p>We introduce Helios, the first 14B video generation model that runs at 19.5 FPS on a single NVIDIA H100 GPU and supports minute-scale generation while matching the quality of a strong baseline. We make breakthroughs along three key dimensions: (1) robustness to long-video drifting without commonly used anti-drifting heuristics such as self-forcing, error-banks, or keyframe sampling; (2) real-time generation without standard acceleration techniques such as KV-cache, sparse/linear attention, or qu...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.04379">https://huggingface.co/papers/2603.04379...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
-<hr />
-<h2 id="_3">📊 이번 주 통계</h2>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>수치</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>총 수집</td>
-<td>10개</td>
-</tr>
-<tr>
-<td>🔥 핵심</td>
-<td>1개</td>
-</tr>
-<tr>
-<td>✅ 즉시 실증 가능</td>
-<td>0개</td>
+<td>영상</td>
+<td>3편</td>
+<td>경량 VLM·로보틱스·신원보존 영상</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="_4">🔬 실증 권장 항목</h2>
-<p>코드가 공개되어 <strong>이번 주 내 테스트 가능</strong>한 항목:</p>
+<h2 id="_2">💡 아르카 픽</h2>
+<p>이번 주 가장 주목할 논문은 <strong>SkillNet(#3)</strong> 과 <strong>Planning in 8 Tokens(#9)</strong>.<br />
+SkillNet은 DSUComfyCG의 모듈형 노드 구조와 철학적으로 맞닿아 있고,<br />
+8-Token Planner는 ComfyUI 워크플로우 최적화에 응용 가능성이 보임.<br />
+HiFi-Inpaint(#8)는 부산마법소녀 캐릭터 합성 파이프라인에 바로 써볼 만한 기술.</p>
 <hr />
-<h2 id="_5">🔗 전체 데이터베이스</h2>
-<p><a href="https://www.notion.so/2f8f02707d88803da78fd90dce7379b6">→ Notion SOTA Database 바로가기</a></p>
-<hr />
-<p><strong>발행</strong>: 동서대학교 글로컬30 가상융합기술연구원<br />
-<strong>발행일</strong>: 2026년 03월 09일<br />
-<strong>문의</strong>: jsdavid88@g.dongseo.ac.kr</p>
-<hr />
-<p><em>© 2026 동서대학교 가상융합기술연구원</em></p>
+<p><em>자동 수집: <code>auto_collect.py --limit 10 --no-translate</code> | Notion 저장 완료 | 번역: 아르카</em></p>
         </main>
         <footer>
             <p>© 2026 동서대학교 가상융합기술연구원</p>

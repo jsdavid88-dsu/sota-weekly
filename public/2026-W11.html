@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOTA Weekly — 2026-W11 (2026-03-13)</title>
+    <title>🧠 SOTA Weekly Report — 2026-W11</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -153,13 +153,13 @@
             <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
         </header>
         <main>
-            <h1 id="sota-weekly-2026-w11-2026-03-13">SOTA Weekly — 2026-W11 (2026-03-13)</h1>
-<blockquote>
-<p>출처: HuggingFace Daily Papers | 수집일: 2026-03-13 | 상위 10편
-번역 및 요약: 아르카 (Claude Sonnet 4.6)</p>
-</blockquote>
+            <h1 id="sota-weekly-report-2026-w11">🧠 SOTA Weekly Report — 2026-W11</h1>
+<p><strong>수집일</strong>: 2026-03-14 (토) 오전 8:00 KST<br />
+<strong>출처</strong>: HuggingFace Daily Papers<br />
+<strong>수집</strong>: 50개 → 필터링 48개 → 상위 10개 선정<br />
+<strong>Notion</strong>: ✅ 10/10 저장 완료</p>
 <hr />
-<h2 id="2026-03-13">📊 이번 주 상위 논문 (2026-03-13 기준)</h2>
+<h2 id="_1">📊 이번 주 논문 요약</h2>
 <table>
 <thead>
 <tr>
@@ -167,132 +167,182 @@
 <th>카테고리</th>
 <th>한글 제목</th>
 <th>Upvotes</th>
+<th>한 줄 요약</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
 <td>3D재구성</td>
-<td>기하학 가이드 강화학습을 이용한 다시점 일관성 3D 장면 편집</td>
-<td>⬆ 133</td>
+<td>Spatial-TTT: 테스트 타임 트레이닝을 통한 스트리밍 비주얼 기반 공간 지능</td>
+<td>⬆️ 63</td>
+<td>스트리밍 비디오에서 실시간 공간 추론을 위해 테스트 타임에 모델을 동적으로 적응시키는 기법</td>
 </tr>
 <tr>
 <td>2</td>
 <td>에이전트</td>
-<td>OpenClaw-RL: 대화만으로 어떤 에이전트든 학습시키기</td>
-<td>⬆ 59</td>
+<td>전략적 탐색인가 확률적 검색인가? 에이전트와 인간의 문서 추론 방식 비교</td>
+<td>⬆️ 39</td>
+<td>LLM 에이전트와 인간이 대규모 문서 컬렉션을 탐색하는 방식의 차이를 분석하고 에이전트 개선 방향 제시</td>
 </tr>
 <tr>
 <td>3</td>
-<td>AI생성/LLM</td>
-<td>생각으로 기억하기: 추론이 LLM의 파라메트릭 지식을 여는 방법</td>
-<td>⬆ 53</td>
+<td>에이전트</td>
+<td>IndexCache: 크로스 레이어 인덱스 재사용을 통한 스파스 어텐션 가속화</td>
+<td>⬆️ 32</td>
+<td>LLM 추론 속도 향상을 위해 레이어 간 어텐션 인덱스를 재사용해 KV 캐시 선택 비용 대폭 절감</td>
 </tr>
 <tr>
 <td>4</td>
-<td>AI생성</td>
-<td>Flash-KMeans: 빠르고 메모리 효율적인 정확한 K-Means</td>
-<td>⬆ 43</td>
+<td>에이전트</td>
+<td>컴퓨터 사용 에이전트를 위한 비디오 기반 보상 모델링</td>
+<td>⬆️ 30</td>
+<td>GUI 에이전트 학습을 위해 화면 녹화 비디오에서 자동으로 보상 신호를 추출하는 프레임워크</td>
 </tr>
 <tr>
 <td>5</td>
-<td>AI생성/멀티모달</td>
-<td>InternVL-U: 이해·추론·생성·편집을 위한 통합 멀티모달 모델의 대중화</td>
-<td>⬆ 33</td>
+<td>3D재구성</td>
+<td>DreamVideo-Omni: 잠재 정체성 강화를 통한 옴니 모션 제어 멀티 주체 비디오 커스터마이제이션</td>
+<td>⬆️ 24</td>
+<td>여러 피사체의 외형과 동작을 동시에 개별 제어하여 고품질 커스텀 비디오를 생성하는 통합 프레임워크</td>
 </tr>
 <tr>
 <td>6</td>
-<td>영상/VLM</td>
-<td>VLM을 코트로: 스포츠 도메인 공간 지능 벤치마킹</td>
-<td>⬆ 24</td>
+<td>AI생성</td>
+<td>크리틱을 신뢰하라: 충실한 이미지 편집을 위한 강건한 보상 모델링과 강화학습</td>
+<td>⬆️ 21</td>
+<td>이미지 편집 시 원본 내용을 훼손하지 않으면서 지시를 충실히 따르도록 RL 기반 보상 모델을 설계</td>
 </tr>
 <tr>
 <td>7</td>
-<td>에이전트/영상</td>
-<td>MA-EgoQA: 다중 체화 에이전트의 1인칭 영상 기반 질의응답</td>
-<td>⬆ 22</td>
+<td>영상</td>
+<td>DVD: 생성적 프라이어를 활용한 결정적 비디오 깊이 추정</td>
+<td>⬆️ 16</td>
+<td>생성 모델의 사전 지식을 활용해 영상의 깊이를 일관되고 정확하게 추정하는 결정론적 방법</td>
 </tr>
 <tr>
 <td>8</td>
-<td>AI생성/LLM</td>
-<td>LLM2Vec-Gen: 대형 언어 모델 기반 생성적 임베딩</td>
-<td>⬆ 21</td>
+<td>AI생성</td>
+<td>WeEdit: 텍스트 중심 이미지 편집을 위한 데이터셋, 벤치마크 및 글리프 가이드 프레임워크</td>
+<td>⬆️ 15</td>
+<td>텍스트가 포함된 이미지 편집에 특화된 데이터셋과 평가 기준, 글자 형태 기반 편집 방법론 제시</td>
 </tr>
 <tr>
 <td>9</td>
-<td>AI생성/LLM</td>
-<td>LLM의 도구 사용을 위한 인컨텍스트 강화학습</td>
-<td>⬆ 19</td>
+<td>에이전트</td>
+<td>ShotVerse: 텍스트 기반 멀티샷 비디오 제작을 위한 시네마틱 카메라 제어</td>
+<td>⬆️ 15</td>
+<td>텍스트 프롬프트만으로 영화 같은 카메라 무빙이 적용된 여러 장면 연속 비디오 생성</td>
 </tr>
 <tr>
 <td>10</td>
-<td>AI생성/LLM</td>
-<td>ReMix: LLM 파인튜닝에서 LoRA 혼합을 위한 강화학습 라우팅</td>
-<td>⬆ 19</td>
+<td>3D재구성</td>
+<td>SVG-EAR: 오류 인식 라우팅 기반 스파스 비디오 생성을 위한 파라미터 없는 선형 보상</td>
+<td>⬆️ 15</td>
+<td>추가 학습 없이 스파스 비디오 생성 모델의 프레임 간 불일치 오류를 자동 보정하는 경량 기법</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="_1">📝 논문 상세</h2>
-<h3 id="1-3d-geometry-guided-reinforcement-learning-for-multi-view-consistent-3d-scene-editing">1. [3D재구성] Geometry-Guided Reinforcement Learning for Multi-view Consistent 3D Scene Editing</h3>
-<p><strong>한글 제목:</strong> 기하학 가이드 강화학습을 이용한 다시점 일관성 3D 장면 편집
-<strong>⬆ 133 votes</strong> | ⭐ 관심</p>
-<p><strong>한줄 요약:</strong> 깊이맵·법선맵 등 기하 정보를 RL 보상 신호로 활용해, 여러 카메라 시점에서 외형이 일관된 3D 장면 편집을 달성하는 방법론.</p>
+<h2 id="_2">🔍 상세 리뷰</h2>
+<h3 id="1-spatial-ttt-63">1. 🥇 Spatial-TTT ⬆️63</h3>
+<p><strong>카테고리</strong>: 3D재구성<br />
+<strong>arXiv</strong>: 2603.12255<br />
+<strong>한글 제목</strong>: 테스트 타임 트레이닝을 통한 스트리밍 비주얼 기반 공간 지능  </p>
+<blockquote>
+<p>인간처럼 연속된 시각 스트림에서 실시간으로 공간을 이해하고 적응하는 모델. 테스트 시점에서도 스트리밍 데이터로 모델을 동적 업데이트해 3D 공간 추론의 일관성과 정확도를 높임.<br />
+<strong>준석 관심도</strong>: ★★★ (Gaussian Splatting/3D 재구성 파이프라인에 직접 응용 가능)</p>
+</blockquote>
 <hr />
-<h3 id="2-openclaw-rl-train-any-agent-simply-by-talking">2. [에이전트] OpenClaw-RL: Train Any Agent Simply by Talking</h3>
-<p><strong>한글 제목:</strong> OpenClaw-RL: 대화만으로 어떤 에이전트든 학습시키기
-<strong>⬆ 59 votes</strong> | ⭐ 관심</p>
-<p><strong>한줄 요약:</strong> 자연어 대화만으로 강화학습 에이전트의 목표·보상·환경을 정의·학습시키는 프레임워크, 코드 작성 없이 복잡한 에이전트 행동 구현 가능.</p>
+<h3 id="2-strategic-navigation-or-stochastic-search-39">2. 🥈 Strategic Navigation or Stochastic Search? ⬆️39</h3>
+<p><strong>카테고리</strong>: 에이전트<br />
+<strong>한글 제목</strong>: 에이전트와 인간의 문서 컬렉션 추론 방식 비교 분석  </p>
+<blockquote>
+<p>LLM 에이전트가 대용량 문서 탐색 시 전략적으로 탐색하는지 무작위 검색을 하는지 실험적으로 분석. 에이전트의 추론 취약점과 인간 전략과의 차이를 규명.<br />
+<strong>준석 관심도</strong>: ★★ (에이전트 오케스트레이션 설계 참고)</p>
+</blockquote>
 <hr />
-<h3 id="3-aillm-thinking-to-recall-how-reasoning-unlocks-parametric-knowledge-in-llms">3. [AI생성/LLM] Thinking to Recall: How Reasoning Unlocks Parametric Knowledge in LLMs</h3>
-<p><strong>한글 제목:</strong> 생각으로 기억하기: 추론이 LLM의 파라메트릭 지식을 여는 방법
-<strong>⬆ 53 votes</strong> | ⭐ 관심</p>
-<p><strong>한줄 요약:</strong> Chain-of-Thought 추론 과정이 LLM에 학습으로 저장된 사실 지식을 더 정확히 인출하도록 돕는다는 것을 실험으로 규명, 검색 없이 지식 활용 가능성 제시.</p>
+<h3 id="3-indexcache-32">3. 🥉 IndexCache ⬆️32</h3>
+<p><strong>카테고리</strong>: 에이전트 (LLM 추론 최적화)<br />
+<strong>arXiv</strong>: 2603.12201<br />
+<strong>한글 제목</strong>: 크로스 레이어 인덱스 재사용을 통한 스파스 어텐션 가속화  </p>
+<blockquote>
+<p>인접 레이어들이 유사한 어텐션 패턴을 보인다는 점을 이용해, 이전 레이어의 Top-K 인덱스를 다음 레이어에서 재사용. ComfyUI에서 LLM 노드 추론 속도 향상에 활용 가능.<br />
+<strong>준석 관심도</strong>: ★★★ (ComfyUI 커스텀 노드 개발 시 추론 최적화 레퍼런스)</p>
+</blockquote>
 <hr />
-<h3 id="4-ai-flash-kmeans-fast-and-memory-efficient-exact-k-means">4. [AI생성] Flash-KMeans: Fast and Memory-Efficient Exact K-Means</h3>
-<p><strong>한글 제목:</strong> Flash-KMeans: 빠르고 메모리 효율적인 정확한 K-Means
-<strong>⬆ 43 votes</strong> | ⭐ 관심</p>
-<p><strong>한줄 요약:</strong> FlashAttention 방식의 타일 기반 GPU 메모리 접근법을 K-Means 클러스터링에 적용, 기존 대비 대규모 데이터셋에서 속도와 메모리 효율 모두 대폭 개선.</p>
+<h3 id="4-video-based-reward-modeling-30">4. Video-Based Reward Modeling ⬆️30</h3>
+<p><strong>카테고리</strong>: 에이전트<br />
+<strong>한글 제목</strong>: 컴퓨터 사용 에이전트를 위한 비디오 기반 보상 모델링  </p>
+<blockquote>
+<p>GUI 조작 에이전트(웹 브라우저, OS 등)를 학습시킬 때 실제 화면 녹화를 기반으로 자동 보상 신호 생성. 사람의 레이블링 없이 RL 학습 가능.<br />
+<strong>준석 관심도</strong>: ★★ (DSUComfyCG의 자동화 파이프라인 참고)</p>
+</blockquote>
 <hr />
-<h3 id="5-ai-internvl-u-democratizing-unified-multimodal-models-for-understanding-reasoning-generation-and-editing">5. [AI생성/멀티모달] InternVL-U: Democratizing Unified Multimodal Models for Understanding, Reasoning, Generation and Editing</h3>
-<p><strong>한글 제목:</strong> InternVL-U: 이해·추론·생성·편집을 위한 통합 멀티모달 모델의 대중화
-<strong>⬆ 33 votes</strong> | ⭐ 관심</p>
-<p><strong>한줄 요약:</strong> 이미지 이해·추론·생성·편집을 단일 모델로 처리하는 통합 멀티모달 아키텍처, 오픈소스로 접근성을 높여 연구자 누구나 활용 가능.</p>
+<h3 id="5-dreamvideo-omni-24">5. DreamVideo-Omni ⬆️24</h3>
+<p><strong>카테고리</strong>: 3D재구성/영상 생성<br />
+<strong>한글 제목</strong>: 잠재 정체성 강화를 통한 옴니 모션 제어 멀티 주체 비디오 커스터마이제이션  </p>
+<blockquote>
+<p>여러 캐릭터의 외형 정체성을 유지하면서 각각의 움직임을 독립 제어. 부산마법소녀 멀티 캐릭터 씬 제작에 직접 응용 가능.<br />
+<strong>준석 관심도</strong>: ★★★ (부산마법소녀 프로젝트 — 마법소녀+배경 캐릭터 동시 제어)</p>
+</blockquote>
 <hr />
-<h3 id="6-vlm-stepping-vlms-onto-the-court-benchmarking-spatial-intelligence-in-sports">6. [영상/VLM] Stepping VLMs onto the Court: Benchmarking Spatial Intelligence in Sports</h3>
-<p><strong>한글 제목:</strong> VLM을 코트로: 스포츠 도메인 공간 지능 벤치마킹
-<strong>⬆ 24 votes</strong> | ⭐ 관심</p>
-<p><strong>한줄 요약:</strong> 스포츠 영상에서 선수 위치·공간 관계·전술 이해 등 VLM의 공간 추론 능력을 평가하는 전문 벤치마크 데이터셋 구축.</p>
+<h3 id="6-trust-your-critic-21">6. Trust Your Critic ⬆️21</h3>
+<p><strong>카테고리</strong>: AI생성<br />
+<strong>한글 제목</strong>: 크리틱을 신뢰하라 — 충실한 이미지 편집을 위한 강건한 보상 모델링  </p>
+<blockquote>
+<p>RLHF 방식으로 이미지 편집 모델 개선. 편집 지시를 따르면서도 원본 이미지의 미편집 영역을 훼손하지 않도록 보상 함수를 설계. ComfyUI inpainting 품질 향상 참고.<br />
+<strong>준석 관심도</strong>: ★★★ (ComfyUI Inpainting/Image Editing 노드 개발에 직접 적용 가능)</p>
+</blockquote>
 <hr />
-<h3 id="7-ma-egoqa-question-answering-over-egocentric-videos-from-multiple-embodied-agents">7. [에이전트/영상] MA-EgoQA: Question Answering over Egocentric Videos from Multiple Embodied Agents</h3>
-<p><strong>한글 제목:</strong> MA-EgoQA: 다중 체화 에이전트의 1인칭 영상 기반 질의응답
-<strong>⬆ 22 votes</strong> | 🔥 핵심</p>
-<p><strong>한줄 요약:</strong> 여러 로봇·에이전트가 각자 촬영한 1인칭 시점 영상을 통합 분석해 질문에 답하는 협력적 멀티에이전트 비디오 QA 시스템.</p>
+<h3 id="7-dvd-deterministic-video-depth-16">7. DVD: Deterministic Video Depth ⬆️16</h3>
+<p><strong>카테고리</strong>: 영상<br />
+<strong>한글 제목</strong>: 생성적 프라이어를 활용한 결정적 비디오 깊이 추정  </p>
+<blockquote>
+<p>비디오의 시간적 일관성 있는 깊이 맵 생성. 생성 모델의 강력한 사전 지식을 디노이징 없이 결정론적으로 활용. UE5 3D 재구성 파이프라인 연동 가능.<br />
+<strong>준석 관심도</strong>: ★★★ (부산 로케이션 촬영 → 3D 재구성 파이프라인 핵심 기술)</p>
+</blockquote>
 <hr />
-<h3 id="8-aillm-llm2vec-gen-generative-embeddings-from-large-language-models">8. [AI생성/LLM] LLM2Vec-Gen: Generative Embeddings from Large Language Models</h3>
-<p><strong>한글 제목:</strong> LLM2Vec-Gen: 대형 언어 모델 기반 생성적 임베딩
-<strong>⬆ 21 votes</strong> | ⭐ 관심</p>
-<p><strong>한줄 요약:</strong> 생성형 LLM의 디코더 능력을 직접 활용해 의미론적으로 풍부한 텍스트 임베딩을 생성, 기존 인코더 기반 방식 대비 복잡한 의미 포착 능력 향상.</p>
+<h3 id="8-weedit-15">8. WeEdit ⬆️15</h3>
+<p><strong>카테고리</strong>: AI생성<br />
+<strong>한글 제목</strong>: 텍스트 중심 이미지 편집을 위한 데이터셋·벤치마크·글리프 가이드 프레임워크  </p>
+<blockquote>
+<p>이미지 내 텍스트(간판, 자막 등)를 자연스럽게 편집하는 특화 프레임워크. 글자 형태(Glyph)를 가이드로 사용해 편집 정확도 향상.<br />
+<strong>준석 관심도</strong>: ★★ (부산 로케이션 촬영 이미지 내 한글 간판 편집 등에 활용)</p>
+</blockquote>
 <hr />
-<h3 id="9-aillm-in-context-reinforcement-learning-for-tool-use-in-large-language-models">9. [AI생성/LLM] In-Context Reinforcement Learning for Tool Use in Large Language Models</h3>
-<p><strong>한글 제목:</strong> LLM의 도구 사용을 위한 인컨텍스트 강화학습
-<strong>⬆ 19 votes</strong> | ⭐ 관심</p>
-<p><strong>한줄 요약:</strong> 파인튜닝 없이 인컨텍스트 학습 방식으로 LLM이 외부 도구(API, 코드 실행 등)를 효율적으로 활용하도록 RL 신호를 제공하는 경량 프레임워크.</p>
+<h3 id="9-shotverse-15">9. ShotVerse ⬆️15</h3>
+<p><strong>카테고리</strong>: 에이전트/영상<br />
+<strong>한글 제목</strong>: 텍스트 기반 멀티샷 비디오 제작을 위한 시네마틱 카메라 제어  </p>
+<blockquote>
+<p>텍스트 시나리오에서 영화적 카메라 움직임(팬, 틸트, 달리 등)을 자동 생성하여 연속된 멀티샷 영상 제작. AnimateDiff 기반 파이프라인에서 활용 가능.<br />
+<strong>준석 관심도</strong>: ★★★ (부산마법소녀 변신/전투 씬 카메라 연출 자동화)</p>
+</blockquote>
 <hr />
-<h3 id="10-aillm-remix-reinforcement-routing-for-mixtures-of-loras-in-llm-finetuning">10. [AI생성/LLM] ReMix: Reinforcement Routing for Mixtures of LoRAs in LLM Finetuning</h3>
-<p><strong>한글 제목:</strong> ReMix: LLM 파인튜닝에서 LoRA 혼합을 위한 강화학습 라우팅
-<strong>⬆ 19 votes</strong> | ⭐ 관심</p>
-<p><strong>한줄 요약:</strong> 여러 LoRA 어댑터 중 입력에 최적화된 조합을 강화학습으로 동적 선택하는 라우팅 방식, 파라미터 오버헤드 없이 파인튜닝 성능과 효율 동시 향상.</p>
+<h3 id="10-svg-ear-15">10. SVG-EAR ⬆️15</h3>
+<p><strong>카테고리</strong>: 3D재구성<br />
+<strong>한글 제목</strong>: 오류 인식 라우팅 기반 스파스 비디오 생성의 파라미터 없는 선형 보상  </p>
+<blockquote>
+<p>스파스 프레임으로 비디오를 생성할 때 프레임 간 오류를 감지하고 라우팅을 조정해 품질 개선. 추가 학습 없이 적용 가능한 플러그인 방식.<br />
+<strong>준석 관심도</strong>: ★★ (AnimateDiff 워크플로우 품질 개선 참고)</p>
+</blockquote>
 <hr />
-<h2 id="_2">🔍 이번 주 트렌드</h2>
-<ul>
-<li><strong>강화학습 응용 폭발적 확산</strong>: 3D 편집, 에이전트 학습, LoRA 라우팅 등 RL이 다양한 영역으로 침투</li>
-<li><strong>멀티모달 통합 가속</strong>: InternVL-U처럼 이해+생성 통합 단일 모델 트렌드 지속</li>
-<li><strong>체화 AI / 로봇</strong>: MA-EgoQA 등 1인칭 시점 + 다중 에이전트 협력 연구 증가</li>
-<li><strong>LLM 지식 활용</strong>: CoT가 사실 지식 인출에 미치는 영향 실증 연구 주목</li>
-</ul>
+<h2 id="_3">📌 이번 주 핵심 트렌드</h2>
+<ol>
+<li><strong>테스트 타임 적응 (TTT)</strong> — 추론 시점에서도 모델을 동적 업데이트하는 패러다임 확산</li>
+<li><strong>비디오 기반 강화학습</strong> — 화면 녹화를 보상 신호로 활용하는 GUI 에이전트 학습</li>
+<li><strong>어텐션 효율화</strong> — KV 캐시 재사용/선택적 스파스화로 LLM 추론 비용 절감</li>
+<li><strong>멀티 주체 비디오 제어</strong> — 여러 캐릭터의 외형+동작을 독립 제어하는 기술 성숙</li>
+</ol>
+<h2 id="top-3">🎯 준석 추천 논문 TOP 3</h2>
+<ol>
+<li><strong>DreamVideo-Omni</strong> — 부산마법소녀 멀티 캐릭터 씬 직접 적용</li>
+<li><strong>ShotVerse</strong> — 변신/전투 씬 시네마틱 카메라 자동화</li>
+<li><strong>DVD (Video Depth)</strong> — 부산 촬영본 3D 재구성 파이프라인 핵심</li>
+</ol>
 <hr />
-<p><em>생성: 아르카 | 2026-03-13 08:00 KST</em></p>
+<p><em>Generated by 아르카 (SOTA Auto-Collect 2026-W11)</em><br />
+<em>Notion: https://www.notion.so/ | GitHub Pages: https://jsdavid88-dsu.github.io/sota-weekly/</em></p>
         </main>
         <footer>
             <p>© 2026 동서대학교 가상융합기술연구원</p>

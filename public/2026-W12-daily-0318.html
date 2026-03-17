@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔬 가상융합기술연구원 SOTA Weekly — 일일 수집 보고</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-weekly">🔬 가상융합기술연구원 SOTA Weekly — 일일 수집 보고</h1>
+<h2 id="2026-3-18-w12">2026년 3월 18일 (수) — W12 보충 수집</h2>
+<blockquote>
+<p><strong>동서대학교 글로컬30 가상융합기술연구원</strong>
+HuggingFace Daily Papers 기반 AI·XR·영상 기술 동향</p>
+</blockquote>
+<hr />
+<h2 id="top-10">📌 금일 수집 TOP 10 (한글 번역)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>카테고리</th>
+<th>한글 제목</th>
+<th>⬆️</th>
+<th>한줄 요약</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🎨AI생성</td>
+<td>AI는 과학적 안목을 학습할 수 있다</td>
+<td>214</td>
+<td>AI가 논문의 영향력·혁신성을 사전 평가하는 '과학적 취향' 학습 가능성 입증</td>
+</tr>
+<tr>
+<td>2</td>
+<td>🤖에이전트</td>
+<td>OpenSeeker: 훈련 데이터 완전 공개로 프론티어 검색 에이전트 민주화</td>
+<td>124</td>
+<td>검색 에이전트의 학습 데이터·파이프라인을 완전 오픈소스로 공개하여 재현 가능한 연구 기반 구축</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🤖에이전트</td>
+<td>EnterpriseOps-Gym: 기업 환경의 상태 유지형 에이전트 계획 및 도구 사용 평가</td>
+<td>116</td>
+<td>기업 IT 운영 시나리오에서 에이전트의 장기 상태 관리·도구 활용 능력을 평가하는 벤치마크</td>
+</tr>
+<tr>
+<td>4</td>
+<td>🧊3D재구성</td>
+<td>HSImul3R: 시뮬레이션용 인간-장면 상호작용의 물리 기반 재구성</td>
+<td>92</td>
+<td>물리 시뮬레이션이 가능한 수준의 인간-환경 상호작용 3D 재구성 파이프라인</td>
+</tr>
+<tr>
+<td>5</td>
+<td>🎬영상</td>
+<td>실제 대도시를 기반으로 한 월드 시뮬레이션 모델의 그라운딩</td>
+<td>92</td>
+<td>실제 도시 환경 데이터로 월드 시뮬레이션 모델을 현실에 고정(grounding)하는 방법론</td>
+</tr>
+<tr>
+<td>6</td>
+<td>🎨AI생성</td>
+<td>Attention Residuals: 어텐션 잔차</td>
+<td>57</td>
+<td>트랜스포머 어텐션에 잔차 연결을 도입하여 학습 안정성·성능 동시 향상</td>
+</tr>
+<tr>
+<td>7</td>
+<td>🎨AI생성</td>
+<td>Mixture-of-Depths Attention: 깊이 혼합 어텐션</td>
+<td>48</td>
+<td>토큰별로 어텐션 깊이를 동적 할당하여 계산 효율성과 성능을 동시에 확보</td>
+</tr>
+<tr>
+<td>8</td>
+<td>🎨AI생성</td>
+<td>하이브리드 xLSTM 아키텍처로의 효과적 증류</td>
+<td>30</td>
+<td>트랜스포머 지식을 xLSTM 하이브리드 구조로 효율적으로 증류하는 기법</td>
+</tr>
+<tr>
+<td>9</td>
+<td>🎨AI생성</td>
+<td>거짓말의 해부학: 비전-언어 모델 환각 추적을 위한 다단계 진단 프레임워크</td>
+<td>24</td>
+<td>VLM이 환각을 생성하는 내부 과정을 단계별로 추적·진단하는 해석 가능 프레임워크</td>
+</tr>
+<tr>
+<td>10</td>
+<td>🧊3D재구성</td>
+<td>ViFeEdit: 비디오 없이 비디오 확산 트랜스포머를 튜닝하기</td>
+<td>21</td>
+<td>비디오 데이터 없이 이미지만으로 비디오 확산 모델을 미세조정하는 편집 기법</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_1">🔍 주요 논문 상세</h2>
+<h3 id="1-ai-ai-can-learn-scientific-taste">1. AI는 과학적 안목을 학습할 수 있다 (AI Can Learn Scientific Taste)</h3>
+<ul>
+<li><strong>카테고리</strong>: AI생성 | <strong>Upvotes</strong>: 214</li>
+<li>AI가 단순 키워드 매칭이 아닌 과학적 '안목'(taste) — 논문의 참신성, 영향력, 방법론적 엄밀함을 사전 판별하는 능력을 학습할 수 있음을 실증. 논문 스크리닝·리뷰 자동화에 큰 시사점.</li>
+</ul>
+<h3 id="2-openseeker-openseeker">2. OpenSeeker: 프론티어 검색 에이전트 민주화 (OpenSeeker)</h3>
+<ul>
+<li><strong>카테고리</strong>: 에이전트 | <strong>Upvotes</strong>: 124</li>
+<li>Perplexity·SearchGPT 같은 검색 에이전트의 훈련 데이터·기법을 완전 공개. 데이터 수집→정제→학습 전 과정을 재현 가능하게 만들어 오픈소스 검색 에이전트 생태계 구축.</li>
+</ul>
+<h3 id="3-enterpriseops-gym-enterpriseops-gym">3. EnterpriseOps-Gym: 기업 운영 에이전트 평가 환경 (EnterpriseOps-Gym)</h3>
+<ul>
+<li><strong>카테고리</strong>: 에이전트 | <strong>Upvotes</strong>: 116</li>
+<li>클라우드 인프라 관리, IT 장애 대응 등 기업 운영 시나리오에서 AI 에이전트의 상태 유지형 계획 수립과 도구 사용 능력을 체계적으로 평가하는 벤치마크.</li>
+</ul>
+<h3 id="4-hsimul3r-hsimul3r">4. HSImul3R: 물리 시뮬레이션용 인간-장면 상호작용 재구성 (HSImul3R)</h3>
+<ul>
+<li><strong>카테고리</strong>: 3D재구성 | <strong>Upvotes</strong>: 92</li>
+<li>3D 스캔에서 물리 엔진에서 바로 사용할 수 있는 수준의 인간-환경 상호작용 데이터를 재구성. 물리 법칙을 루프에 포함시켜 관통·부유 없는 사실적 결과 생성. <strong>준석 연구 직결</strong>: 3D Reconstruction + UE5 파이프라인에 직접 연관.</li>
+</ul>
+<h3 id="5-grounding-world-simulation-models">5. 실제 대도시 기반 월드 시뮬레이션 그라운딩 (Grounding World Simulation Models)</h3>
+<ul>
+<li><strong>카테고리</strong>: 영상 | <strong>Upvotes</strong>: 92</li>
+<li>합성 데이터가 아닌 실제 대도시(메트로폴리스) 환경에서 월드 모델을 그라운딩. 도시 규모 시뮬레이션의 현실성을 크게 향상. <strong>준석 연구 관련</strong>: 부산 로케이션 기반 VFX·가상환경 구축에 참고 가능.</li>
+</ul>
+<h3 id="6-attention-residuals-attention-residuals">6. Attention Residuals: 어텐션 잔차 (Attention Residuals)</h3>
+<ul>
+<li><strong>카테고리</strong>: AI생성 | <strong>Upvotes</strong>: 57</li>
+<li>기존 어텐션 메커니즘에 잔차(residual) 경로를 추가하여 그래디언트 흐름 개선. 심층 트랜스포머의 학습 안정성과 최종 성능 모두 향상.</li>
+</ul>
+<h3 id="7-mixture-of-depths-attention-mod-attention">7. Mixture-of-Depths Attention: 깊이 혼합 어텐션 (MoD-Attention)</h3>
+<ul>
+<li><strong>카테고리</strong>: AI생성 | <strong>Upvotes</strong>: 48</li>
+<li>Mixture-of-Experts의 아이디어를 '깊이' 차원에 적용. 각 토큰이 필요한 만큼만 어텐션 레이어를 통과하도록 라우팅하여, 품질 유지하면서 추론 비용 절감.</li>
+</ul>
+<h3 id="8-xlstm-effective-distillation-to-hybrid-xlstm">8. 하이브리드 xLSTM으로의 효과적 증류 (Effective Distillation to Hybrid xLSTM)</h3>
+<ul>
+<li><strong>카테고리</strong>: AI생성 | <strong>Upvotes</strong>: 30</li>
+<li>대형 트랜스포머의 지식을 xLSTM 기반 하이브리드 아키텍처로 증류. 선형 시간 복잡도의 장점을 유지하면서 트랜스포머급 성능 달성.</li>
+</ul>
+<h3 id="9-vlm-anatomy-of-a-lie">9. 거짓말의 해부학: VLM 환각 추적 진단 (Anatomy of a Lie)</h3>
+<ul>
+<li><strong>카테고리</strong>: AI생성 | <strong>Upvotes</strong>: 24</li>
+<li>비전-언어 모델이 환각을 생성하는 과정을 다단계로 분해 분석. 시각 인코딩→크로스 어텐션→디코딩 각 단계에서 환각 원인을 특정하여 타겟 교정 가능.</li>
+</ul>
+<h3 id="10-vifeedit-vifeedit">10. ViFeEdit: 비디오 없이 비디오 모델 튜닝 (ViFeEdit)</h3>
+<ul>
+<li><strong>카테고리</strong>: 3D재구성 | <strong>Upvotes</strong>: 21</li>
+<li>비디오 확산 트랜스포머를 이미지 데이터만으로 미세조정하는 혁신적 접근. 비디오 데이터 수집 비용 없이 편집 능력 부여. <strong>준석 연구 관련</strong>: ComfyUI 비디오 워크플로우에 활용 잠재력.</li>
+</ul>
+<hr />
+<h2 id="_2">📊 금일 수집 통계</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>수치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>총 스캔</td>
+<td>50개 (HuggingFace Daily Papers)</td>
+</tr>
+<tr>
+<td>관련 분야 필터링</td>
+<td>46개</td>
+</tr>
+<tr>
+<td>최종 선정</td>
+<td>10개</td>
+</tr>
+<tr>
+<td>카테고리 분포</td>
+<td>AI생성 5 · 에이전트 2 · 영상 1 · 3D재구성 2</td>
+</tr>
+<tr>
+<td>최고 upvotes</td>
+<td>214 (AI Can Learn Scientific Taste)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_3">🔬 준석 연구 연관도</h2>
+<table>
+<thead>
+<tr>
+<th>논문</th>
+<th>연관 분야</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HSImul3R</td>
+<td>3D Reconstruction, UE5</td>
+<td>물리 기반 인간-장면 재구성 — Gaussian Splatting 파이프라인 직결</td>
+</tr>
+<tr>
+<td>Grounding World Sim</td>
+<td>영상/VFX</td>
+<td>실제 도시 기반 월드 모델 — 부산 로케이션 VFX에 참고</td>
+</tr>
+<tr>
+<td>ViFeEdit</td>
+<td>영상 생성</td>
+<td>비디오 없이 비디오 모델 튜닝 — ComfyUI 워크플로우 적용 가능</td>
+</tr>
+<tr>
+<td>Anatomy of a Lie</td>
+<td>VLM 연구</td>
+<td>환각 진단 — AI 생성 품질 관리에 활용</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_4">🔗 전체 데이터베이스</h2>
+<p><a href="https://www.notion.so/2f8f02707d88803da78fd90dce7379b6">→ Notion SOTA Database 바로가기</a></p>
+<hr />
+<p><strong>발행</strong>: 동서대학교 글로컬30 가상융합기술연구원
+<strong>발행일</strong>: 2026년 03월 18일
+<strong>문의</strong>: jsdavid88@g.dongseo.ac.kr</p>
+<hr />
+<p><em>© 2026 동서대학교 가상융합기술연구원</em></p>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

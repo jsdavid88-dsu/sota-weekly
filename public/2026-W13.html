@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOTA Weekly Report — 2026-W13</title>
+    <title>🔬 가상융합기술연구원 SOTA Weekly</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -153,137 +153,138 @@
             <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
         </header>
         <main>
-            <h1 id="sota-weekly-report-2026-w13">SOTA Weekly Report — 2026-W13</h1>
+            <h1 id="sota-weekly">🔬 가상융합기술연구원 SOTA Weekly</h1>
+<h2 id="2026-3-13-330-45">2026년 3월 13주차 (3/30 ~ 4/5)</h2>
 <blockquote>
-<p>수집일: 2026-03-23 (월) | 소스: HuggingFace Daily Papers | 상위 10편</p>
+<p><strong>동서대학교 글로컬30 가상융합기술연구원</strong>
+AI·XR·영상 기술 최신 동향 리포트</p>
 </blockquote>
 <hr />
-<h2 id="_1">📊 이번 주 논문 요약</h2>
+<h2 id="0">📌 이번 주 핵심 0선</h2>
+<hr />
+<h2 id="3d">🧊 3D재구성</h2>
+<details>
+<summary><strong>MonoArt: Progressive Structural Reasoning for Monocular Articulated 3D Reconstruction</strong> — Reconstructing articulated 3D objects from a single image requires jointly infer</summary>
+<p>Reconstructing articulated 3D objects from a single image requires jointly inferring object geometry, part structure, and motion parameters from limited visual evidence. A key difficulty lies in the entanglement between motion cues and object structure, which makes direct articulation regression unstable. Existing methods address this challenge through multi-view supervision, retrieval-based assembly, or auxiliary video generation, often sacrificing scalability or efficiency. We present MonoArt,...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.19231">https://huggingface.co/papers/2603.19231...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>Bridging Semantic and Kinematic Conditions with Diffusion-based Discrete Motion Tokenizer</strong> — Prior motion generation largely follows two paradigms: continuous diffusion mode</summary>
+<p>Prior motion generation largely follows two paradigms: continuous diffusion models that excel at kinematic control, and discrete token-based generators that are effective for semantic conditioning. To combine their strengths, we propose a three-stage framework comprising condition feature extraction (Perception), discrete token generation (Planning), and diffusion-based motion synthesis (Control). Central to this framework is MoTok, a diffusion-based discrete motion tokenizer that decouples sema...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.19227">https://huggingface.co/papers/2603.19227...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>3DreamBooth: High-Fidelity 3D Subject-Driven Video Generation Model</strong> — Creating dynamic, view-consistent videos of customized subjects is highly sought</summary>
+<p>Creating dynamic, view-consistent videos of customized subjects is highly sought after for a wide range of emerging applications, including immersive VR/AR, virtual production, and next-generation e-commerce. However, despite rapid progress in subject-driven video generation, existing methods predominantly treat subjects as 2D entities, focusing on transferring identity through single-view visual features or textual prompts. Because real-world subjects are inherently 3D, applying these 2D-centri...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.18524">https://huggingface.co/papers/2603.18524...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>Generation Models Know Space: Unleashing Implicit 3D Priors for Scene Understanding</strong> — While Multimodal Large Language Models demonstrate impressive semantic capabilit</summary>
+<p>While Multimodal Large Language Models demonstrate impressive semantic capabilities, they often suffer from spatial blindness, struggling with fine-grained geometric reasoning and physical dynamics. Existing solutions typically rely on explicit 3D modalities or complex geometric scaffolding, which are limited by data scarcity and generalization challenges. In this work, we propose a paradigm shift by leveraging the implicit spatial prior within large-scale video generation models. We posit that ...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.19235">https://huggingface.co/papers/2603.19235...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<hr />
+<h2 id="_1">🤖 에이전트</h2>
+<details>
+<summary><strong>Memento-Skills: Let Agents Design Agents</strong> — We introduce Memento-Skills, a generalist, continually-learnable LLM agent syste</summary>
+<p>We introduce Memento-Skills, a generalist, continually-learnable LLM agent system that functions as an agent-designing agent: it autonomously constructs, adapts, and improves task-specific agents through experience. The system is built on a memory-based reinforcement learning framework with stateful prompts, where reusable skills (stored as structured markdown files) serve as persistent, evolving memory. These skills encode both behaviour and context, enabling the agent to carry forward knowledg...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.18743">https://huggingface.co/papers/2603.18743...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>Nemotron-Cascade 2: Post-Training LLMs with Cascade RL and Multi-Domain On-Policy Distillation</strong> — We introduce Nemotron-Cascade 2, an open 30B MoE model with 3B activated paramet</summary>
+<p>We introduce Nemotron-Cascade 2, an open 30B MoE model with 3B activated parameters that delivers best-in-class reasoning and strong agentic capabilities. Despite its compact size, its mathematical and coding reasoning performance approaches that of frontier open models. It is the second open-weight LLM, after DeepSeekV3.2-Speciale-671B-A37B, to achieve Gold Medal-level performance in the 2025 International Mathematical Olympiad (IMO), the International Olympiad in Informatics (IOI), and the ICP...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.19220">https://huggingface.co/papers/2603.19220...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<hr />
+<h2 id="ai">🎨 AI생성</h2>
+<details>
+<summary><strong>FASTER: Rethinking Real-Time Flow VLAs</strong> — Real-time execution is crucial for deploying Vision-Language-Action (VLA) models</summary>
+<p>Real-time execution is crucial for deploying Vision-Language-Action (VLA) models in the physical world. Existing asynchronous inference methods primarily optimize trajectory smoothness, but neglect the critical latency in reacting to environmental changes. By rethinking the notion of reaction in action chunking policies, this paper presents a systematic analysis of the factors governing reaction time. We show that reaction time follows a uniform distribution determined jointly by the Time to Fir...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.19199">https://huggingface.co/papers/2603.19199...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>Efficient Reasoning with Balanced Thinking</strong> — Large Reasoning Models (LRMs) have shown remarkable reasoning capabilities, yet </summary>
+<p>Large Reasoning Models (LRMs) have shown remarkable reasoning capabilities, yet they often suffer from overthinking, expending redundant computational steps on simple problems, or underthinking, failing to explore sufficient reasoning paths despite inherent capabilities. These issues lead to inefficiencies and potential inaccuracies, limiting practical deployment in resource-constrained settings. Existing methods to mitigate overthinking, such as suppressing reflective keywords or adjusting reas...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.12372">https://huggingface.co/papers/2603.12372...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<hr />
+<h2 id="_2">🎬 영상</h2>
+<details>
+<summary><strong>SAMA: Factorized Semantic Anchoring and Motion Alignment for Instruction-Guided Video Editing</strong> — Current instruction-guided video editing models struggle to simultaneously balan</summary>
+<p>Current instruction-guided video editing models struggle to simultaneously balance precise semantic modifications with faithful motion preservation. While existing approaches rely on injecting explicit external priors (e.g., VLM features or structural conditions) to mitigate these issues, this reliance severely bottlenecks model robustness and generalization. To overcome this limitation, we present SAMA (factorized Semantic Anchoring and Motion Alignment), a framework that factorizes video editi...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.19228">https://huggingface.co/papers/2603.19228...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>Video-CoE: Reinforcing Video Event Prediction via Chain of Events</strong> — Despite advances in the application of MLLMs for various video tasks, video even</summary>
+<p>Despite advances in the application of MLLMs for various video tasks, video event prediction (VEP) remains relatively underexplored. VEP requires the model to perform fine-grained temporal modeling of videos and establish logical relationships between videos and future events, which current MLLMs still struggle with. In this work, we first present a comprehensive evaluation of current leading MLLMs on the VEP task, revealing the reasons behind their inaccurate predictions, including lack of logi...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.14935">https://huggingface.co/papers/2603.14935...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<hr />
+<h2 id="_3">📊 이번 주 통계</h2>
 <table>
 <thead>
 <tr>
-<th>#</th>
-<th>카테고리</th>
-<th>한글 제목</th>
-<th>Upvotes</th>
-<th>한줄 요약</th>
+<th>항목</th>
+<th>수치</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>AI생성</td>
-<td><strong>균형 잡힌 사고를 통한 효율적 추론</strong></td>
-<td>132</td>
-<td>추론 모델의 "생각 시간"을 동적으로 조절하여 성능 유지하면서 추론 비용을 대폭 절감하는 기법</td>
+<td>총 수집</td>
+<td>10개</td>
 </tr>
 <tr>
-<td>2</td>
-<td>영상</td>
-<td><strong>Video-CoE: 이벤트 체인을 통한 비디오 사건 예측 강화</strong></td>
-<td>90</td>
-<td>비디오 속 사건을 인과 체인으로 모델링하여 다음에 일어날 일을 정확히 예측하는 프레임워크</td>
+<td>🔥 핵심</td>
+<td>0개</td>
 </tr>
 <tr>
-<td>3</td>
-<td>3D재구성</td>
-<td><strong>생성 모델은 공간을 안다: 암묵적 3D 사전지식으로 장면 이해 해방</strong></td>
-<td>84</td>
-<td>대규모 생성 모델에 내재된 3D 공간 이해 능력을 활용해 별도 3D 데이터 없이 장면을 재구성</td>
-</tr>
-<tr>
-<td>4</td>
-<td>영상</td>
-<td><strong>SAMA: 지시 기반 비디오 편집을 위한 의미 고정 및 모션 정렬 분해</strong></td>
-<td>61</td>
-<td>텍스트 지시로 비디오를 편집할 때 의미(내용)와 모션(움직임)을 분리 처리하여 정밀 편집 달성</td>
-</tr>
-<tr>
-<td>5</td>
-<td>3D재구성</td>
-<td><strong>3DreamBooth: 고충실도 3D 주체 기반 비디오 생성 모델</strong></td>
-<td>51</td>
-<td>특정 3D 객체/인물의 정체성을 유지하면서 다양한 비디오를 생성하는 DreamBooth의 3D 확장판</td>
-</tr>
-<tr>
-<td>6</td>
-<td>AI생성</td>
-<td><strong>FASTER: 실시간 플로우 VLA 재고</strong></td>
-<td>49</td>
-<td>Vision-Language-Action 모델의 실시간 추론 속도를 획기적으로 개선한 아키텍처</td>
-</tr>
-<tr>
-<td>7</td>
-<td>에이전트</td>
-<td><strong>Nemotron-Cascade 2: 캐스케이드 RL과 다중 도메인 온폴리시 증류로 LLM 후학습</strong></td>
-<td>47</td>
-<td>NVIDIA의 계단식 강화학습 + 다중 도메인 증류 기법으로 소형 LLM 성능을 대형 모델 수준으로 끌어올림</td>
-</tr>
-<tr>
-<td>8</td>
-<td>3D재구성</td>
-<td><strong>확산 기반 이산 모션 토크나이저로 의미적·운동학적 조건 연결</strong></td>
-<td>39</td>
-<td>자연어 의미와 물리적 움직임 사이의 간극을 디퓨전 기반 이산 토큰으로 연결하는 모션 생성 기법</td>
-</tr>
-<tr>
-<td>9</td>
-<td>에이전트</td>
-<td><strong>Memento-Skills: 에이전트가 에이전트를 설계하게 하라</strong></td>
-<td>37</td>
-<td>AI 에이전트가 자신의 경험을 "스킬"로 저장하고, 이를 재활용해 새로운 에이전트를 자동 설계</td>
-</tr>
-<tr>
-<td>10</td>
-<td>3D재구성</td>
-<td><strong>MonoArt: 단안 관절 3D 재구성을 위한 점진적 구조 추론</strong></td>
-<td>31</td>
-<td>단일 이미지에서 관절이 있는 물체(로봇팔, 동물 등)의 3D 구조를 단계적으로 추론·복원</td>
+<td>✅ 즉시 실증 가능</td>
+<td>0개</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="_2">🔥 주요 트렌드</h2>
-<h3 id="1-3d-4">1. 3D 재구성 — 이번 주 최다 (4편)</h3>
-<p>생성 모델의 암묵적 3D 지식 활용(#3), 주체 기반 3D 비디오(#5), 모션 토크나이저(#8), 단안 관절 복원(#10)까지 다양한 접근. <strong>생성 모델이 곧 3D 엔진이 되는 흐름</strong> 가속.</p>
-<h3 id="2">2. 비디오 이해·편집 — 실용화 단계 진입</h3>
-<p>이벤트 체인 예측(#2)과 지시 기반 편집(#4) 모두 구조적 분해 접근. 단순 생성을 넘어 <strong>제어 가능한 비디오 AI</strong> 시대.</p>
-<h3 id="3">3. 에이전트 자기진화</h3>
-<p>Memento-Skills(#9)은 에이전트가 스스로 스킬을 설계하는 메타 에이전트 패러다임. 자율 에이전트 연구의 새 이정표.</p>
+<h2 id="_4">🔬 실증 권장 항목</h2>
+<p>코드가 공개되어 <strong>이번 주 내 테스트 가능</strong>한 항목:</p>
 <hr />
-<h2 id="_3">🎯 준석 관심 분야 연관</h2>
-<table>
-<thead>
-<tr>
-<th>논문</th>
-<th>연관 분야</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>#3 생성모델→3D</td>
-<td>Gaussian Splatting / 3D Reconstruction 직접 연관</td>
-</tr>
-<tr>
-<td>#5 3DreamBooth</td>
-<td>부산마법소녀 캐릭터 3D 비디오 생성 파이프라인 적용 가능</td>
-</tr>
-<tr>
-<td>#8 모션 토크나이저</td>
-<td>AnimateDiff / 모션 제어 워크플로우 확장</td>
-</tr>
-<tr>
-<td>#10 MonoArt</td>
-<td>단안 관절 복원 → ComfyUI 3D 노드 연동 가능성</td>
-</tr>
-<tr>
-<td>#4 SAMA</td>
-<td>비디오 편집 → UE5 합성 파이프라인 보완</td>
-</tr>
-</tbody>
-</table>
+<h2 id="_5">🔗 전체 데이터베이스</h2>
+<p><a href="https://www.notion.so/2f8f02707d88803da78fd90dce7379b6">→ Notion SOTA Database 바로가기</a></p>
 <hr />
-<p><em>Generated by SOTA Auto-Collector | Arca 🦊</em></p>
+<p><strong>발행</strong>: 동서대학교 글로컬30 가상융합기술연구원<br />
+<strong>발행일</strong>: 2026년 03월 23일<br />
+<strong>문의</strong>: jsdavid88@g.dongseo.ac.kr</p>
+<hr />
+<p><em>© 2026 동서대학교 가상융합기술연구원</em></p>
         </main>
         <footer>
             <p>© 2026 동서대학교 가상융합기술연구원</p>

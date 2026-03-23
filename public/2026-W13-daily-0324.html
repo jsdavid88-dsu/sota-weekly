@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔬 SOTA Weekly Report — 2026-W13 (Daily: 2026-03-24)</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-weekly-report-2026-w13-daily-2026-03-24">🔬 SOTA Weekly Report — 2026-W13 (Daily: 2026-03-24)</h1>
+<h2 id="huggingface-daily-papers">HuggingFace Daily Papers 한글 번역 리포트</h2>
+<blockquote>
+<p><strong>동서대학교 글로컬30 영상애니메이션연구소</strong>
+AI×XR연구실 최신 논문 트래킹 리포트
+생성일: 2026-03-24 (월) 08:00 KST</p>
+</blockquote>
+<hr />
+<h2 id="_1">📊 수집 요약</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수집 소스</td>
+<td>HuggingFace Daily Papers</td>
+</tr>
+<tr>
+<td>전체 수집</td>
+<td>50편</td>
+</tr>
+<tr>
+<td>관련 필터링</td>
+<td>47편</td>
+</tr>
+<tr>
+<td>상위 선정</td>
+<td>10편</td>
+</tr>
+<tr>
+<td>Notion 저장</td>
+<td>✅ 완료</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="top-10-upvotes">🏆 Top 10 논문 (Upvotes 순)</h2>
+<h3 id="1-hopchain-">1. [영상] HopChain: 일반화 가능한 비전-언어 추론을 위한 다중 홉 데이터 합성</h3>
+<ul>
+<li><strong>원제</strong>: HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning</li>
+<li><strong>Upvotes</strong>: 94 ⭐</li>
+<li><strong>한줄 요약</strong>: 비전-언어 모델의 복잡한 다단계 추론 능력을 강화하기 위해 다중 홉(multi-hop) 합성 데이터를 자동 생성하는 프레임워크. 단순 단일 질문 응답을 넘어 연쇄적 시각 추론을 학습시킴.</li>
+</ul>
+<h3 id="2-astrolabe">2. [영상] Astrolabe: 증류된 자기회귀 영상 모델을 위한 순방향 프로세스 강화학습 조향</h3>
+<ul>
+<li><strong>원제</strong>: Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models</li>
+<li><strong>Upvotes</strong>: 83 ⭐</li>
+<li><strong>한줄 요약</strong>: 증류(distilled) 영상 생성 모델의 품질을 순방향 프로세스 RL로 미세 조정하여, 추론 비용 없이 생성 영상의 시각적 품질과 시간 일관성을 대폭 향상시키는 방법.</li>
+</ul>
+<h3 id="3-3d-3dreambooth-3d">3. [3D재구성] 3DreamBooth: 고충실도 3D 주체 기반 영상 생성 모델</h3>
+<ul>
+<li><strong>원제</strong>: 3DreamBooth: High-Fidelity 3D Subject-Driven Video Generation Model</li>
+<li><strong>Upvotes</strong>: 53 ⭐</li>
+<li><strong>한줄 요약</strong>: 2D 이미지 기반의 기존 주체 커스터마이징을 넘어, 3D 공간 사전지식을 1프레임 최적화로 주입하여 다시점에서도 정체성이 보존되는 영상 생성 프레임워크. VR/AR·가상 프로덕션에 직결.</li>
+</ul>
+<h3 id="4-3d-monoart-3d">4. [3D재구성] MonoArt: 단안 관절형 3D 재구성을 위한 점진적 구조 추론</h3>
+<ul>
+<li><strong>원제</strong>: MonoArt: Progressive Structural Reasoning for Monocular Articulated 3D Reconstruction</li>
+<li><strong>Upvotes</strong>: 35 ⭐</li>
+<li><strong>한줄 요약</strong>: 단일 이미지에서 관절형(articulated) 3D 객체의 기하·파트 구조·모션을 통합 추론하는 프레임워크. 외부 모션 템플릿 없이 점진적 구조 추론으로 SOTA 달성. 로봇 조작에도 확장 가능.</li>
+</ul>
+<h3 id="5-ai-proactivebench">5. [AI생성] ProactiveBench: 멀티모달 대형 언어 모델의 능동성 벤치마크</h3>
+<ul>
+<li><strong>원제</strong>: ProactiveBench: Benchmarking Proactiveness in Multimodal Large Language Models</li>
+<li><strong>Upvotes</strong>: 26 ⭐</li>
+<li><strong>한줄 요약</strong>: MLLM이 사용자의 요청을 기다리지 않고 스스로 정보를 파악하고 제안하는 '능동성(proactiveness)'을 체계적으로 평가하는 최초의 벤치마크.</li>
+</ul>
+<h3 id="6-ai-flowscene">6. [AI생성] FlowScene: 멀티모달 그래프 정류 흐름 기반 스타일 일관 실내 장면 생성</h3>
+<ul>
+<li><strong>원제</strong>: FlowScene: Style-Consistent Indoor Scene Generation with Multimodal Graph Rectified Flow</li>
+<li><strong>Upvotes</strong>: 24 ⭐</li>
+<li><strong>한줄 요약</strong>: 실내 장면 전체를 스타일 일관성 있게 생성하기 위해, 멀티모달 그래프 구조와 정류 흐름(Rectified Flow)을 결합한 생성 파이프라인. 인테리어 디자인·건축 시각화에 활용 가능.</li>
+</ul>
+<h3 id="7-reactmotion">7. [영상] ReactMotion: 화자 발화에서 반응형 청취자 모션 생성</h3>
+<ul>
+<li><strong>원제</strong>: ReactMotion: Generating Reactive Listener Motions from Speaker Utterance</li>
+<li><strong>Upvotes</strong>: 24 ⭐</li>
+<li><strong>한줄 요약</strong>: 대화 중 화자의 발화에 맞춰 청취자가 자연스럽게 반응하는 모션(고개 끄덕임, 표정 변화 등)을 자동 생성하는 모델. 가상 아바타·디지털 휴먼 대화 시스템에 핵심.</li>
+</ul>
+<h3 id="8-androtmem-gui">8. [에이전트] AndroTMem: 장기 GUI 에이전트를 위한 인터랙션 궤적 기반 앵커드 메모리</h3>
+<ul>
+<li><strong>원제</strong>: AndroTMem: From Interaction Trajectories to Anchored Memory in Long-Horizon GUI Agents</li>
+<li><strong>Upvotes</strong>: 23 ⭐</li>
+<li><strong>한줄 요약</strong>: 안드로이드 GUI 에이전트가 긴 작업 시퀀스에서 과거 인터랙션 궤적을 구조화된 앵커 메모리로 변환하여, 장기 맥락을 잃지 않고 복잡한 다단계 작업을 수행하는 방법.</li>
+</ul>
+<h3 id="9-ai-llm-y-">9. [AI생성] LLM을 위한 Y-컴비네이터: 미적분학으로 장문맥 부패 해결</h3>
+<ul>
+<li><strong>원제</strong>: The Y-Combinator for LLMs: Solving Long-Context Rot with Calculus</li>
+<li><strong>Upvotes</strong>: 21 ⭐</li>
+<li><strong>한줄 요약</strong>: LLM의 장문맥(long-context) 처리 시 발생하는 성능 저하(rot)를 수학적 미적분 기법으로 해결하는 이론적 프레임워크. 컨텍스트 윈도우 확장의 근본적 한계를 공략.</li>
+</ul>
+<h3 id="10-lumosx-">10. [에이전트] LumosX: 개인화 영상 생성을 위한 정체성-속성 관계 매핑</h3>
+<ul>
+<li><strong>원제</strong>: LumosX: Relate Any Identities with Their Attributes for Personalized Video Generation</li>
+<li><strong>Upvotes</strong>: 21 ⭐</li>
+<li><strong>한줄 요약</strong>: 다수의 인물 정체성과 각각의 속성(외모·동작·스타일)을 유연하게 매핑하여, 개인화된 멀티 캐릭터 영상을 생성하는 시스템.</li>
+</ul>
+<hr />
+<h2 id="_2">🎯 준석 교수 관심 태그</h2>
+<table>
+<thead>
+<tr>
+<th>태그</th>
+<th>해당 논문</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3D Reconstruction</td>
+<td>#3 3DreamBooth, #4 MonoArt</td>
+</tr>
+<tr>
+<td>Video Generation</td>
+<td>#1 HopChain, #2 Astrolabe, #7 ReactMotion</td>
+</tr>
+<tr>
+<td>AI Agent</td>
+<td>#8 AndroTMem, #10 LumosX</td>
+</tr>
+<tr>
+<td>LLM/Foundation</td>
+<td>#5 ProactiveBench, #9 Y-Combinator</td>
+</tr>
+<tr>
+<td>Scene Generation</td>
+<td>#6 FlowScene</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="notion">🔗 Notion 데이터베이스</h2>
+<p><a href="https://www.notion.so/2f8f02707d88803da78fd90dce7379b6">→ Notion SOTA Database 바로가기</a></p>
+<hr />
+<p><strong>소속</strong>: 동서대학교 글로컬30 영상애니메이션연구소
+<strong>생성일</strong>: 2026년 03월 24일 08:00 KST
+<strong>연락처</strong>: jsdavid88@g.dongseo.ac.kr
+<strong>번역</strong>: 아르카 (자동 한글 번역)</p>
+<hr />
+<p><em>© 2026 동서대학교 영상애니메이션연구소</em></p>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

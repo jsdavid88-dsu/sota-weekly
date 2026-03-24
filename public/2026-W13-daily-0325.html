@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔬 SOTA Weekly Report — 2026-W13 (Daily: 2026-03-25)</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-weekly-report-2026-w13-daily-2026-03-25">🔬 SOTA Weekly Report — 2026-W13 (Daily: 2026-03-25)</h1>
+<h2 id="huggingface-daily-papers">HuggingFace Daily Papers 한글 번역 리포트</h2>
+<blockquote>
+<p><strong>동서대학교 글로컬30 영상애니메이션연구소</strong>
+AI×XR연구실 최신 논문 트래킹 리포트
+생성일: 2026-03-25 (화) 08:00 KST</p>
+</blockquote>
+<hr />
+<h2 id="_1">📊 수집 요약</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수집 소스</td>
+<td>HuggingFace Daily Papers</td>
+</tr>
+<tr>
+<td>전체 수집</td>
+<td>50편</td>
+</tr>
+<tr>
+<td>관련 필터링</td>
+<td>45편</td>
+</tr>
+<tr>
+<td>상위 선정</td>
+<td>10편</td>
+</tr>
+<tr>
+<td>Notion 저장</td>
+<td>✅ 완료</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="top-10-upvotes">🏆 Top 10 논문 (Upvotes 순)</h2>
+<h3 id="1-omni-worldbench">1. [에이전트] Omni-WorldBench: 월드 모델을 위한 포괄적 상호작용 중심 평가</h3>
+<ul>
+<li><strong>원제</strong>: Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models</li>
+<li><strong>Upvotes</strong>: 107 ⭐</li>
+<li><strong>한줄 요약</strong>: 월드 모델의 물리적 상호작용 이해 능력을 종합적으로 평가하는 벤치마크. 기존 비디오 품질 중심 평가를 넘어 인과 추론·물리 시뮬레이션·에이전트 상호작용까지 다차원으로 측정.</li>
+</ul>
+<h3 id="2-speed-by-simplicity-">2. [영상] Speed by Simplicity: 고속 오디오-비디오 생성 기반 모델을 위한 단일 스트림 아키텍처</h3>
+<ul>
+<li><strong>원제</strong>: Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model</li>
+<li><strong>Upvotes</strong>: 88 ⭐</li>
+<li><strong>한줄 요약</strong>: 오디오-비디오 동시 생성에서 복잡한 듀얼 스트림 대신 단일 스트림 아키텍처로 속도와 품질을 동시에 잡은 기반 모델. 추론 효율이 기존 대비 대폭 향상.</li>
+</ul>
+<h3 id="3-longcat-flash-prover">3. [에이전트] LongCat-Flash-Prover: 에이전트 도구 통합 강화학습을 통한 네이티브 형식 추론 발전</h3>
+<ul>
+<li><strong>원제</strong>: LongCat-Flash-Prover: Advancing Native Formal Reasoning via Agentic Tool-Integrated Reinforcement Learning</li>
+<li><strong>Upvotes</strong>: 62 ⭐</li>
+<li><strong>한줄 요약</strong>: 수학적 형식 증명을 위해 에이전트가 외부 도구(Lean/Isabelle 등)를 자율적으로 호출하며 RL로 추론 능력을 강화하는 프레임워크. 형식 검증 자동화에 돌파구.</li>
+</ul>
+<h3 id="4-ai-look-where-it-matters-vlm">4. [AI생성] Look Where It Matters: 효율적 VLM을 위한 고해상도 크롭 검색</h3>
+<ul>
+<li><strong>원제</strong>: Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs</li>
+<li><strong>Upvotes</strong>: 55 ⭐</li>
+<li><strong>한줄 요약</strong>: 비전-언어 모델이 전체 이미지를 고해상도로 처리하는 대신, 질문과 관련된 핵심 영역만 고해상도 크롭으로 추출하여 정확도를 유지하면서 연산 비용을 크게 절감하는 방법.</li>
+</ul>
+<h3 id="5-openresearcher">5. [에이전트] OpenResearcher: 장기 심층 연구 궤적 합성을 위한 완전 개방형 파이프라인</h3>
+<ul>
+<li><strong>원제</strong>: OpenResearcher: A Fully Open Pipeline for Long-Horizon Deep Research Trajectory Synthesis</li>
+<li><strong>Upvotes</strong>: 49 ⭐</li>
+<li><strong>한줄 요약</strong>: 깊은 연구 작업(문헌 조사→가설 수립→실험 설계)의 전체 궤적을 합성하는 완전 오픈소스 파이프라인. 연구 자동화 에이전트 학습 데이터 생성에 핵심.</li>
+</ul>
+<h3 id="6-videodetective-">6. [영상] VideoDetective: 장편 비디오 이해를 위한 외부 질의-내부 관련성 기반 단서 탐색</h3>
+<ul>
+<li><strong>원제</strong>: VideoDetective: Clue Hunting via both Extrinsic Query and Intrinsic Relevance for Long Video Understanding</li>
+<li><strong>Upvotes</strong>: 45 ⭐</li>
+<li><strong>한줄 요약</strong>: 긴 비디오에서 핵심 단서를 찾기 위해 외부 질의(사용자 질문)와 내부 관련성(프레임 간 연관)을 동시에 활용하는 '탐정식' 비디오 이해 프레임워크.</li>
+</ul>
+<h3 id="7-3d-spatialboost">7. [3D재구성] SpatialBoost: 언어 유도 추론을 통한 시각 표현 강화</h3>
+<ul>
+<li><strong>원제</strong>: SpatialBoost: Enhancing Visual Representation through Language-Guided Reasoning</li>
+<li><strong>Upvotes</strong>: 38 ⭐</li>
+<li><strong>한줄 요약</strong>: 언어 설명을 가이드로 3D 공간 이해를 강화하는 시각 표현 학습 방법. 텍스트-비전 정렬을 공간 추론 단계로 확장하여 3D 장면 이해 성능을 향상.</li>
+</ul>
+<h3 id="8-3d-f4splat-3d">8. [3D재구성] F4Splat: 피드포워드 3D 가우시안 스플래팅을 위한 피드포워드 예측 밀집화 🔥</h3>
+<ul>
+<li><strong>원제</strong>: F4Splat: Feed-Forward Predictive Densification for Feed-Forward 3D Gaussian Splatting</li>
+<li><strong>Upvotes</strong>: 30 🔥핵심</li>
+<li><strong>한줄 요약</strong>: 3D Gaussian Splatting의 밀집화(densification)를 별도 최적화 없이 피드포워드로 예측하는 방법. 실시간 3D 재구성 속도를 획기적으로 개선. <strong>준석 교수 핵심 관심 분야.</strong></li>
+</ul>
+<h3 id="9-manifold-aware-exploration">9. [영상] Manifold-Aware Exploration: 비디오 생성 강화학습을 위한 매니폴드 인식 탐색</h3>
+<ul>
+<li><strong>원제</strong>: Manifold-Aware Exploration for Reinforcement Learning in Video Generation</li>
+<li><strong>Upvotes</strong>: 30 ⭐</li>
+<li><strong>한줄 요약</strong>: 비디오 생성 모델의 RL 학습 시 데이터 매니폴드 구조를 인식하여 탐색 효율을 높이는 방법. 무작위 탐색의 비효율을 매니폴드 기하학으로 극복.</li>
+</ul>
+<h3 id="10-ai-msft-sft">10. [AI생성] mSFT: 다중 작업 SFT에서 데이터셋 혼합의 이질적 과적합 해결</h3>
+<ul>
+<li><strong>원제</strong>: mSFT: Addressing Dataset Mixtures Overfitting Heterogeneously in Multi-task SFT</li>
+<li><strong>Upvotes</strong>: 26 ⭐</li>
+<li><strong>한줄 요약</strong>: 다중 작업 지도 미세조정(SFT) 시 데이터셋 별로 불균등하게 발생하는 과적합 문제를 진단하고 해결하는 방법론. 혼합 비율 최적화를 넘어 이질적 학습 속도 자체를 제어.</li>
+</ul>
+<hr />
+<h2 id="_2">🎯 준석 교수 관심 태그</h2>
+<table>
+<thead>
+<tr>
+<th>태그</th>
+<th>해당 논문</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3D Reconstruction</td>
+<td>#7 SpatialBoost, #8 F4Splat 🔥</td>
+</tr>
+<tr>
+<td>Video Generation</td>
+<td>#2 Speed by Simplicity, #6 VideoDetective, #9 Manifold-Aware</td>
+</tr>
+<tr>
+<td>AI Agent</td>
+<td>#1 Omni-WorldBench, #3 LongCat-Flash-Prover, #5 OpenResearcher</td>
+</tr>
+<tr>
+<td>VLM/Foundation</td>
+<td>#4 Look Where It Matters, #10 mSFT</td>
+</tr>
+<tr>
+<td>World Models</td>
+<td>#1 Omni-WorldBench</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="notion">🔗 Notion 데이터베이스</h2>
+<p><a href="https://www.notion.so/2f8f02707d88803da78fd90dce7379b6">→ Notion SOTA Database 바로가기</a></p>
+<hr />
+<p><strong>소속</strong>: 동서대학교 글로컬30 영상애니메이션연구소
+<strong>생성일</strong>: 2026년 03월 25일 08:00 KST
+<strong>연락처</strong>: jsdavid88@g.dongseo.ac.kr
+<strong>번역</strong>: 아르카 (한글 번역)</p>
+<hr />
+<p><em>© 2026 동서대학교 영상애니메이션연구소</em></p>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTA Weekly Report — 2026-W14 (2026-03-30)</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-weekly-report-2026-w14-2026-03-30">SOTA Weekly Report — 2026-W14 (2026-03-30)</h1>
+<blockquote>
+<p>HuggingFace Daily Papers 기반 자동 수집 + 한글 번역 리포트
+수집: 상위 10편 (upvotes 기준)</p>
+</blockquote>
+<hr />
+<h2 id="top-10-notion">📊 Top 10 논문 (Notion 연동)</h2>
+<h3 id="1-pixelsmile">1. PixelSmile: 세밀한 표정 편집을 향하여</h3>
+<ul>
+<li><strong>카테고리:</strong> AI생성 | <strong>Upvotes:</strong> 111</li>
+<li><strong>한줄요약:</strong> 픽셀 수준의 세밀한 표정 편집이 가능한 새로운 생성 모델. 기존 표정 전이 한계를 넘어 미세한 감정 뉘앙스까지 제어.</li>
+</ul>
+<h3 id="2-intern-s1-pro">2. Intern-S1-Pro: 조 단위 규모의 과학 멀티모달 기반 모델</h3>
+<ul>
+<li><strong>카테고리:</strong> 에이전트 | <strong>Upvotes:</strong> 108</li>
+<li><strong>한줄요약:</strong> 트릴리언 스케일의 과학 특화 멀티모달 기반 모델. 과학 논문 이해·추론·생성을 통합한 대규모 파운데이션 모델.</li>
+</ul>
+<h3 id="3-cua-suite">3. CUA-Suite: 컴퓨터 사용 에이전트를 위한 대규모 사람 주석 영상 시연</h3>
+<ul>
+<li><strong>카테고리:</strong> 에이전트 | <strong>Upvotes:</strong> 87</li>
+<li><strong>한줄요약:</strong> GUI 에이전트 학습용 대규모 비디오 데모 데이터셋. 사람이 직접 주석한 컴퓨터 조작 영상으로 에이전트 훈련 품질 향상.</li>
+</ul>
+<h3 id="4-calibri">4. Calibri: 파라미터 효율적 캘리브레이션으로 디퓨전 트랜스포머 강화</h3>
+<ul>
+<li><strong>카테고리:</strong> AI생성 | <strong>Upvotes:</strong> 53</li>
+<li><strong>한줄요약:</strong> 소수 파라미터만 미세조정해 DiT 성능을 크게 끌어올리는 효율적 캘리브레이션 기법. 학습 비용 대폭 절감.</li>
+</ul>
+<h3 id="5-realrestorer">5. RealRestorer: 대규모 이미지 편집 모델 기반 범용 실사 이미지 복원</h3>
+<ul>
+<li><strong>카테고리:</strong> AI생성 | <strong>Upvotes:</strong> 47</li>
+<li><strong>한줄요약:</strong> 대규모 이미지 편집 모델을 활용한 범용 실세계 이미지 복원. 노이즈·블러·압축 아티팩트 등 다양한 열화에 일반화.</li>
+</ul>
+<h3 id="6-voxtral-tts">6. Voxtral TTS</h3>
+<ul>
+<li><strong>카테고리:</strong> 오디오 | <strong>Upvotes:</strong> 42</li>
+<li><strong>한줄요약:</strong> Mistral AI의 텍스트-음성 변환 모델. 고품질 다국어 음성 합성으로 오픈소스 TTS 생태계 확장.</li>
+</ul>
+<h3 id="7-llm">7. 자기 증류가 (때때로) LLM 추론 능력을 저하시키는 이유</h3>
+<ul>
+<li><strong>카테고리:</strong> AI생성 | <strong>Upvotes:</strong> 40</li>
+<li><strong>한줄요약:</strong> LLM 자기 증류 시 추론 능력이 오히려 떨어지는 현상을 분석. 지식 압축과 추론 보존 사이의 트레이드오프 규명.</li>
+</ul>
+<h3 id="8-ui-voyager-gui">8. UI-Voyager: 실패 경험 학습 기반 자기 진화 GUI 에이전트</h3>
+<ul>
+<li><strong>카테고리:</strong> 에이전트 | <strong>Upvotes:</strong> 40</li>
+<li><strong>한줄요약:</strong> 실패한 경험에서 학습해 스스로 진화하는 GUI 자동화 에이전트. 반복 실패를 통한 자율적 능력 향상.</li>
+</ul>
+<h3 id="9-eva">9. EVA: 엔드투엔드 비디오 에이전트를 위한 효율적 강화학습</h3>
+<ul>
+<li><strong>카테고리:</strong> 에이전트 | <strong>Upvotes:</strong> 39</li>
+<li><strong>한줄요약:</strong> 비디오 기반 에이전트에 효율적 강화학습을 적용. 영상 이해부터 행동 결정까지 엔드투엔드 최적화.</li>
+</ul>
+<h3 id="10-msa-1">10. MSA: 1억 토큰까지 확장 가능한 메모리 희소 어텐션</h3>
+<ul>
+<li><strong>카테고리:</strong> 에이전트 | <strong>Upvotes:</strong> 34</li>
+<li><strong>한줄요약:</strong> 1억 토큰 컨텍스트까지 효율적으로 확장하는 메모리 희소 어텐션 메커니즘. 장기 메모리 모델의 실용화.</li>
+</ul>
+<hr />
+<h2 id="_1">📌 주간 트렌드 분석</h2>
+<h3 id="_2">이번 주 핵심 키워드</h3>
+<ul>
+<li><strong>에이전트 전성시대</strong>: 10편 중 5편이 에이전트 관련 (GUI 에이전트, 비디오 에이전트, 컴퓨터 사용 에이전트)</li>
+<li><strong>효율성 경쟁</strong>: 희소 어텐션, 파라미터 효율적 학습, 자기 증류 등 대규모 모델의 효율화 연구 활발</li>
+<li><strong>표정/이미지 생성 고도화</strong>: PixelSmile(111⬆), RealRestorer(47⬆) 등 세밀한 이미지 제어·복원 기술 주목</li>
+</ul>
+<h3 id="_3">준석 연구실 관련도</h3>
+<ul>
+<li>🔥 <strong>PixelSmile</strong> — ComfyUI 표정 편집 노드 개발에 참고 가능</li>
+<li>🔥 <strong>Calibri</strong> — DiT 파인튜닝 효율화, DSUComfyCG 노드 경량화에 적용 여지</li>
+<li>⭐ <strong>RealRestorer</strong> — 실사 복원 파이프라인, 부산마법소녀 촬영 소스 후처리에 활용 가능</li>
+</ul>
+<hr />
+<p><em>Auto-collected from HuggingFace Daily Papers | Translated by Arca 🦊</em></p>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTA Weekly Report — 2026-W14 (2026-04-02)</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-weekly-report-2026-w14-2026-04-02">SOTA Weekly Report — 2026-W14 (2026-04-02)</h1>
+<blockquote>
+<p>HuggingFace Daily Papers 기반 자동 수집 · 아르카 한글 번역
+수집일: 2026-04-02 (목) 08:00 KST</p>
+</blockquote>
+<hr />
+<h2 id="top-10">📊 이번 주 Top 10</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>카테고리</th>
+<th>한글 제목</th>
+<th>Upvotes</th>
+<th>관심도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🤖 에이전트</td>
+<td>CARLA-Air: CARLA 세계에서 드론 비행 — 공중-지상 체화지능 통합 인프라</td>
+<td>228</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>2</td>
+<td>🔊 오디오</td>
+<td>LongCat-Next: 모달리티를 이산 토큰으로 어휘화하기</td>
+<td>117</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🧬 AI생성</td>
+<td>Lingshu-Cell: 가상 세포를 향한 전사체 모델링용 생성적 세포 월드모델</td>
+<td>71</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>4</td>
+<td>🤖 에이전트</td>
+<td>GEMS: 메모리와 스킬을 갖춘 에이전트-네이티브 멀티모달 생성</td>
+<td>58</td>
+<td>🔥핵심</td>
+</tr>
+<tr>
+<td>5</td>
+<td>🧬 AI생성</td>
+<td>Project Imaging-X: 파운데이션 모델 개발을 위한 1000+ 오픈 의료영상 데이터셋 서베이</td>
+<td>46</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>6</td>
+<td>🎬 3D재구성</td>
+<td>VGGRPO: 4D 잠재 보상을 통한 세계-일관적 비디오 생성</td>
+<td>43</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>7</td>
+<td>🤖 에이전트</td>
+<td>Unify-Agent: 세계-기반 이미지 합성을 위한 통합 멀티모달 에이전트</td>
+<td>33</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>8</td>
+<td>🤖 에이전트</td>
+<td>CutClaw: 음악 동기화 기반 에이전틱 장시간 비디오 편집</td>
+<td>28</td>
+<td>🔥핵심</td>
+</tr>
+<tr>
+<td>9</td>
+<td>🎥 영상</td>
+<td>월드모델로서의 비디오 생성 모델: 효율적 패러다임, 아키텍처, 알고리즘</td>
+<td>25</td>
+<td>⭐관심</td>
+</tr>
+<tr>
+<td>10</td>
+<td>🧬 AI생성</td>
+<td>daVinci-LLM: 사전학습의 과학을 향하여</td>
+<td>23</td>
+<td>⭐관심</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_1">📝 상세 요약</h2>
+<h3 id="1-carla-air-carla-">1. CARLA-Air: CARLA 세계에서 드론 비행 — 공중-지상 체화지능 통합 인프라</h3>
+<ul>
+<li><strong>카테고리:</strong> 에이전트 | <strong>Upvotes:</strong> 228</li>
+<li><strong>요약:</strong> 언리얼 엔진 단일 프로세스 내에서 고충실도 도시 주행 시뮬레이션과 물리 기반 멀티로터 비행을 통합하는 오픈소스 인프라. CARLA와 AirSim 네이티브 API를 보존하며, 18가지 센서 모달리티를 동기 캡처. 공중-지상 협동, 체화 내비게이션, 멀티모달 인지, RL 기반 정책 학습 워크로드 지원.</li>
+<li><strong>준석 관련도:</strong> ⭐ UE5 시뮬레이션 환경 + 체화지능 — UE5 연구에 직접 참고 가능</li>
+</ul>
+<h3 id="2-longcat-next">2. LongCat-Next: 모달리티를 이산 토큰으로 어휘화하기</h3>
+<ul>
+<li><strong>카테고리:</strong> 오디오 | <strong>Upvotes:</strong> 117</li>
+<li><strong>요약:</strong> Discrete Native Autoregressive(DiNA) 프레임워크 제안. 임의 해상도에서 시각 신호를 계층적 이산 토큰으로 변환하는 dNaViT 도입. 텍스트·비전·오디오를 단일 자기회귀 목표로 처리하는 네이티브 멀티모달 모델. 이산 비전 모델링의 이해 작업 성능 한계를 돌파하고, 이해와 생성 간 충돌을 효과적으로 해결. 오픈소스 공개.</li>
+<li><strong>준석 관련도:</strong> ⭐ 멀티모달 통합 생성 — ComfyUI 파이프라인 토큰화 전략 참고</li>
+</ul>
+<h3 id="3-lingshu-cell">3. Lingshu-Cell: 가상 세포를 향한 전사체 모델링용 생성적 세포 월드모델</h3>
+<ul>
+<li><strong>카테고리:</strong> AI생성 | <strong>Upvotes:</strong> 71</li>
+<li><strong>요약:</strong> 마스크드 이산 확산 모델로 약 18,000개 유전자의 전사체 상태 분포를 학습하고, 섭동 조건부 시뮬레이션을 지원. 사전 유전자 선별 없이 복잡한 전사체 수준 발현 의존성을 포착. Virtual Cell Challenge H1 벤치마크와 사이토카인 유도 반응 예측에서 선두 성능 달성.</li>
+<li><strong>준석 관련도:</strong> 보통 — 생물학 도메인이나 확산 모델 응용 사례로 참고</li>
+</ul>
+<h3 id="4-gems-">4. GEMS: 메모리와 스킬을 갖춘 에이전트-네이티브 멀티모달 생성 🔥</h3>
+<ul>
+<li><strong>카테고리:</strong> 에이전트 | <strong>Upvotes:</strong> 58</li>
+<li><strong>요약:</strong> Claude Code 등 고급 에이전트 프레임워크에서 영감. Agent Loop(반복 최적화), Agent Memory(궤적 수준 계층적 기억), Agent Skill(도메인별 전문성 온디맨드 로딩) 3가지 핵심 컴포넌트로 구성. 경량 6B 모델 Z-Image-Turbo가 SOTA Nano Banana 2를 GenEval2에서 능가하는 성과.</li>
+<li><strong>준석 관련도:</strong> 🔥 에이전트+멀티모달 생성 — ComfyUI 에이전트 파이프라인 설계에 직접 참고</li>
+</ul>
+<h3 id="5-project-imaging-x-1000">5. Project Imaging-X: 파운데이션 모델 개발을 위한 1000+ 오픈 의료영상 데이터셋 서베이</h3>
+<ul>
+<li><strong>카테고리:</strong> AI생성 | <strong>Upvotes:</strong> 46</li>
+<li><strong>요약:</strong> 전 세계 1000+ 오픈 의료 영상 데이터셋을 체계적으로 통합. 임상 전문성 요구와 프라이버시 제약으로 파편화된 소규모 데이터셋을 대규모 통합 리포지토리로 변환. 구조화된 메타데이터와 참조 링크 제공.</li>
+<li><strong>준석 관련도:</strong> 보통 — 의료 AI 도메인, 대규모 데이터셋 큐레이션 방법론 참고</li>
+</ul>
+<h3 id="6-vggrpo-4d-">6. VGGRPO: 4D 잠재 보상을 통한 세계-일관적 비디오 생성</h3>
+<ul>
+<li><strong>카테고리:</strong> 3D재구성 | <strong>Upvotes:</strong> 43</li>
+<li><strong>요약:</strong> 비디오 확산 잠재 공간에서 기하학 파운데이션 모델로 직접 장면 기하학을 디코딩하는 Latent Geometry Model(LGM) 제안. 4D 재구성 능력으로 동적 장면까지 확장. 카메라 모션 부드러움 보상과 기하학 재투영 일관성 보상으로 GRPO 수행. VAE 디코딩 비용 제거.</li>
+<li><strong>준석 관련도:</strong> ⭐ 3D 재구성 + 비디오 생성 일관성 — Gaussian Splatting 연구 직접 관련</li>
+</ul>
+<h3 id="7-unify-agent-">7. Unify-Agent: 세계-기반 이미지 합성을 위한 통합 멀티모달 에이전트</h3>
+<ul>
+<li><strong>카테고리:</strong> 에이전트 | <strong>Upvotes:</strong> 33</li>
+<li><strong>요약:</strong> 실제 세계 기반(world-grounded) 이미지 합성을 위한 통합 멀티모달 에이전트. 시각적 이해와 생성을 단일 프레임워크에서 결합하여, 실세계 맥락에 맞는 이미지를 생성.</li>
+<li><strong>준석 관련도:</strong> ⭐ 멀티모달 에이전트 + 이미지 합성 — 부산마법소녀 합성 파이프라인 참고</li>
+</ul>
+<h3 id="8-cutclaw">8. CutClaw: 음악 동기화 기반 에이전틱 장시간 비디오 편집 🔥</h3>
+<ul>
+<li><strong>카테고리:</strong> 에이전트 | <strong>Upvotes:</strong> 28</li>
+<li><strong>요약:</strong> 멀티 에이전트 프레임워크로 수시간 분량의 원본 영상을 음악에 맞춰 자동 편집. 계층적 멀티모달 분해로 시각·오디오의 세부 디테일과 글로벌 구조를 포착. Playwriter Agent가 스토리텔링 흐름을 조율하고, Editor/Reviewer Agent가 미학·의미 기준으로 최종 편집 최적화.</li>
+<li><strong>준석 관련도:</strong> 🔥 영상 편집 자동화 + 멀티에이전트 — 영상 제작 파이프라인 직접 적용 가능</li>
+</ul>
+<h3 id="9">9. 월드모델로서의 비디오 생성 모델: 효율적 패러다임, 아키텍처, 알고리즘</h3>
+<ul>
+<li><strong>카테고리:</strong> 영상 | <strong>Upvotes:</strong> 25</li>
+<li><strong>요약:</strong> 비디오 생성 모델을 월드모델 관점에서 분석하는 서베이. 효율적 패러다임, 아키텍처 설계, 알고리즘 전략을 체계적으로 정리. 시뮬레이션·로보틱스·자율주행 등 물리 세계 이해를 위한 비디오 생성 접근법 조망.</li>
+<li><strong>준석 관련도:</strong> ⭐ 비디오 생성 + 월드모델 서베이 — UE5 시뮬레이션 연구 방향 참고</li>
+</ul>
+<h3 id="10-davinci-llm">10. daVinci-LLM: 사전학습의 과학을 향하여</h3>
+<ul>
+<li><strong>카테고리:</strong> AI생성 | <strong>Upvotes:</strong> 23</li>
+<li><strong>요약:</strong> 완전 공개 사전학습 연구. 모델 가중치뿐 아니라 데이터 처리 파이프라인, 학습 과정, 200+ 통제 실험을 모두 공개. Data Darwinism 프레임워크로 L0-L9 단계적 데이터 처리 파이프라인 연구. 3B 모델을 8T 토큰으로 2단계 적응형 커리큘럼 학습. 처리 깊이가 데이터 양과 함께 주요 스케일링 차원임을 입증.</li>
+<li><strong>준석 관련도:</strong> ⭐ 사전학습 방법론 — 연구 참고, 학생 교육 자료로 활용 가능</li>
+</ul>
+<hr />
+<h2 id="_2">🔥 이번 주 핵심 트렌드</h2>
+<ol>
+<li><strong>에이전트 시대 본격화</strong> — GEMS, CutClaw, Unify-Agent 등 멀티에이전트 프레임워크가 생성 AI의 품질 한계를 돌파하는 핵심 전략으로 부상</li>
+<li><strong>잠재 공간에서의 기하학적 보상</strong> — VGGRPO가 제안한 latent geometry-guided GRPO는 비디오 생성의 3D 일관성 문제를 우아하게 해결</li>
+<li><strong>멀티모달 이산 토큰 통합</strong> — LongCat-Next의 DiNA 프레임워크가 텍스트·비전·오디오를 단일 이산 공간으로 통합하는 방향 제시</li>
+<li><strong>시뮬레이션 인프라 성숙</strong> — CARLA-Air가 UE 기반 공중-지상 통합 시뮬레이션의 새 기준 제시</li>
+</ol>
+<hr />
+<p><em>Generated by SOTA Auto-Collect + 아르카 한글 번역 | 2026-04-02 08:13 KST</em></p>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

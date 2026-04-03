@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTA Daily Report — 2026-W14 (2026-04-04)</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-daily-report-2026-w14-2026-04-04">SOTA Daily Report — 2026-W14 (2026-04-04)</h1>
+<blockquote>
+<p>HuggingFace Daily Papers 기반 자동 수집 · 아르카 한글 번역
+수집일: 2026-04-04 (토) 08:00 KST</p>
+</blockquote>
+<hr />
+<h2 id="top-10">📊 오늘의 Top 10</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>카테고리</th>
+<th>한글 제목</th>
+<th>Upvotes</th>
+<th>한줄 요약</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>AI생성</td>
+<td><strong>DataFlex: 데이터 중심 동적 LLM 훈련을 위한 통합 프레임워크</strong></td>
+<td>138</td>
+<td>데이터 선택·혼합·커리큘럼을 하나의 프레임워크로 통합해 LLM 훈련 효율을 극대화하는 데이터 중심 접근법</td>
+</tr>
+<tr>
+<td>2</td>
+<td>AI생성</td>
+<td><strong>잠재 공간: 기초, 진화, 메커니즘, 능력, 그리고 전망</strong></td>
+<td>97</td>
+<td>생성 모델의 핵심인 잠재 공간(Latent Space)의 이론적 기초부터 최신 발전까지 포괄적으로 조망하는 서베이</td>
+</tr>
+<tr>
+<td>3</td>
+<td>영상</td>
+<td><strong>생성적 월드 렌더러 (Generative World Renderer)</strong></td>
+<td>74</td>
+<td>3D 월드를 생성 모델로 렌더링하는 새로운 패러다임 — 기존 래스터화/레이트레이싱을 대체할 가능성</td>
+</tr>
+<tr>
+<td>4</td>
+<td>에이전트</td>
+<td><strong>SKILL0: 스킬 내재화를 위한 인컨텍스트 에이전트 강화학습</strong></td>
+<td>71</td>
+<td>에이전트가 맥락 내 학습(ICL)으로 스킬을 내재화하는 강화학습 방법론 — few-shot 없이 기술 습득</td>
+</tr>
+<tr>
+<td>5</td>
+<td>3D재구성</td>
+<td><strong>EgoSim: 체화된 상호작용 생성을 위한 자기중심 월드 시뮬레이터</strong></td>
+<td>30</td>
+<td>1인칭 시점에서 사람-환경 상호작용을 시뮬레이션하는 체화 AI용 월드 모델</td>
+</tr>
+<tr>
+<td>6</td>
+<td>AI생성</td>
+<td><strong>조향 가능한 시각 표현 (Steerable Visual Representations)</strong></td>
+<td>27</td>
+<td>사용자가 원하는 방향으로 시각 표현을 조종할 수 있는 제어 가능한 표현 학습 방법</td>
+</tr>
+<tr>
+<td>7</td>
+<td>AI생성</td>
+<td><strong>NearID: 유사-동일인 방해자를 활용한 정체성 표현 학습</strong></td>
+<td>19</td>
+<td>외모가 비슷한 사람들(near-identity distractors)을 활용해 얼굴/정체성 인식 정확도를 높이는 새로운 학습 전략</td>
+</tr>
+<tr>
+<td>8</td>
+<td>AI생성</td>
+<td><strong>LatentUM: 잠재 공간 통합 모델을 통한 교차 모달 추론의 잠재력 해방</strong></td>
+<td>19</td>
+<td>텍스트·이미지 등 다중 모달을 잠재 공간에서 통합해 교차 모달 추론 성능을 끌어올리는 아키텍처</td>
+</tr>
+<tr>
+<td>9</td>
+<td>에이전트</td>
+<td><strong>Omni-SimpleMem: 자동연구 기반 평생 멀티모달 에이전트 메모리 탐색</strong></td>
+<td>16</td>
+<td>멀티모달 에이전트가 평생 학습하며 기억을 관리하는 심플하면서도 효과적인 메모리 시스템 발견</td>
+</tr>
+<tr>
+<td>10</td>
+<td>AI생성</td>
+<td><strong>고로 나는 존재한다. 나는 생각한다. (Therefore I am. I Think.)</strong></td>
+<td>15</td>
+<td>AI 추론과 자기 인식의 철학적 경계를 탐구하는 도발적 논문 — "생각한다"와 "존재한다"의 순서 역전</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_1">🔥 주요 트렌드</h2>
+<ul>
+<li><strong>데이터 중심 AI 훈련</strong>: DataFlex가 압도적 1위 — 모델 아키텍처보다 데이터 전략이 핵심이라는 흐름 재확인</li>
+<li><strong>잠재 공간의 재조명</strong>: Latent Space 서베이 + LatentUM 등 잠재 공간 기반 접근이 여전히 활발</li>
+<li><strong>생성적 렌더링</strong>: Generative World Renderer — 3D 렌더링 파이프라인 자체를 생성 모델로 대체하려는 시도. 준석 연구실 UE5+ComfyUI 하이브리드 파이프라인과 직접 관련</li>
+<li><strong>에이전트 스킬 학습</strong>: SKILL0 + Omni-SimpleMem — 에이전트가 자율적으로 기술을 습득하고 기억하는 방향</li>
+<li><strong>체화 AI + 1인칭 시뮬레이션</strong>: EgoSim — Gaussian Splatting 기반 3D 재구성과 시너지 가능성</li>
+<li><strong>AI 철학</strong>: "Therefore I am. I Think." — 데카르트 명제를 뒤집는 도발적 제목. 준석 학술 관심사(AI 미학)와 연결점</li>
+</ul>
+<hr />
+<h2 id="_2">🎯 준석 연구실 관련도 높은 논문</h2>
+<table>
+<thead>
+<tr>
+<th>논문</th>
+<th>관련 분야</th>
+<th>이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generative World Renderer</td>
+<td>UE5 + AI 파이프라인</td>
+<td>생성적 렌더링 → 부산마법소녀 배경 제작 파이프라인에 적용 가능성</td>
+</tr>
+<tr>
+<td>EgoSim</td>
+<td>3D Reconstruction</td>
+<td>1인칭 월드 시뮬레이션 → Gaussian Splatting/SHARP 연구와 시너지</td>
+</tr>
+<tr>
+<td>Steerable Visual Representations</td>
+<td>ComfyUI + ControlNet</td>
+<td>시각 표현 조향 → IP-Adapter/ControlNet 워크플로우 개선 가능성</td>
+</tr>
+<tr>
+<td>NearID</td>
+<td>캐릭터 일관성</td>
+<td>유사 얼굴 구분 → AI 캐릭터 생성 시 정체성 유지 문제 해결</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>자동 생성 by 아르카 SOTA Researcher | <a href="https://www.notion.so/">Notion DB</a> | <a href="https://jsdavid88-dsu.github.io/sota-weekly/">GitHub Pages</a></em></p>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

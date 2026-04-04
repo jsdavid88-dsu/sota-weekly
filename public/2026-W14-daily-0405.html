@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTA Daily Report — 2026-W14 (2026-04-05)</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-daily-report-2026-w14-2026-04-05">SOTA Daily Report — 2026-W14 (2026-04-05)</h1>
+<blockquote>
+<p>HuggingFace Daily Papers 기반 자동 수집 · 아르카 수동 한글 번역
+수집 시각: 2026-04-05 08:00 KST</p>
+</blockquote>
+<hr />
+<h2 id="top-10">오늘의 Top 10</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>카테고리</th>
+<th>한글 제목</th>
+<th style="text-align: right;">Upvotes</th>
+<th>한줄 요약</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>AI생성</td>
+<td><strong>DataFlex: 대규모 언어모델의 데이터 중심 동적 학습을 위한 통합 프레임워크</strong></td>
+<td style="text-align: right;">152</td>
+<td>데이터 선택·혼합·가중치 조정을 한 프레임워크로 묶어 LLM 학습 재현성과 효율을 높이려는 방법.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>AI생성</td>
+<td><strong>잠재 공간: 기초, 진화, 메커니즘, 능력, 그리고 전망</strong></td>
+<td style="text-align: right;">114</td>
+<td>토큰이 아니라 연속적인 잠재 공간이 언어모델의 핵심 계산 기반이 되고 있다는 흐름을 정리한 대형 서베이.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>영상</td>
+<td><strong>생성형 월드 렌더러</strong></td>
+<td style="text-align: right;">85</td>
+<td>AAA 게임에서 추출한 대규모 동적 데이터셋을 바탕으로, 장면 렌더링 자체를 생성모델로 대체하려는 접근.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>에이전트</td>
+<td><strong>SKILL0: 스킬 내재화를 위한 인컨텍스트 에이전트 강화학습</strong></td>
+<td style="text-align: right;">80</td>
+<td>추론 시 불러다 쓰는 외부 스킬을 모델 파라미터 내부 지식으로 흡수해 더 가볍고 안정적인 에이전트를 만들려는 연구.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>AI생성</td>
+<td><strong>조향 가능한 시각 표현</strong></td>
+<td style="text-align: right;">39</td>
+<td>사전학습 비전 표현이 항상 가장 눈에 띄는 특징만 보지 않도록, 사용자가 관심 개념 쪽으로 표현을 유도하는 방법.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>에이전트</td>
+<td><strong>CORAL: 열린 탐색형 발견을 위한 자율 멀티에이전트 진화</strong></td>
+<td style="text-align: right;">36</td>
+<td>고정 규칙 대신 장시간 동작하는 에이전트들이 탐색·반성·협업을 반복하며 지식을 축적하도록 만든 개방형 발견 프레임워크.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>3D재구성</td>
+<td><strong>EgoSim: 체화 상호작용 생성을 위한 자기중심 월드 시뮬레이터</strong></td>
+<td style="text-align: right;">33</td>
+<td>1인칭 시점 비디오를 생성하면서 장면의 3D 상태를 계속 업데이트해, 연속적인 상호작용 시뮬레이션을 가능하게 하는 월드 모델.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>AI생성</td>
+<td><strong>NearID: 근접 동일체 방해자를 활용한 정체성 표현 학습</strong></td>
+<td style="text-align: right;">26</td>
+<td>배경 문맥 대신 인물 자체 정체성에 집중하도록, 매우 비슷하지만 다른 개체를 같은 배경에 두고 학습시키는 프레임워크.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>AI생성</td>
+<td><strong>LatentUM: 잠재 공간 통합 모델로 교차 모달 추론의 잠재력 끌어내기</strong></td>
+<td style="text-align: right;">25</td>
+<td>텍스트·이미지 등 서로 다른 모달을 잠재 공간에서 함께 다뤄, 시각적 사고가 필요한 추론과 자기반성형 생성 성능을 높이려는 모델.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>영상</td>
+<td><strong>VOID: 비디오 객체 및 상호작용 삭제</strong></td>
+<td style="text-align: right;">23</td>
+<td>단순 객체 지우기를 넘어 충돌·접촉 같은 물리적 상호작용까지 함께 수정해 더 그럴듯한 비디오 인페인팅을 구현하는 방법.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_1">메모</h2>
+<ul>
+<li>이번 상위권은 <strong>데이터 중심 학습</strong>, <strong>잠재 공간 기반 모델링</strong>, <strong>에이전트의 자율성</strong>, <strong>생성형 렌더링/시뮬레이션</strong> 네 축이 강했다.</li>
+<li>준석 관점에서는 <strong>Generative World Renderer</strong>, <strong>EgoSim</strong>, <strong>Steerable Visual Representations</strong>가 UE5·ComfyUI·3D 재구성 연구와 직접 연결되는 편.</li>
+</ul>
+<hr />
+<h2 id="_2">원문 링크</h2>
+<ol>
+<li>DataFlex — https://huggingface.co/papers/2603.26164</li>
+<li>The Latent Space — https://huggingface.co/papers/2604.02029</li>
+<li>Generative World Renderer — https://huggingface.co/papers/2604.02329</li>
+<li>SKILL0 — https://huggingface.co/papers/2604.02268</li>
+<li>Steerable Visual Representations — https://huggingface.co/papers/2604.02327</li>
+<li>CORAL — https://huggingface.co/papers/2604.01658</li>
+<li>EgoSim — https://huggingface.co/papers/2604.01001</li>
+<li>NearID — https://huggingface.co/papers/2604.01973</li>
+<li>LatentUM — https://huggingface.co/papers/2604.02097</li>
+<li>VOID — https://huggingface.co/papers/2604.02296</li>
+</ol>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

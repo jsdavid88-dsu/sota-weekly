@@ -1,0 +1,845 @@
+[
+  {
+    "title": "DataFlex: A Unified Framework for Data-Centric Dynamic Training of Large Language Models",
+    "url": "https://huggingface.co/papers/2603.26164",
+    "arxiv_id": "2603.26164",
+    "summary": "Data-centric training has emerged as a promising direction for improving large language models (LLMs) by optimizing not only model parameters but also the selection, composition, and weighting of training data during optimization. However, existing approaches to data selection, data mixture optimization, and data reweighting are often developed in isolated codebases with inconsistent interfaces, hindering reproducibility, fair comparison, and practical integration. In this paper, we present Data...",
+    "authors": [
+      {
+        "_id": "69ccf51d1f6782218d973dbc",
+        "user": {
+          "_id": "6751a4fedf636b0140a9b873",
+          "avatarUrl": "/avatars/d75f7f6cfbfb4d646e0e557d1cfacdce.svg",
+          "isPro": false,
+          "fullname": "Hao Liang",
+          "user": "lhpku20010120",
+          "type": "user",
+          "name": "lhpku20010120"
+        },
+        "name": "Hao Liang",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-03T09:08:55.763Z",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dbd",
+        "name": "Zhengyang Zhao",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dbe",
+        "name": "Meiyi Qiang",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dbf",
+        "name": "Mingrui Chen",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dc0",
+        "name": "Lu Ma",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dc1",
+        "name": "Rongyi Yu",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dc2",
+        "name": "Hengyi Feng",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dc3",
+        "name": "Shixuan Sun",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dc4",
+        "name": "Zimo Meng",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dc5",
+        "name": "Xiaochen Ma",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dc6",
+        "name": "Xuanlin Yang",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dc7",
+        "name": "Qifeng Cai",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dc8",
+        "name": "Ruichuan An",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dc9",
+        "name": "Bohan Zeng",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dca",
+        "name": "Zhen Hao Wong",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dcb",
+        "name": "Chengyu Shen",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dcc",
+        "name": "Runming He",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dcd",
+        "name": "Zhaoyang Han",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dce",
+        "name": "Yaowei Zheng",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dcf",
+        "name": "Fangcheng Fu",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dd0",
+        "name": "Conghui He",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dd1",
+        "name": "Bin Cui",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dd2",
+        "name": "Zhiyu Li",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dd3",
+        "name": "Weinan E",
+        "hidden": false
+      },
+      {
+        "_id": "69ccf51d1f6782218d973dd4",
+        "name": "Wentao Zhang",
+        "hidden": false
+      }
+    ],
+    "category": "AI생성",
+    "relevance": "⭐관심",
+    "upvotes": 170
+  },
+  {
+    "title": "The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook",
+    "url": "https://huggingface.co/papers/2604.02029",
+    "arxiv_id": "2604.02029",
+    "summary": "Latent space is rapidly emerging as a native substrate for language-based models. While modern systems are still commonly understood through explicit token-level generation, an increasing body of work shows that many critical internal processes are more naturally carried out in continuous latent space than in human-readable verbal traces. This shift is driven by the structural limitations of explicit-space computation, including linguistic redundancy, discretization bottlenecks, sequential ineff...",
+    "authors": [
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a1f",
+        "name": "Xinlei Yu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a20",
+        "name": "Zhangquan Chen",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a21",
+        "name": "Yongbo He",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a22",
+        "name": "Tianyu Fu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a23",
+        "user": {
+          "_id": "67c443afb753bd020f9c97d8",
+          "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/no-auth/xbACBNLSopWmN5G1K8h_Y.png",
+          "isPro": false,
+          "fullname": "Cheng",
+          "user": "YangC777",
+          "type": "user",
+          "name": "YangC777"
+        },
+        "name": "Cheng Yang",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-03T09:07:49.776Z",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a24",
+        "name": "Chengming Xu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a25",
+        "name": "Yue Ma",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a26",
+        "name": "Xiaobin Hu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a27",
+        "name": "Zhe Cao",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a28",
+        "name": "Jie Xu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a29",
+        "name": "Guibin Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a2a",
+        "name": "Jiale Tao",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a2b",
+        "name": "Jiayi Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a2c",
+        "name": "Siyuan Ma",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a2d",
+        "name": "Kaituo Feng",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a2e",
+        "user": {
+          "_id": "69c8d4631d39906ca9ded454",
+          "avatarUrl": "/avatars/38bf2d0a4b84334940b701bd17333af2.svg",
+          "isPro": false,
+          "fullname": "Haojie Huang",
+          "user": "hhj-ai",
+          "type": "user",
+          "name": "hhj-ai"
+        },
+        "name": "Haojie Huang",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-03T09:07:47.828Z",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a2f",
+        "name": "Youxing Li",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a30",
+        "name": "Ronghao Chen",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a31",
+        "name": "Huacan Wang",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a32",
+        "name": "Chenglin Wu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a33",
+        "name": "Zikun Su",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a34",
+        "name": "Xiaogang Xu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a35",
+        "name": "Kelu Yao",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a36",
+        "name": "Kun Wang",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a37",
+        "name": "Chen Gao",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a38",
+        "name": "Yue Liao",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a39",
+        "name": "Ruqi Huang",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a3a",
+        "name": "Tao Jin",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a3b",
+        "name": "Cheng Tan",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a3c",
+        "name": "Jiangning Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a3d",
+        "name": "Wenqi Ren",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a3e",
+        "name": "Yanwei Fu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a3f",
+        "name": "Yong Liu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a40",
+        "name": "Yu Wang",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a41",
+        "name": "Xiangyu Yue",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a42",
+        "name": "Yu-Gang Jiang",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1c3ee02fdd68b91b7a43",
+        "name": "Shuicheng Yan",
+        "hidden": false
+      }
+    ],
+    "category": "AI생성",
+    "relevance": "⭐관심",
+    "upvotes": 123
+  },
+  {
+    "title": "Generative World Renderer",
+    "url": "https://huggingface.co/papers/2604.02329",
+    "arxiv_id": "2604.02329",
+    "summary": "Scaling generative inverse and forward rendering to real-world scenarios is bottlenecked by the limited realism and temporal coherence of existing synthetic datasets. To bridge this persistent domain gap, we introduce a large-scale, dynamic dataset curated from visually complex AAA games. Using a novel dual-screen stitched capture method, we extracted 4M continuous frames (720p/30 FPS) of synchronized RGB and five G-buffer channels across diverse scenes, visual effects, and environments, includi...",
+    "authors": [
+      {
+        "_id": "69cf1f95e02fdd68b91b7a47",
+        "name": "Zheng-Hui Huang",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1f95e02fdd68b91b7a48",
+        "user": {
+          "_id": "6307a98795b2ab342fec0cf7",
+          "avatarUrl": "/avatars/85b261bcdda4717a6e40491f6c7b7a89.svg",
+          "isPro": false,
+          "fullname": "Zhixiang Wang",
+          "user": "wangzx1994",
+          "type": "user",
+          "name": "wangzx1994"
+        },
+        "name": "Zhixiang Wang",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-03T09:07:45.712Z",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1f95e02fdd68b91b7a49",
+        "name": "Jiaming Tan",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1f95e02fdd68b91b7a4a",
+        "name": "Ruihan Yu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1f95e02fdd68b91b7a4b",
+        "name": "Yidan Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1f95e02fdd68b91b7a4c",
+        "name": "Bo Zheng",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1f95e02fdd68b91b7a4d",
+        "name": "Yu-Lun Liu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1f95e02fdd68b91b7a4e",
+        "name": "Yung-Yu Chuang",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1f95e02fdd68b91b7a4f",
+        "name": "Kaipeng Zhang",
+        "hidden": false
+      }
+    ],
+    "category": "영상",
+    "relevance": "⭐관심",
+    "upvotes": 87
+  },
+  {
+    "title": "SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization",
+    "url": "https://huggingface.co/papers/2604.02268",
+    "arxiv_id": "2604.02268",
+    "summary": "Agent skills, structured packages of procedural knowledge and executable resources that agents dynamically load at inference time, have become a reliable mechanism for augmenting LLM agents. Yet inference-time skill augmentation is fundamentally limited: retrieval noise introduces irrelevant guidance, injected skill content imposes substantial token overhead, and the model never truly acquires the knowledge it merely follows. We ask whether skills can instead be internalized into model parameter...",
+    "authors": [
+      {
+        "_id": "69cf1af5e02fdd68b91b7a12",
+        "user": {
+          "_id": "676127cf11b19ea602bb202a",
+          "avatarUrl": "/avatars/dfd802a24bd63e509728159ebb1769f6.svg",
+          "isPro": false,
+          "fullname": "Zhengxi Lu",
+          "user": "LZXzju",
+          "type": "user",
+          "name": "LZXzju"
+        },
+        "name": "Zhengxi Lu",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-03T09:07:58.508Z",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1af5e02fdd68b91b7a13",
+        "name": "Zhiyuan Yao",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1af5e02fdd68b91b7a14",
+        "name": "Jinyang Wu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1af5e02fdd68b91b7a15",
+        "name": "Chengcheng Han",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1af5e02fdd68b91b7a16",
+        "name": "Qi Gu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1af5e02fdd68b91b7a17",
+        "name": "Xunliang Cai",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1af5e02fdd68b91b7a18",
+        "name": "Weiming Lu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1af5e02fdd68b91b7a19",
+        "name": "Jun Xiao",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1af5e02fdd68b91b7a1a",
+        "name": "Yueting Zhuang",
+        "hidden": false
+      },
+      {
+        "_id": "69cf1af5e02fdd68b91b7a1b",
+        "name": "Yongliang Shen",
+        "hidden": false
+      }
+    ],
+    "category": "에이전트",
+    "relevance": "⭐관심",
+    "upvotes": 83
+  },
+  {
+    "title": "Steerable Visual Representations",
+    "url": "https://huggingface.co/papers/2604.02327",
+    "arxiv_id": "2604.02327",
+    "summary": "Pretrained Vision Transformers (ViTs) such as DINOv2 and MAE provide generic image features that can be applied to a variety of downstream tasks such as retrieval, classification, and segmentation. However, such representations tend to focus on the most salient visual cues in the image, with no way to direct them toward less prominent concepts of interest. In contrast, Multimodal LLMs can be guided with textual prompts, but the resulting representations tend to be language-centric and lose their...",
+    "authors": [
+      {
+        "_id": "69cf9739e02fdd68b91b7c2f",
+        "name": "Jona Ruthardt",
+        "hidden": false
+      },
+      {
+        "_id": "69cf9739e02fdd68b91b7c30",
+        "name": "Manu Gaur",
+        "hidden": false
+      },
+      {
+        "_id": "69cf9739e02fdd68b91b7c31",
+        "name": "Deva Ramanan",
+        "hidden": false
+      },
+      {
+        "_id": "69cf9739e02fdd68b91b7c32",
+        "name": "Makarand Tapaswi",
+        "hidden": false
+      },
+      {
+        "_id": "69cf9739e02fdd68b91b7c33",
+        "name": "Yuki M. Asano",
+        "hidden": false
+      }
+    ],
+    "category": "AI생성",
+    "relevance": "⭐관심",
+    "upvotes": 43
+  },
+  {
+    "title": "CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery",
+    "url": "https://huggingface.co/papers/2604.01658",
+    "arxiv_id": "2604.01658",
+    "summary": "Large language model (LLM)-based evolution is a promising approach for open-ended discovery, where progress requires sustained search and knowledge accumulation. Existing methods still rely heavily on fixed heuristics and hard-coded exploration rules, which limit the autonomy of LLM agents. We present CORAL, the first framework for autonomous multi-agent evolution on open-ended problems. CORAL replaces rigid control with long-running agents that explore, reflect, and collaborate through shared p...",
+    "authors": [
+      {
+        "_id": "69cfeffe2c523d36431fa7c2",
+        "name": "Ao Qu",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7c3",
+        "name": "Han Zheng",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7c4",
+        "name": "Zijian Zhou",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7c5",
+        "name": "Yihao Yan",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7c6",
+        "name": "Yihong Tang",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7c7",
+        "name": "Shao Yong Ong",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7c8",
+        "name": "Fenglu Hong",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7c9",
+        "name": "Kaichen Zhou",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7ca",
+        "name": "Chonghe Jiang",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7cb",
+        "name": "Minwei Kong",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7cc",
+        "name": "Jiacheng Zhu",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7cd",
+        "name": "Xuan Jiang",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7ce",
+        "name": "Sirui Li",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7cf",
+        "name": "Cathy Wu",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7d0",
+        "name": "Bryan Kian Hsiang Low",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7d1",
+        "name": "Jinhua Zhao",
+        "hidden": false
+      },
+      {
+        "_id": "69cfeffe2c523d36431fa7d2",
+        "name": "Paul Pu Liang",
+        "hidden": false
+      }
+    ],
+    "category": "에이전트",
+    "relevance": "🔥핵심",
+    "upvotes": 41
+  },
+  {
+    "title": "EgoSim: Egocentric World Simulator for Embodied Interaction Generation",
+    "url": "https://huggingface.co/papers/2604.01001",
+    "arxiv_id": "2604.01001",
+    "summary": "We introduce EgoSim, a closed-loop egocentric world simulator that generates spatially consistent interaction videos and persistently updates the underlying 3D scene state for continuous simulation. Existing egocentric simulators either lack explicit 3D grounding, causing structural drift under viewpoint changes, or treat the scene as static, failing to update world states across multi-stage interactions. EgoSim addresses both limitations by modeling 3D scenes as updatable world states. We gener...",
+    "authors": [
+      {
+        "_id": "69cea18ce02fdd68b91b78bc",
+        "user": {
+          "_id": "64edb581067fbb625f893628",
+          "avatarUrl": "/avatars/d59893d6f1f752bb73255bd78b325fe9.svg",
+          "isPro": false,
+          "fullname": "hao",
+          "user": "wuzhi-hao",
+          "type": "user",
+          "name": "wuzhi-hao"
+        },
+        "name": "Jinkun Hao",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-03T09:08:25.078Z",
+        "hidden": false
+      },
+      {
+        "_id": "69cea18ce02fdd68b91b78bd",
+        "name": "Mingda Jia",
+        "hidden": false
+      },
+      {
+        "_id": "69cea18ce02fdd68b91b78be",
+        "name": "Ruiyan Wang",
+        "hidden": false
+      },
+      {
+        "_id": "69cea18ce02fdd68b91b78bf",
+        "name": "Xihui Liu",
+        "hidden": false
+      },
+      {
+        "_id": "69cea18ce02fdd68b91b78c0",
+        "name": "Ran Yi",
+        "hidden": false
+      },
+      {
+        "_id": "69cea18ce02fdd68b91b78c1",
+        "name": "Lizhuang Ma",
+        "hidden": false
+      },
+      {
+        "_id": "69cea18ce02fdd68b91b78c2",
+        "name": "Jiangmiao Pang",
+        "hidden": false
+      },
+      {
+        "_id": "69cea18ce02fdd68b91b78c3",
+        "name": "Xudong Xu",
+        "hidden": false
+      }
+    ],
+    "category": "3D재구성",
+    "relevance": "⭐관심",
+    "upvotes": 34
+  },
+  {
+    "title": "VOID: Video Object and Interaction Deletion",
+    "url": "https://huggingface.co/papers/2604.02296",
+    "arxiv_id": "2604.02296",
+    "summary": "Existing video object removal methods excel at inpainting content \"behind\" the object and correcting appearance-level artifacts such as shadows and reflections. However, when the removed object has more significant interactions, such as collisions with other objects, current models fail to correct them and produce implausible results. We present VOID, a video object removal framework designed to perform physically-plausible inpainting in these complex scenarios. To train the model, we generate a...",
+    "authors": [
+      {
+        "_id": "69cf64dde02fdd68b91b7b58",
+        "user": {
+          "_id": "6475c37b04c82116f9bb2356",
+          "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/6475c37b04c82116f9bb2356/nfBllBSa0Vr_QvUEC84t3.jpeg",
+          "isPro": true,
+          "fullname": "Sam Motamed",
+          "user": "sam-motamed",
+          "type": "user",
+          "name": "sam-motamed"
+        },
+        "name": "Saman Motamed",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-03T09:07:16.138Z",
+        "hidden": false
+      },
+      {
+        "_id": "69cf64dde02fdd68b91b7b59",
+        "name": "William Harvey",
+        "hidden": false
+      },
+      {
+        "_id": "69cf64dde02fdd68b91b7b5a",
+        "name": "Benjamin Klein",
+        "hidden": false
+      },
+      {
+        "_id": "69cf64dde02fdd68b91b7b5b",
+        "name": "Luc Van Gool",
+        "hidden": false
+      },
+      {
+        "_id": "69cf64dde02fdd68b91b7b5c",
+        "name": "Zhuoning Yuan",
+        "hidden": false
+      },
+      {
+        "_id": "69cf64dde02fdd68b91b7b5d",
+        "name": "Ta-Ying Cheng",
+        "hidden": false
+      }
+    ],
+    "category": "영상",
+    "relevance": "⭐관심",
+    "upvotes": 29
+  },
+  {
+    "title": "LatentUM: Unleashing the Potential of Interleaved Cross-Modal Reasoning via a Latent-Space Unified Model",
+    "url": "https://huggingface.co/papers/2604.02097",
+    "arxiv_id": "2604.02097",
+    "summary": "Unified models (UMs) hold promise for their ability to understand and generate content across heterogeneous modalities. Compared to merely generating visual content, the use of UMs for interleaved cross-modal reasoning is more promising and valuable, e.g., for solving understanding problems that require dense visual thinking, improving visual generation through self-reflection, or modeling visual dynamics of the physical world guided by stepwise action interventions. However, existing UMs necess...",
+    "authors": [
+      {
+        "_id": "69cf3956e02fdd68b91b7a93",
+        "user": {
+          "_id": "66260b48d0a96a5db0de9722",
+          "avatarUrl": "/avatars/2901980e13b37af52cdb13bc5f8a6de3.svg",
+          "isPro": false,
+          "fullname": "Jiachun Jin",
+          "user": "orres",
+          "type": "user",
+          "name": "orres"
+        },
+        "name": "Jiachun Jin",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-03T09:07:44.022Z",
+        "hidden": false
+      },
+      {
+        "_id": "69cf3956e02fdd68b91b7a94",
+        "name": "Zetong Zhou",
+        "hidden": false
+      },
+      {
+        "_id": "69cf3956e02fdd68b91b7a95",
+        "name": "Xiao Yang",
+        "hidden": false
+      },
+      {
+        "_id": "69cf3956e02fdd68b91b7a96",
+        "name": "Hao Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69cf3956e02fdd68b91b7a97",
+        "name": "Pengfei Liu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf3956e02fdd68b91b7a98",
+        "name": "Jun Zhu",
+        "hidden": false
+      },
+      {
+        "_id": "69cf3956e02fdd68b91b7a99",
+        "name": "Zhijie Deng",
+        "hidden": false
+      }
+    ],
+    "category": "AI생성",
+    "relevance": "⭐관심",
+    "upvotes": 27
+  },
+  {
+    "title": "NearID: Identity Representation Learning via Near-identity Distractors",
+    "url": "https://huggingface.co/papers/2604.01973",
+    "arxiv_id": "2604.01973",
+    "summary": "When evaluating identity-focused tasks such as personalized generation and image editing, existing vision encoders entangle object identity with background context, leading to unreliable representations and metrics. We introduce the first principled framework to address this vulnerability using Near-identity (NearID) distractors, where semantically similar but distinct instances are placed on the exact same background as a reference image, eliminating contextual shortcuts and isolating identity ...",
+    "authors": [
+      {
+        "_id": "69cfae0ce02fdd68b91b7c8e",
+        "name": "Aleksandar Cvejic",
+        "hidden": false
+      },
+      {
+        "_id": "69cfae0ce02fdd68b91b7c8f",
+        "name": "Rameen Abdal",
+        "hidden": false
+      },
+      {
+        "_id": "69cfae0ce02fdd68b91b7c90",
+        "name": "Abdelrahman Eldesokey",
+        "hidden": false
+      },
+      {
+        "_id": "69cfae0ce02fdd68b91b7c91",
+        "name": "Bernard Ghanem",
+        "hidden": false
+      },
+      {
+        "_id": "69cfae0ce02fdd68b91b7c92",
+        "name": "Peter Wonka",
+        "hidden": false
+      }
+    ],
+    "category": "AI생성",
+    "relevance": "⭐관심",
+    "upvotes": 26
+  }
+]

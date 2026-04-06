@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔬 가상융합기술연구원 SOTA Weekly</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-weekly">🔬 가상융합기술연구원 SOTA Weekly</h1>
+<h2 id="2026-4-15-413-419">2026년 4월 15주차 (4/13 ~ 4/19)</h2>
+<blockquote>
+<p><strong>동서대학교 글로컬30 가상융합기술연구원</strong>
+AI·XR·영상 기술 최신 동향 리포트</p>
+</blockquote>
+<hr />
+<h2 id="1">📌 이번 주 핵심 1선</h2>
+<details>
+<summary><strong>1. CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery</strong> — Large language model (LLM)-based evolution is a promising ap</summary>
+<p>Large language model (LLM)-based evolution is a promising approach for open-ended discovery, where progress requires sustained search and knowledge accumulation. Existing methods still rely heavily on fixed heuristics and hard-coded exploration rules, which limit the autonomy of LLM agents. We present CORAL, the first framework for autonomous multi-agent evolution on open-ended problems. CORAL replaces rigid control with long-running agents that explore, reflect, and collaborate through shared p...</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📄 링크</td>
+<td><a href="https://huggingface.co/papers/2604.01658">https://huggingface.co/papers/2604.01658...</a></td>
+</tr>
+<tr>
+<td>🏷️ 카테고리</td>
+<td>에이전트</td>
+</tr>
+<tr>
+<td>🎯 관련성</td>
+<td>🔥핵심</td>
+</tr>
+<tr>
+<td>🧪 실증가능성</td>
+<td>🔧커스텀필요</td>
+</tr>
+<tr>
+<td>🏷️ 태그</td>
+<td>HuggingFace, AutoCollect, 한글</td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<h2 id="_1">🤖 에이전트</h2>
+<details>
+<summary><strong>SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization</strong> — Agent skills, structured packages of procedural knowledge and executable resourc</summary>
+<p>Agent skills, structured packages of procedural knowledge and executable resources that agents dynamically load at inference time, have become a reliable mechanism for augmenting LLM agents. Yet inference-time skill augmentation is fundamentally limited: retrieval noise introduces irrelevant guidance, injected skill content imposes substantial token overhead, and the model never truly acquires the knowledge it merely follows. We ask whether skills can instead be internalized into model parameter...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.02268">https://huggingface.co/papers/2604.02268...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<hr />
+<h2 id="ai">🎨 AI생성</h2>
+<details>
+<summary><strong>NearID: Identity Representation Learning via Near-identity Distractors</strong> — When evaluating identity-focused tasks such as personalized generation and image</summary>
+<p>When evaluating identity-focused tasks such as personalized generation and image editing, existing vision encoders entangle object identity with background context, leading to unreliable representations and metrics. We introduce the first principled framework to address this vulnerability using Near-identity (NearID) distractors, where semantically similar but distinct instances are placed on the exact same background as a reference image, eliminating contextual shortcuts and isolating identity ...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.01973">https://huggingface.co/papers/2604.01973...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>LatentUM: Unleashing the Potential of Interleaved Cross-Modal Reasoning via a Latent-Space Unified M</strong> — Unified models (UMs) hold promise for their ability to understand and generate c</summary>
+<p>Unified models (UMs) hold promise for their ability to understand and generate content across heterogeneous modalities. Compared to merely generating visual content, the use of UMs for interleaved cross-modal reasoning is more promising and valuable, e.g., for solving understanding problems that require dense visual thinking, improving visual generation through self-reflection, or modeling visual dynamics of the physical world guided by stepwise action interventions. However, existing UMs necess...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.02097">https://huggingface.co/papers/2604.02097...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>Steerable Visual Representations</strong> — Pretrained Vision Transformers (ViTs) such as DINOv2 and MAE provide generic ima</summary>
+<p>Pretrained Vision Transformers (ViTs) such as DINOv2 and MAE provide generic image features that can be applied to a variety of downstream tasks such as retrieval, classification, and segmentation. However, such representations tend to focus on the most salient visual cues in the image, with no way to direct them toward less prominent concepts of interest. In contrast, Multimodal LLMs can be guided with textual prompts, but the resulting representations tend to be language-centric and lose their...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.02327">https://huggingface.co/papers/2604.02327...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook</strong> — Latent space is rapidly emerging as a native substrate for language-based models</summary>
+<p>Latent space is rapidly emerging as a native substrate for language-based models. While modern systems are still commonly understood through explicit token-level generation, an increasing body of work shows that many critical internal processes are more naturally carried out in continuous latent space than in human-readable verbal traces. This shift is driven by the structural limitations of explicit-space computation, including linguistic redundancy, discretization bottlenecks, sequential ineff...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.02029">https://huggingface.co/papers/2604.02029...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>DataFlex: A Unified Framework for Data-Centric Dynamic Training of Large Language Models</strong> — Data-centric training has emerged as a promising direction for improving large l</summary>
+<p>Data-centric training has emerged as a promising direction for improving large language models (LLMs) by optimizing not only model parameters but also the selection, composition, and weighting of training data during optimization. However, existing approaches to data selection, data mixture optimization, and data reweighting are often developed in isolated codebases with inconsistent interfaces, hindering reproducibility, fair comparison, and practical integration. In this paper, we present Data...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2603.26164">https://huggingface.co/papers/2603.26164...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<hr />
+<h2 id="_2">🎬 영상</h2>
+<details>
+<summary><strong>VOID: Video Object and Interaction Deletion</strong> — Existing video object removal methods excel at inpainting content "behind" the o</summary>
+<p>Existing video object removal methods excel at inpainting content "behind" the object and correcting appearance-level artifacts such as shadows and reflections. However, when the removed object has more significant interactions, such as collisions with other objects, current models fail to correct them and produce implausible results. We present VOID, a video object removal framework designed to perform physically-plausible inpainting in these complex scenarios. To train the model, we generate a...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.02296">https://huggingface.co/papers/2604.02296...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>Generative World Renderer</strong> — Scaling generative inverse and forward rendering to real-world scenarios is bott</summary>
+<p>Scaling generative inverse and forward rendering to real-world scenarios is bottlenecked by the limited realism and temporal coherence of existing synthetic datasets. To bridge this persistent domain gap, we introduce a large-scale, dynamic dataset curated from visually complex AAA games. Using a novel dual-screen stitched capture method, we extracted 4M continuous frames (720p/30 FPS) of synchronized RGB and five G-buffer channels across diverse scenes, visual effects, and environments, includi...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.02329">https://huggingface.co/papers/2604.02329...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<hr />
+<h2 id="3d">🧊 3D재구성</h2>
+<details>
+<summary><strong>EgoSim: Egocentric World Simulator for Embodied Interaction Generation</strong> — We introduce EgoSim, a closed-loop egocentric world simulator that generates spa</summary>
+<p>We introduce EgoSim, a closed-loop egocentric world simulator that generates spatially consistent interaction videos and persistently updates the underlying 3D scene state for continuous simulation. Existing egocentric simulators either lack explicit 3D grounding, causing structural drift under viewpoint changes, or treat the scene as static, failing to update world states across multi-stage interactions. EgoSim addresses both limitations by modeling 3D scenes as updatable world states. We gener...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.01001">https://huggingface.co/papers/2604.01001...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<hr />
+<h2 id="_3">📊 이번 주 통계</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>수치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>총 수집</td>
+<td>10개</td>
+</tr>
+<tr>
+<td>🔥 핵심</td>
+<td>1개</td>
+</tr>
+<tr>
+<td>✅ 즉시 실증 가능</td>
+<td>0개</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_4">🔬 실증 권장 항목</h2>
+<p>코드가 공개되어 <strong>이번 주 내 테스트 가능</strong>한 항목:</p>
+<hr />
+<h2 id="_5">🔗 전체 데이터베이스</h2>
+<p><a href="https://www.notion.so/2f8f02707d88803da78fd90dce7379b6">→ Notion SOTA Database 바로가기</a></p>
+<hr />
+<p><strong>발행</strong>: 동서대학교 글로컬30 가상융합기술연구원<br />
+<strong>발행일</strong>: 2026년 04월 06일<br />
+<strong>문의</strong>: jsdavid88@g.dongseo.ac.kr</p>
+<hr />
+<p><em>© 2026 동서대학교 가상융합기술연구원</em></p>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

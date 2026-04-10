@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTA Daily Report - 2026-W15-daily-0411</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-daily-report-2026-w15-daily-0411">SOTA Daily Report - 2026-W15-daily-0411</h1>
+<p><strong>수집일:</strong> 2026-04-11 (토) | <strong>출처:</strong> HuggingFace Daily Papers</p>
+<hr />
+<h2 id="_1">요약</h2>
+<ul>
+<li>수집 명령: <code>python auto_collect.py --limit 10 --no-translate</code></li>
+<li>대상: HuggingFace Daily Papers 상위 10편</li>
+<li>방식: 노션 저장 후, 제목/초록을 바탕으로 아르카가 직접 한글 번역·요약</li>
+</ul>
+<hr />
+<h2 id="_2">오늘의 논문</h2>
+<h3 id="1-ai-sft">1. [AI생성] 추론 SFT의 일반화 다시 보기: 최적화·데이터·모델 능력의 조건부 분석</h3>
+<ul>
+<li><strong>원제:</strong> Rethinking Generalization in Reasoning SFT: A Conditional Analysis on Optimization, Data, and Model Capability</li>
+<li><strong>Upvotes:</strong> 152</li>
+<li><strong>한줄 요약:</strong> 추론 SFT의 일반화 실패는 본질이 아니라 최적화·데이터 구성·기반 모델 역량이 함께 맞아야 드러나는 조건부 현상이라고 재해석한다.</li>
+<li><strong>원문 링크:</strong> https://huggingface.co/papers/2604.06628</li>
+</ul>
+<h3 id="2-skillclaw">2. [에이전트] SkillClaw: 에이전트 진화기로 스킬을 집단적으로 진화시키기</h3>
+<ul>
+<li><strong>원제:</strong> SkillClaw: Let Skills Evolve Collectively with Agentic Evolver</li>
+<li><strong>Upvotes:</strong> 143</li>
+<li><strong>한줄 요약:</strong> 여러 사용자와 실행 로그에서 얻은 성공·실패 신호를 합쳐 정적 스킬을 지속적으로 개선하는 집단 진화형 에이전트 스킬 프레임워크다.</li>
+<li><strong>원문 링크:</strong> https://huggingface.co/papers/2604.08377</li>
+</ul>
+<h3 id="3-hy-embodied-05-embodied">3. [에이전트] HY-Embodied-0.5: 실세계 에이전트를 위한 embodied 파운데이션 모델</h3>
+<ul>
+<li><strong>원제:</strong> HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents</li>
+<li><strong>Upvotes:</strong> 126</li>
+<li><strong>한줄 요약:</strong> 공간·시간 시각 인지와 예측·상호작용·계획 능력을 강화해 현실 로봇/에이전트에 맞춘 embodied VLM 계열 모델군을 제안한다.</li>
+<li><strong>원문 링크:</strong> https://huggingface.co/papers/2604.07430</li>
+</ul>
+<h3 id="4-">4. [영상] 숫자가 말할 때: 텍스트-비디오 확산모델에서 숫자 표현과 시각 인스턴스 정렬</h3>
+<ul>
+<li><strong>원제:</strong> When Numbers Speak: Aligning Textual Numerals and Visual Instances in Text-to-Video Diffusion Models</li>
+<li><strong>Upvotes:</strong> 104</li>
+<li><strong>한줄 요약:</strong> 프롬프트 속 숫자 개수와 실제 영상에 생성되는 객체 수가 어긋나는 문제를 줄여 텍스트-비디오 생성의 수량 일관성을 높이려는 연구다.</li>
+<li><strong>원문 링크:</strong> https://huggingface.co/papers/2604.08546</li>
+</ul>
+<h3 id="5-clawbench-ai">5. [에이전트] ClawBench: AI 에이전트는 일상적인 온라인 작업을 끝낼 수 있는가?</h3>
+<ul>
+<li><strong>원제:</strong> ClawBench: Can AI Agents Complete Everyday Online Tasks?</li>
+<li><strong>Upvotes:</strong> 81</li>
+<li><strong>한줄 요약:</strong> 실제 웹 환경의 일상 과업을 기준으로 에이전트의 끝까지 해내는 능력과 실패 패턴을 측정하는 현실형 벤치마크다.</li>
+<li><strong>원문 링크:</strong> https://huggingface.co/papers/2604.08523</li>
+</ul>
+<h3 id="6-ai-megastyle-">6. [AI생성] MegaStyle: 일관된 텍스트-이미지 스타일 매핑으로 다양하고 확장 가능한 스타일 데이터셋 구축</h3>
+<ul>
+<li><strong>원제:</strong> MegaStyle: Constructing Diverse and Scalable Style Dataset via Consistent Text-to-Image Style Mapping</li>
+<li><strong>Upvotes:</strong> 79</li>
+<li><strong>한줄 요약:</strong> 스타일 표현을 대규모로 정리·생성해 텍스트-이미지 모델이 더 넓고 일관된 시각 스타일 공간을 학습하도록 만드는 데이터셋 구축 연구다.</li>
+<li><strong>원문 링크:</strong> https://huggingface.co/papers/2604.08364</li>
+</ul>
+<h3 id="7-lpm-10">7. [에이전트] LPM 1.0: 비디오 기반 캐릭터 퍼포먼스 모델</h3>
+<ul>
+<li><strong>원제:</strong> LPM 1.0: Video-based Character Performance Model</li>
+<li><strong>Upvotes:</strong> 36</li>
+<li><strong>한줄 요약:</strong> 영상에서 캐릭터의 동작과 퍼포먼스를 학습해 더 자연스럽고 제어 가능한 캐릭터 행동 생성에 쓰려는 비디오 기반 모델이다.</li>
+<li><strong>원문 링크:</strong> https://huggingface.co/papers/2604.07823</li>
+</ul>
+<h3 id="8-knowu-bench">8. [에이전트] KnowU-Bench: 상호작용적·능동적·개인화된 모바일 에이전트 평가를 향하여</h3>
+<ul>
+<li><strong>원제:</strong> KnowU-Bench: Towards Interactive, Proactive, and Personalized Mobile Agent Evaluation</li>
+<li><strong>Upvotes:</strong> 33</li>
+<li><strong>한줄 요약:</strong> 모바일 에이전트가 단순 명령 수행을 넘어 사용자 맥락을 이해하고 선제적으로 돕는지 평가하기 위한 개인화 벤치마크다.</li>
+<li><strong>원문 링크:</strong> https://huggingface.co/papers/2604.08455</li>
+</ul>
+<h3 id="9-llm">9. [에이전트] LLM 에이전트의 외재화: 메모리·스킬·프로토콜·하네스 엔지니어링에 대한 통합 리뷰</h3>
+<ul>
+<li><strong>원제:</strong> Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols, and Harness Engineering</li>
+<li><strong>Upvotes:</strong> 33</li>
+<li><strong>한줄 요약:</strong> 에이전트 성능을 모델 내부가 아니라 외부 메모리, 스킬, 실행 프로토콜, 평가 하네스로 확장하는 흐름을 체계적으로 정리한 리뷰다.</li>
+<li><strong>원문 링크:</strong> https://huggingface.co/papers/2604.08224</li>
+</ul>
+<h3 id="10-ai-dmax">10. [AI생성] DMax: 확산 언어모델을 위한 공격적 병렬 디코딩</h3>
+<ul>
+<li><strong>원제:</strong> DMax: Aggressive Parallel Decoding for dLLMs</li>
+<li><strong>Upvotes:</strong> 28</li>
+<li><strong>한줄 요약:</strong> 확산 언어모델의 병렬 디코딩에서 생기는 오류 누적을 줄여 더 많은 토큰을 동시에 예측하면서도 품질을 유지하는 방법이다.</li>
+<li><strong>원문 링크:</strong> https://huggingface.co/papers/2604.08302</li>
+</ul>
+<hr />
+<h2 id="_3">아르카 코멘트</h2>
+<p>이번 묶음은 <strong>에이전트 평가·진화·내재화</strong>가 제일 강하다. SkillClaw, ClawBench, KnowU-Bench, Externalization 리뷰가 한 줄로 이어지고, 생성 쪽에서는 추론 SFT 일반화·스타일 데이터셋·병렬 디코딩처럼 <strong>학습 효율과 표현 통제력</strong>을 밀어 올리는 논문이 눈에 띈다.</p>
+<p><em>생성: 아르카 (Arca) | 2026-04-11 08:00 KST</em></p>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

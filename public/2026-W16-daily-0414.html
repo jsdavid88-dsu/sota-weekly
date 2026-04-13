@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTA Daily Report - 2026-W16-daily-0414</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-daily-report-2026-w16-daily-0414">SOTA Daily Report - 2026-W16-daily-0414</h1>
+<p><strong>생성시각:</strong> 2026-04-14 08:00 KST<br />
+<strong>소스:</strong> HuggingFace Daily Papers + Arca 한글 번역</p>
+<hr />
+<h2 id="_1">요약 포맷</h2>
+<p>논문 번호 | 카테고리 | 한글 제목 | upvotes | 한줄 요약</p>
+<ol>
+<li><strong>[AI생성] 추론 SFT의 일반화를 다시 보기: 최적화·데이터·모델 역량의 조건부 분석</strong>  </li>
+<li>원제: Rethinking Generalization in Reasoning SFT: A Conditional Analysis on Optimization, Data, and Model Capability  </li>
+<li>upvotes: <strong>304</strong>  </li>
+<li>
+<p>한줄 요약: 추론용 SFT는 무조건 암기에 머무는 게 아니라, 최적화 길이·데이터 품질·기반 모델 역량이 맞아떨어질 때 도메인 밖으로도 일반화될 수 있음을 보인다.</p>
+</li>
+<li>
+<p><strong>[에이전트] ClawBench: AI 에이전트는 일상적인 온라인 업무를 끝낼 수 있는가?</strong>  </p>
+</li>
+<li>원제: ClawBench: Can AI Agents Complete Everyday Online Tasks?  </li>
+<li>upvotes: <strong>247</strong>  </li>
+<li>
+<p>한줄 요약: 구매, 예약, 지원서 제출 같은 실제 웹 작업 153개를 라이브 서비스 환경에서 평가해 차세대 웹 에이전트의 실전 수행력을 측정하는 벤치마크다.</p>
+</li>
+<li>
+<p><strong>[3D재구성] WildDet3D: 개방 환경에서의 프롬프트 가능한 3D 검출 확장</strong>  </p>
+</li>
+<li>원제: WildDet3D: Scaling Promptable 3D Detection in the Wild  </li>
+<li>upvotes: <strong>199</strong>  </li>
+<li>
+<p>한줄 요약: 자연어 프롬프트로 다양한 객체를 찾을 수 있는 3D 검출기를 실제 환경 규모로 확장해, 개방형 3D 인지의 범용성을 끌어올리려는 연구다.</p>
+</li>
+<li>
+<p><strong>[AI생성] MegaStyle: 일관된 텍스트-이미지 스타일 매핑으로 대규모 스타일 데이터셋 구축하기</strong>  </p>
+</li>
+<li>원제: MegaStyle: Constructing Diverse and Scalable Style Dataset via Consistent Text-to-Image Style Mapping  </li>
+<li>upvotes: <strong>92</strong>  </li>
+<li>
+<p>한줄 요약: 17만 개 스타일 프롬프트와 40만 개 콘텐츠 프롬프트를 조합해 140만 장 규모의 스타일 데이터셋을 만들고, 스타일 인코더와 스타일 전이 모델 학습에 활용한다.</p>
+</li>
+<li>
+<p><strong>[3D재구성] FORGE: 제조 시나리오를 위한 세밀한 멀티모달 평가</strong>  </p>
+</li>
+<li>원제: FORGE: Fine-grained Multimodal Evaluation for Manufacturing Scenarios  </li>
+<li>upvotes: <strong>82</strong>  </li>
+<li>
+<p>한줄 요약: 제조 현장의 복합 시각·언어·공간 정보를 더 정밀하게 읽어내는 모델을 평가하기 위해, 실제 산업 맥락에 맞춘 멀티모달 벤치마크를 제안한다.</p>
+</li>
+<li>
+<p><strong>[3D재구성] RefineAnything: 완벽한 국부 디테일을 위한 멀티모달 영역별 정제</strong>  </p>
+</li>
+<li>원제: RefineAnything: Multimodal Region-Specific Refinement for Perfect Local Details  </li>
+<li>upvotes: <strong>35</strong>  </li>
+<li>
+<p>한줄 요약: 텍스트와 시각 단서를 함께 사용해 이미지·장면의 특정 영역만 선택적으로 다듬어, 전체 구조를 해치지 않고 국부 품질을 개선하는 방법이다.</p>
+</li>
+<li>
+<p><strong>[3D재구성] OpenSpatial: 공간 지능 강화를 위한 원칙 기반 데이터 엔진</strong>  </p>
+</li>
+<li>원제: OpenSpatial: A Principled Data Engine for Empowering Spatial Intelligence  </li>
+<li>upvotes: <strong>34</strong>  </li>
+<li>
+<p>한줄 요약: 공간 이해와 추론에 필요한 데이터를 체계적으로 수집·정제·생성하는 엔진을 설계해, 범용 공간 지능 모델의 학습 기반을 넓히려는 작업이다.</p>
+</li>
+<li>
+<p><strong>[영상] Matrix-Game 3.0: 장기 기억을 갖춘 실시간 스트리밍 인터랙티브 월드 모델</strong>  </p>
+</li>
+<li>원제: Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory  </li>
+<li>upvotes: <strong>32</strong>  </li>
+<li>
+<p>한줄 요약: 실시간 상호작용과 스트리밍 생성, 그리고 긴 시간축 기억을 결합해 더 지속적이고 반응성 높은 인터랙티브 월드 모델을 구현한다.</p>
+</li>
+<li>
+<p><strong>[에이전트] 웹 에이전트 역량의 구조화된 증류는 일반화를 가능하게 한다</strong>  </p>
+</li>
+<li>원제: Structured Distillation of Web Agent Capabilities Enables Generalization  </li>
+<li>upvotes: <strong>18</strong>  </li>
+<li>
+<p>한줄 요약: 웹 에이전트의 행동 패턴을 구조적으로 증류해 새로운 사이트와 작업에도 더 잘 적응하도록 만드는 일반화 전략을 제시한다.</p>
+</li>
+<li>
+<p><strong>[영상] ELT: 시각 생성용 탄성 루프드 트랜스포머</strong>  </p>
+</li>
+<li>원제: ELT: Elastic Looped Transformers for Visual Generation  </li>
+<li>upvotes: <strong>15</strong>  </li>
+<li>한줄 요약: 반복 루프 구조를 가진 트랜스포머로 계산량과 생성 품질의 균형을 조절해, 시각 생성 모델의 효율과 표현력을 함께 높이려는 접근이다.</li>
+</ol>
+<hr />
+<h2 id="_2">메모</h2>
+<ul>
+<li>본 리포트는 <code>python auto_collect.py --limit 10 --no-translate</code> 실행 결과 기준으로 상위 10개를 정리했다.</li>
+<li>제목과 요약은 Arca가 직접 한글화했다.</li>
+</ul>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

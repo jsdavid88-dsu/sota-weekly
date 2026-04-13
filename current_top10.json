@@ -1,0 +1,1057 @@
+[
+  {
+    "title": "Rethinking Generalization in Reasoning SFT: A Conditional Analysis on Optimization, Data, and Model Capability",
+    "url": "https://huggingface.co/papers/2604.06628",
+    "arxiv_id": "2604.06628",
+    "summary": "A prevailing narrative in LLM post-training holds that supervised finetuning (SFT) memorizes while reinforcement learning (RL) generalizes. We revisit this claim for reasoning SFT with long chain-of-thought (CoT) supervision and find that cross-domain generalization is not absent but conditional, jointly shaped by optimization dynamics, training data, and base-model capability. Some reported failures are under-optimization artifacts: cross-domain performance first degrades before recovering and ...",
+    "authors": [
+      {
+        "_id": "69d87f8679548974da94661d",
+        "name": "Qihan Ren",
+        "hidden": false
+      },
+      {
+        "_id": "69d87f8679548974da94661e",
+        "name": "Peng Wang",
+        "hidden": false
+      },
+      {
+        "_id": "69d87f8679548974da94661f",
+        "name": "Ruikun Cai",
+        "hidden": false
+      },
+      {
+        "_id": "69d87f8679548974da946620",
+        "name": "Shuai Shao",
+        "hidden": false
+      },
+      {
+        "_id": "69d87f8679548974da946621",
+        "name": "Dadi Guo",
+        "hidden": false
+      },
+      {
+        "_id": "69d87f8679548974da946622",
+        "name": "Yuejin Xie",
+        "hidden": false
+      },
+      {
+        "_id": "69d87f8679548974da946623",
+        "name": "Yafu Li",
+        "hidden": false
+      },
+      {
+        "_id": "69d87f8679548974da946624",
+        "name": "Quanshi Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69d87f8679548974da946625",
+        "name": "Xia Hu",
+        "hidden": false
+      },
+      {
+        "_id": "69d87f8679548974da946626",
+        "name": "Jing Shao",
+        "hidden": false
+      },
+      {
+        "_id": "69d87f8679548974da946627",
+        "name": "Dongrui Liu",
+        "hidden": false
+      }
+    ],
+    "category": "AI생성",
+    "relevance": "⭐관심",
+    "upvotes": 152
+  },
+  {
+    "title": "SkillClaw: Let Skills Evolve Collectively with Agentic Evolver",
+    "url": "https://huggingface.co/papers/2604.08377",
+    "arxiv_id": "2604.08377",
+    "summary": "Large language model (LLM) agents such as OpenClaw rely on reusable skills to perform complex tasks, yet these skills remain largely static after deployment. As a result, similar workflows, tool usage patterns, and failure modes are repeatedly rediscovered across users, preventing the system from improving with experience. While interactions from different users provide complementary signals about when a skill works or fails, existing systems lack a mechanism to convert such heterogeneous experi...",
+    "authors": [
+      {
+        "_id": "69d85acc79548974da9464a7",
+        "name": "Ziyu Ma",
+        "hidden": false
+      },
+      {
+        "_id": "69d85acc79548974da9464a8",
+        "name": "Shidong Yang",
+        "hidden": false
+      },
+      {
+        "_id": "69d85acc79548974da9464a9",
+        "name": "Yuxiang Ji",
+        "hidden": false
+      },
+      {
+        "_id": "69d85acc79548974da9464aa",
+        "name": "Xucong Wang",
+        "hidden": false
+      },
+      {
+        "_id": "69d85acc79548974da9464ab",
+        "name": "Yong Wang",
+        "hidden": false
+      },
+      {
+        "_id": "69d85acc79548974da9464ac",
+        "name": "Yiming Hu",
+        "hidden": false
+      },
+      {
+        "_id": "69d85acc79548974da9464ad",
+        "name": "Tongwen Huang",
+        "hidden": false
+      },
+      {
+        "_id": "69d85acc79548974da9464ae",
+        "name": "Xiangxiang Chu",
+        "hidden": false
+      }
+    ],
+    "category": "에이전트",
+    "relevance": "⭐관심",
+    "upvotes": 143
+  },
+  {
+    "title": "HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents",
+    "url": "https://huggingface.co/papers/2604.07430",
+    "arxiv_id": "2604.07430",
+    "summary": "We introduce HY-Embodied-0.5, a family of foundation models specifically designed for real-world embodied agents. To bridge the gap between general Vision-Language Models (VLMs) and the demands of embodied agents, our models are developed to enhance the core capabilities required by embodied intelligence: spatial and temporal visual perception, alongside advanced embodied reasoning for prediction, interaction, and planning. The HY-Embodied-0.5 suite comprises two primary variants: an efficient m...",
+    "authors": [
+      {
+        "_id": "69d858ac79548974da946469",
+        "name": "Tencent Robotics X",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da94646a",
+        "name": "HY Vision Team",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da94646c",
+        "name": "Xumin Yu",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da94646d",
+        "user": {
+          "_id": "64f001bfabd9fb1914398bd5",
+          "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64f001bfabd9fb1914398bd5/9teH82hkBI4csIz_WQh5q.jpeg",
+          "isPro": false,
+          "fullname": "liuzuyan",
+          "user": "Zuyan",
+          "type": "user",
+          "name": "Zuyan"
+        },
+        "name": "Zuyan Liu",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-10T07:43:58.012Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da94646e",
+        "user": {
+          "_id": "660e422a6455d218e942a668",
+          "avatarUrl": "/avatars/43ebd2b438da2003ad340a2ea174ad0b.svg",
+          "isPro": false,
+          "fullname": "Ziyi Wang",
+          "user": "ziyiwang",
+          "type": "user",
+          "name": "ziyiwang"
+        },
+        "name": "Ziyi Wang",
+        "status": "admin_assigned",
+        "statusLastChangedAt": "2026-04-10T07:51:00.470Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da94646f",
+        "name": "He Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da946470",
+        "user": {
+          "_id": "63e4865354f51ea342d45d78",
+          "avatarUrl": "/avatars/2e7eccc878751331ca8b282f53e38899.svg",
+          "isPro": false,
+          "fullname": "Yongming Rao",
+          "user": "raoyongming",
+          "type": "user",
+          "name": "raoyongming"
+        },
+        "name": "Yongming Rao",
+        "status": "admin_assigned",
+        "statusLastChangedAt": "2026-04-10T07:51:08.986Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da946471",
+        "user": {
+          "_id": "6505a02f9310ce8c400edc63",
+          "avatarUrl": "/avatars/bbf781594fc8c812316711aa8e2797aa.svg",
+          "isPro": false,
+          "fullname": "Fangfu Liu",
+          "user": "Liuff23",
+          "type": "user",
+          "name": "Liuff23"
+        },
+        "name": "Fangfu Liu",
+        "status": "admin_assigned",
+        "statusLastChangedAt": "2026-04-10T07:51:32.933Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da946472",
+        "name": "Yani Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da946473",
+        "user": {
+          "_id": "6522e4fbd89bc7773ddc4b58",
+          "avatarUrl": "/avatars/3e9b158af52c5f738a3eae72dcbb3824.svg",
+          "isPro": false,
+          "fullname": "Ruowen Zhao",
+          "user": "zzzrw",
+          "type": "user",
+          "name": "zzzrw"
+        },
+        "name": "Ruowen Zhao",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-10T07:43:53.994Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da946474",
+        "name": "Oran Wang",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da946475",
+        "name": "Yves Liang",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da946476",
+        "name": "Haitao Lin",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da946477",
+        "name": "Minghui Wang",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da946478",
+        "name": "Yubo Dong",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da946479",
+        "name": "Kevin Cheng",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da94647a",
+        "user": {
+          "_id": "642149592cc2b3c39e7ef6c9",
+          "avatarUrl": "/avatars/fed5d447375cd8c3b2bc9e096fe681de.svg",
+          "isPro": false,
+          "fullname": "Bolin Ni",
+          "user": "nbl97",
+          "type": "user",
+          "name": "nbl97"
+        },
+        "name": "Bolin Ni",
+        "status": "admin_assigned",
+        "statusLastChangedAt": "2026-04-10T07:51:56.263Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da94647b",
+        "name": "Rui Huang",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da94647c",
+        "name": "Han Hu",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da94647d",
+        "name": "Zhengyou Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da94647e",
+        "name": "Linus",
+        "hidden": false
+      },
+      {
+        "_id": "69d858ac79548974da94647f",
+        "name": "Shunyu Yao",
+        "hidden": false
+      }
+    ],
+    "category": "에이전트",
+    "relevance": "⭐관심",
+    "upvotes": 126
+  },
+  {
+    "title": "When Numbers Speak: Aligning Textual Numerals and Visual Instances in Text-to-Video Diffusion Models",
+    "url": "https://huggingface.co/papers/2604.08546",
+    "arxiv_id": "2604.08546",
+    "summary": "Text-to-video diffusion models have enabled open-ended video synthesis, but often struggle with generating the correct number of objects specified in a prompt. We introduce NUMINA , a training-free identify-then-guide framework for improved numerical alignment. NUMINA identifies prompt-layout inconsistencies by selecting discriminative self- and cross-attention heads to derive a countable latent layout. It then refines this layout conservatively and modulates cross-attention to guide regeneratio...",
+    "authors": [
+      {
+        "_id": "69d8623079548974da946565",
+        "name": "Zhengyang Sun",
+        "hidden": false
+      },
+      {
+        "_id": "69d8623079548974da946566",
+        "name": "Yu Chen",
+        "hidden": false
+      },
+      {
+        "_id": "69d8623079548974da946567",
+        "user": {
+          "_id": "6717c5c36bc2876059ed23ab",
+          "avatarUrl": "/avatars/52c68fb315760df5ef9323cd8ada5a3c.svg",
+          "isPro": false,
+          "fullname": "Xin Zhou",
+          "user": "LMD0311",
+          "type": "user",
+          "name": "LMD0311"
+        },
+        "name": "Xin Zhou",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-10T13:34:03.958Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d8623079548974da946568",
+        "user": {
+          "_id": "65f425f9bfb2f1451f237827",
+          "avatarUrl": "/avatars/36b0bce9364d88f10081847befd29787.svg",
+          "isPro": false,
+          "fullname": "Xiaofan Li",
+          "user": "FuNz",
+          "type": "user",
+          "name": "FuNz"
+        },
+        "name": "Xiaofan Li",
+        "status": "admin_assigned",
+        "statusLastChangedAt": "2026-04-10T07:50:09.991Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d8623079548974da946569",
+        "name": "Xiwu Chen",
+        "hidden": false
+      },
+      {
+        "_id": "69d8623079548974da94656a",
+        "user": {
+          "_id": "67467b5979406f42a14517e9",
+          "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/67467b5979406f42a14517e9/wgnUxTd8vWOo0Cr2gaoyG.jpeg",
+          "isPro": false,
+          "fullname": "Dingkang Liang",
+          "user": "dkliang",
+          "type": "user",
+          "name": "dkliang"
+        },
+        "name": "Dingkang Liang",
+        "status": "admin_assigned",
+        "statusLastChangedAt": "2026-04-10T07:49:59.849Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d8623079548974da94656b",
+        "name": "Xiang Bai",
+        "hidden": false
+      }
+    ],
+    "category": "영상",
+    "relevance": "⭐관심",
+    "upvotes": 104
+  },
+  {
+    "title": "ClawBench: Can AI Agents Complete Everyday Online Tasks?",
+    "url": "https://huggingface.co/papers/2604.08523",
+    "arxiv_id": "2604.08523",
+    "summary": "AI agents may be able to automate your inbox, but can they automate other routine aspects of your life? Everyday online tasks offer a realistic yet unsolved testbed for evaluating the next generation of AI agents. To this end, we introduce ClawBench, an evaluation framework of 153 simple tasks that people need to accomplish regularly in their lives and work, spanning 144 live platforms across 15 categories, from completing purchases and booking appointments to submitting job applications. These ...",
+    "authors": [
+      {
+        "_id": "69d85bf879548974da9464df",
+        "user": {
+          "_id": "63b908d0e3c78740d8e950d0",
+          "avatarUrl": "/avatars/3e80075e92aebdfea712f70b00d5ec7d.svg",
+          "isPro": true,
+          "fullname": "Yuxuan Zhang",
+          "user": "Reacherx",
+          "type": "user",
+          "name": "Reacherx"
+        },
+        "name": "Yuxuan Zhang",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-10T07:43:18.089Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464e0",
+        "name": "Yubo Wang",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464e1",
+        "name": "Yipeng Zhu",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464e2",
+        "user": {
+          "_id": "647076467fd7ecdbd0ea03b1",
+          "avatarUrl": "/avatars/6e090ea5f88977c6f70544175094c2a6.svg",
+          "isPro": false,
+          "fullname": "Penghui Du",
+          "user": "eternaldolphin",
+          "type": "user",
+          "name": "eternaldolphin"
+        },
+        "name": "Penghui Du",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-10T07:43:24.166Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464e3",
+        "user": {
+          "_id": "66de7d16c35391da431b55ca",
+          "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/66de7d16c35391da431b55ca/A3WmfTw7vY1EcXFnnGyo9.jpeg",
+          "isPro": false,
+          "fullname": "Junwen Miao",
+          "user": "meksamiao",
+          "type": "user",
+          "name": "meksamiao"
+        },
+        "name": "Junwen Miao",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-10T13:34:08.055Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464e4",
+        "name": "Xuan Lu",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464e5",
+        "user": {
+          "_id": "65437ef98f84f869869cb698",
+          "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65437ef98f84f869869cb698/xRFcyXwQq7szB-GfAeoHu.png",
+          "isPro": false,
+          "fullname": "Wendong XU",
+          "user": "kirailol",
+          "type": "user",
+          "name": "kirailol"
+        },
+        "name": "Wendong Xu",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-10T13:34:09.800Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464e6",
+        "name": "Yunzhuo Hao",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464e7",
+        "name": "Songcheng Cai",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464e8",
+        "name": "Xiaochen Wang",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464e9",
+        "name": "Huaisong Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464ea",
+        "name": "Xian Wu",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464eb",
+        "user": {
+          "_id": "65095591cc02352e1e106d0a",
+          "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65095591cc02352e1e106d0a/QgNhKBItxxHY927pBVBai.jpeg",
+          "isPro": false,
+          "fullname": "Tom Lu",
+          "user": "eigentom",
+          "type": "user",
+          "name": "eigentom"
+        },
+        "name": "Yi Lu",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-10T13:34:11.615Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464ec",
+        "name": "Minyi Lei",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464ed",
+        "name": "Kai Zou",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464ee",
+        "name": "Huifeng Yin",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464ef",
+        "name": "Ping Nie",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464f0",
+        "name": "Liang Chen",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464f1",
+        "name": "Dongfu Jiang",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464f2",
+        "name": "Wenhu Chen",
+        "hidden": false
+      },
+      {
+        "_id": "69d85bf879548974da9464f3",
+        "name": "Kelsey R. Allen",
+        "hidden": false
+      }
+    ],
+    "category": "에이전트",
+    "relevance": "⭐관심",
+    "upvotes": 81
+  },
+  {
+    "title": "MegaStyle: Constructing Diverse and Scalable Style Dataset via Consistent Text-to-Image Style Mapping",
+    "url": "https://huggingface.co/papers/2604.08364",
+    "arxiv_id": "2604.08364",
+    "summary": "In this paper, we introduce MegaStyle, a novel and scalable data curation pipeline that constructs an intra-style consistent, inter-style diverse and high-quality style dataset. We achieve this by leveraging the consistent text-to-image style mapping capability of current large generative models, which can generate images in the same style from a given style description. Building on this foundation, we curate a diverse and balanced prompt gallery with 170K style prompts and 400K content prompts,...",
+    "authors": [
+      {
+        "_id": "69d86a9179548974da9465c6",
+        "user": {
+          "_id": "663b5f08389689b517109b77",
+          "avatarUrl": "/avatars/b8d66083b9e15c7f7924b4bbc8ca3861.svg",
+          "isPro": false,
+          "fullname": "Gaojunyao",
+          "user": "Gaojunyao",
+          "type": "user",
+          "name": "Gaojunyao"
+        },
+        "name": "Junyao Gao",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-10T07:43:00.047Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d86a9179548974da9465c7",
+        "name": "Sibo Liu",
+        "hidden": false
+      },
+      {
+        "_id": "69d86a9179548974da9465c8",
+        "name": "Jiaxing Li",
+        "hidden": false
+      },
+      {
+        "_id": "69d86a9179548974da9465c9",
+        "name": "Yanan Sun",
+        "hidden": false
+      },
+      {
+        "_id": "69d86a9179548974da9465ca",
+        "name": "Yuanpeng Tu",
+        "hidden": false
+      },
+      {
+        "_id": "69d86a9179548974da9465cb",
+        "name": "Fei Shen",
+        "hidden": false
+      },
+      {
+        "_id": "69d86a9179548974da9465cc",
+        "name": "Weidong Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69d86a9179548974da9465cd",
+        "name": "Cairong Zhao",
+        "hidden": false
+      },
+      {
+        "_id": "69d86a9179548974da9465ce",
+        "name": "Jun Zhang",
+        "hidden": false
+      }
+    ],
+    "category": "AI생성",
+    "relevance": "🔥핵심",
+    "upvotes": 79
+  },
+  {
+    "title": "LPM 1.0: Video-based Character Performance Model",
+    "url": "https://huggingface.co/papers/2604.07823",
+    "arxiv_id": "2604.07823",
+    "summary": "Performance, the externalization of intent, emotion, and personality through visual, vocal, and temporal behavior, is what makes a character alive. Learning such performance from video is a promising alternative to traditional 3D pipelines. However, existing video models struggle to jointly achieve high expressiveness, real-time inference, and long-horizon identity stability, a tension we call the performance trilemma. Conversation is the most comprehensive performance scenario, as characters si...",
+    "authors": [
+      {
+        "_id": "69d8611679548974da946540",
+        "name": "Ailing Zeng",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946541",
+        "name": "Casper Yang",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946542",
+        "name": "Chauncey Ge",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946543",
+        "user": {
+          "_id": "61f24cbb88b9b5abbe184a85",
+          "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/61f24cbb88b9b5abbe184a85/OvcJRU51yI8pdO77NBHLb.jpeg",
+          "isPro": false,
+          "fullname": "zhangfan",
+          "user": "Fan-s",
+          "type": "user",
+          "name": "Fan-s"
+        },
+        "name": "Eddie Zhang",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-10T07:43:14.848Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946544",
+        "name": "Garvey Xu",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946545",
+        "name": "Gavin Lin",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946546",
+        "name": "Gilbert Gu",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946547",
+        "name": "Jeremy Pi",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946548",
+        "name": "Leo Li",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946549",
+        "name": "Mingyi Shi",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da94654a",
+        "name": "Sheng Bi",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da94654b",
+        "name": "Steven Tang",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da94654c",
+        "name": "Thorn Hang",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da94654d",
+        "name": "Tobey Guo",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da94654e",
+        "name": "Vincent Li",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da94654f",
+        "user": {
+          "_id": "68ff33ed69960d4bba1eab4b",
+          "avatarUrl": "/avatars/85796145f41ace33cd69e753f617fdc4.svg",
+          "isPro": false,
+          "fullname": "Yuchen Mao",
+          "user": "YuchenMao",
+          "type": "user",
+          "name": "YuchenMao"
+        },
+        "name": "Xin Tong",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-10T13:34:05.608Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946550",
+        "name": "Yikang Li",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946551",
+        "name": "Yuchen Sun",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946552",
+        "name": "Yue",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946553",
+        "name": "Zhao",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946554",
+        "name": "Yuhan Lu",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946555",
+        "name": "Yuwei Li",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946556",
+        "name": "Zane Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946557",
+        "name": "Zeshi Yang",
+        "hidden": false
+      },
+      {
+        "_id": "69d8611679548974da946558",
+        "name": "Zi Ye",
+        "hidden": false
+      }
+    ],
+    "category": "에이전트",
+    "relevance": "⭐관심",
+    "upvotes": 36
+  },
+  {
+    "title": "KnowU-Bench: Towards Interactive, Proactive, and Personalized Mobile Agent Evaluation",
+    "url": "https://huggingface.co/papers/2604.08455",
+    "arxiv_id": "2604.08455",
+    "summary": "Personalized mobile agents that infer user preferences and calibrate proactive assistance hold great promise as everyday digital assistants, yet existing benchmarks fail to capture what this requires. Prior work evaluates preference recovery from static histories or intent prediction from fixed contexts. Neither tests whether an agent can elicit missing preferences through interaction, nor whether it can decide when to intervene, seek consent, or remain silent in a live GUI environment. We intro...",
+    "authors": [
+      {
+        "_id": "69d856cc79548974da946456",
+        "name": "Tongbo Chen",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da946457",
+        "name": "Zhengxi Lu",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da946458",
+        "name": "Zhan Xu",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da946459",
+        "name": "Guocheng Shao",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da94645a",
+        "name": "Shaohan Zhao",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da94645b",
+        "name": "Fei Tang",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da94645c",
+        "name": "Yong Du",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da94645d",
+        "name": "Kaitao Song",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da94645e",
+        "name": "Yizhou Liu",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da94645f",
+        "user": {
+          "_id": "64098738342c26884c792c93",
+          "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/64098738342c26884c792c93/SxBUd-wLrl-PjQsrVYJte.jpeg",
+          "isPro": false,
+          "fullname": "Yuchen Yan",
+          "user": "yanyc",
+          "type": "user",
+          "name": "yanyc"
+        },
+        "name": "Yuchen Yan",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-10T07:43:59.940Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da946460",
+        "name": "Wenqi Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da946461",
+        "name": "Xu Tan",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da946462",
+        "name": "Weiming Lu",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da946463",
+        "name": "Jun Xiao",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da946464",
+        "name": "Yueting Zhuang",
+        "hidden": false
+      },
+      {
+        "_id": "69d856cc79548974da946465",
+        "name": "Yongliang Shen",
+        "hidden": false
+      }
+    ],
+    "category": "에이전트",
+    "relevance": "⭐관심",
+    "upvotes": 33
+  },
+  {
+    "title": "Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering",
+    "url": "https://huggingface.co/papers/2604.08224",
+    "arxiv_id": "2604.08224",
+    "summary": "Large language model (LLM) agents are increasingly built less by changing model weights than by reorganizing the runtime around them. Capabilities that earlier systems expected the model to recover internally are now externalized into memory stores, reusable skills, interaction protocols, and the surrounding harness that makes these modules reliable in practice. This paper reviews that shift through the lens of externalization. Drawing on the idea of cognitive artifacts, we argue that agent infr...",
+    "authors": [
+      {
+        "_id": "69d855ce79548974da94642d",
+        "name": "Chenyu Zhou",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da94642e",
+        "name": "Huacan Chai",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da94642f",
+        "name": "Wenteng Chen",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da946430",
+        "user": {
+          "_id": "68ce79cfcbc51af45b18a75e",
+          "avatarUrl": "/avatars/a0ed9a4999988626f9e7a67ae0d1c818.svg",
+          "isPro": false,
+          "fullname": "SII-ZihanGuo",
+          "user": "SII-ZihanGuo",
+          "type": "user",
+          "name": "SII-ZihanGuo"
+        },
+        "name": "Zihan Guo",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-10T07:44:09.658Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da946431",
+        "name": "Rong Shan",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da946432",
+        "name": "Yuanyi Song",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da946433",
+        "name": "Tianyi Xu",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da946434",
+        "name": "Yingxuan Yang",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da946435",
+        "name": "Aofan Yu",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da946436",
+        "name": "Weiming Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da946437",
+        "name": "Congming Zheng",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da946438",
+        "name": "Jiachen Zhu",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da946439",
+        "name": "Zeyu Zheng",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da94643a",
+        "name": "Zhuosheng Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da94643b",
+        "name": "Xingyu Lou",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da94643c",
+        "name": "Changwang Zhang",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da94643d",
+        "name": "Zhihui Fu",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da94643e",
+        "name": "Jun Wang",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da94643f",
+        "name": "Weiwen Liu",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da946440",
+        "name": "Jianghao Lin",
+        "hidden": false
+      },
+      {
+        "_id": "69d855ce79548974da946441",
+        "name": "Weinan Zhang",
+        "hidden": false
+      }
+    ],
+    "category": "에이전트",
+    "relevance": "⭐관심",
+    "upvotes": 33
+  },
+  {
+    "title": "DMax: Aggressive Parallel Decoding for dLLMs",
+    "url": "https://huggingface.co/papers/2604.08302",
+    "arxiv_id": "2604.08302",
+    "summary": "We present DMax, a new paradigm for efficient diffusion language models (dLLMs). It mitigates error accumulation in parallel decoding, enabling aggressive decoding parallelism while preserving generation quality. Unlike conventional masked dLLMs that decode through a binary mask-to-token transition, DMax reformulates decoding as a progressive self-refinement from mask embeddings to token embeddings. At the core of our approach is On-Policy Uniform Training, a novel training strategy that efficie...",
+    "authors": [
+      {
+        "_id": "69d855c179548974da946425",
+        "user": {
+          "_id": "65811eeaa2284a018e51f1ba",
+          "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/noauth/dH8UZj6Kk5HJkI1DItCNm.jpeg",
+          "isPro": false,
+          "fullname": "Zigeng Chen",
+          "user": "Zigeng",
+          "type": "user",
+          "name": "Zigeng"
+        },
+        "name": "Zigeng Chen",
+        "status": "claimed_verified",
+        "statusLastChangedAt": "2026-04-10T07:44:11.645Z",
+        "hidden": false
+      },
+      {
+        "_id": "69d855c179548974da946426",
+        "name": "Gongfan Fang",
+        "hidden": false
+      },
+      {
+        "_id": "69d855c179548974da946427",
+        "name": "Xinyin Ma",
+        "hidden": false
+      },
+      {
+        "_id": "69d855c179548974da946428",
+        "name": "Ruonan Yu",
+        "hidden": false
+      },
+      {
+        "_id": "69d855c179548974da946429",
+        "name": "Xinchao Wang",
+        "hidden": false
+      }
+    ],
+    "category": "AI생성",
+    "relevance": "⭐관심",
+    "upvotes": 28
+  }
+]

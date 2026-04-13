@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔬 가상융합기술연구원 SOTA Weekly</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.6rem; margin: 2rem 0 1rem; color: var(--primary); }
+        h2 { font-size: 1.3rem; margin: 1.5rem 0 0.8rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        h3 { font-size: 1.1rem; margin: 1.2rem 0 0.5rem; }
+        p { margin: 0.8rem 0; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg);
+            font-weight: 600;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--muted);
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        ul, ol {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        li { margin: 0.3rem 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        details summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary::before {
+            content: "▶ ";
+            font-size: 0.75rem;
+        }
+        details[open] summary::before {
+            content: "▼ ";
+        }
+        details[open] summary {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+        details > :not(summary) {
+            padding: 0 1.2rem;
+        }
+        details p:last-child, details table:last-child {
+            margin-bottom: 1rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            table { font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🔬</div>
+            <h1>가상융합기술연구원</h1>
+            <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
+        </header>
+        <main>
+            <h1 id="sota-weekly">🔬 가상융합기술연구원 SOTA Weekly</h1>
+<h2 id="2026-4-16-420-426">2026년 4월 16주차 (4/20 ~ 4/26)</h2>
+<blockquote>
+<p><strong>동서대학교 글로컬30 가상융합기술연구원</strong>
+AI·XR·영상 기술 최신 동향 리포트</p>
+</blockquote>
+<hr />
+<h2 id="1">📌 이번 주 핵심 1선</h2>
+<details>
+<summary><strong>1. MegaStyle: Constructing Diverse and Scalable Style Dataset via Consistent Text-to-Image Style Mappin</strong> — In this paper, we introduce MegaStyle, a novel and scalable </summary>
+<p>In this paper, we introduce MegaStyle, a novel and scalable data curation pipeline that constructs an intra-style consistent, inter-style diverse and high-quality style dataset. We achieve this by leveraging the consistent text-to-image style mapping capability of current large generative models, which can generate images in the same style from a given style description. Building on this foundation, we curate a diverse and balanced prompt gallery with 170K style prompts and 400K content prompts,...</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📄 링크</td>
+<td><a href="https://huggingface.co/papers/2604.08364">https://huggingface.co/papers/2604.08364...</a></td>
+</tr>
+<tr>
+<td>🏷️ 카테고리</td>
+<td>AI생성</td>
+</tr>
+<tr>
+<td>🎯 관련성</td>
+<td>🔥핵심</td>
+</tr>
+<tr>
+<td>🧪 실증가능성</td>
+<td>🔧커스텀필요</td>
+</tr>
+<tr>
+<td>🏷️ 태그</td>
+<td>HuggingFace, AutoCollect, 한글</td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<h2 id="ai">🎨 AI생성</h2>
+<details>
+<summary><strong>DMax: Aggressive Parallel Decoding for dLLMs</strong> — We present DMax, a new paradigm for efficient diffusion language models (dLLMs).</summary>
+<p>We present DMax, a new paradigm for efficient diffusion language models (dLLMs). It mitigates error accumulation in parallel decoding, enabling aggressive decoding parallelism while preserving generation quality. Unlike conventional masked dLLMs that decode through a binary mask-to-token transition, DMax reformulates decoding as a progressive self-refinement from mask embeddings to token embeddings. At the core of our approach is On-Policy Uniform Training, a novel training strategy that efficie...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.08302">https://huggingface.co/papers/2604.08302...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>Rethinking Generalization in Reasoning SFT: A Conditional Analysis on Optimization, Data, and Model </strong> — A prevailing narrative in LLM post-training holds that supervised finetuning (SF</summary>
+<p>A prevailing narrative in LLM post-training holds that supervised finetuning (SFT) memorizes while reinforcement learning (RL) generalizes. We revisit this claim for reasoning SFT with long chain-of-thought (CoT) supervision and find that cross-domain generalization is not absent but conditional, jointly shaped by optimization dynamics, training data, and base-model capability. Some reported failures are under-optimization artifacts: cross-domain performance first degrades before recovering and ...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.06628">https://huggingface.co/papers/2604.06628...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<hr />
+<h2 id="_1">🤖 에이전트</h2>
+<details>
+<summary><strong>KnowU-Bench: Towards Interactive, Proactive, and Personalized Mobile Agent Evaluation</strong> — Personalized mobile agents that infer user preferences and calibrate proactive a</summary>
+<p>Personalized mobile agents that infer user preferences and calibrate proactive assistance hold great promise as everyday digital assistants, yet existing benchmarks fail to capture what this requires. Prior work evaluates preference recovery from static histories or intent prediction from fixed contexts. Neither tests whether an agent can elicit missing preferences through interaction, nor whether it can decide when to intervene, seek consent, or remain silent in a live GUI environment. We intro...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.08455">https://huggingface.co/papers/2604.08455...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>LPM 1.0: Video-based Character Performance Model</strong> — Performance, the externalization of intent, emotion, and personality through vis</summary>
+<p>Performance, the externalization of intent, emotion, and personality through visual, vocal, and temporal behavior, is what makes a character alive. Learning such performance from video is a promising alternative to traditional 3D pipelines. However, existing video models struggle to jointly achieve high expressiveness, real-time inference, and long-horizon identity stability, a tension we call the performance trilemma. Conversation is the most comprehensive performance scenario, as characters si...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.07823">https://huggingface.co/papers/2604.07823...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents</strong> — We introduce HY-Embodied-0.</summary>
+<p>We introduce HY-Embodied-0.5, a family of foundation models specifically designed for real-world embodied agents. To bridge the gap between general Vision-Language Models (VLMs) and the demands of embodied agents, our models are developed to enhance the core capabilities required by embodied intelligence: spatial and temporal visual perception, alongside advanced embodied reasoning for prediction, interaction, and planning. The HY-Embodied-0.5 suite comprises two primary variants: an efficient m...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.07430">https://huggingface.co/papers/2604.07430...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>ClawBench: Can AI Agents Complete Everyday Online Tasks?</strong> — AI agents may be able to automate your inbox, but can they automate other routin</summary>
+<p>AI agents may be able to automate your inbox, but can they automate other routine aspects of your life? Everyday online tasks offer a realistic yet unsolved testbed for evaluating the next generation of AI agents. To this end, we introduce ClawBench, an evaluation framework of 153 simple tasks that people need to accomplish regularly in their lives and work, spanning 144 live platforms across 15 categories, from completing purchases and booking appointments to submitting job applications. These ...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.08523">https://huggingface.co/papers/2604.08523...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<details>
+<summary><strong>SkillClaw: Let Skills Evolve Collectively with Agentic Evolver</strong> — Large language model (LLM) agents such as OpenClaw rely on reusable skills to pe</summary>
+<p>Large language model (LLM) agents such as OpenClaw rely on reusable skills to perform complex tasks, yet these skills remain largely static after deployment. As a result, similar workflows, tool usage patterns, and failure modes are repeatedly rediscovered across users, preventing the system from improving with experience. While interactions from different users provide complementary signals about when a skill works or fails, existing systems lack a mechanism to convert such heterogeneous experi...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.08377">https://huggingface.co/papers/2604.08377...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<hr />
+<h2 id="3d">🧊 3D재구성</h2>
+<details>
+<summary><strong>OpenVLThinkerV2: A Generalist Multimodal Reasoning Model for Multi-domain Visual Tasks</strong> — Group Relative Policy Optimization (GRPO) has emerged as the de facto Reinforcem</summary>
+<p>Group Relative Policy Optimization (GRPO) has emerged as the de facto Reinforcement Learning (RL) objective driving recent advancements in Multimodal Large Language Models. However, extending this success to open-source multimodal generalist models remains heavily constrained by two primary challenges: the extreme variance in reward topologies across diverse visual tasks, and the inherent difficulty of balancing fine-grained perception with multi-step reasoning capabilities. To address these iss...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.08539">https://huggingface.co/papers/2604.08539...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<hr />
+<h2 id="_2">🎬 영상</h2>
+<details>
+<summary><strong>When Numbers Speak: Aligning Textual Numerals and Visual Instances in Text-to-Video Diffusion Models</strong> — Text-to-video diffusion models have enabled open-ended video synthesis, but ofte</summary>
+<p>Text-to-video diffusion models have enabled open-ended video synthesis, but often struggle with generating the correct number of objects specified in a prompt. We introduce NUMINA , a training-free identify-then-guide framework for improved numerical alignment. NUMINA identifies prompt-layout inconsistencies by selecting discriminative self- and cross-attention heads to derive a countable latent layout. It then refines this layout conservatively and modulates cross-attention to guide regeneratio...</p>
+<ul>
+<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.08546">https://huggingface.co/papers/2604.08546...</a></li>
+<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+</ul>
+</details>
+<hr />
+<h2 id="_3">📊 이번 주 통계</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>수치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>총 수집</td>
+<td>10개</td>
+</tr>
+<tr>
+<td>🔥 핵심</td>
+<td>1개</td>
+</tr>
+<tr>
+<td>✅ 즉시 실증 가능</td>
+<td>0개</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_4">🔬 실증 권장 항목</h2>
+<p>코드가 공개되어 <strong>이번 주 내 테스트 가능</strong>한 항목:</p>
+<hr />
+<h2 id="_5">🔗 전체 데이터베이스</h2>
+<p><a href="https://www.notion.so/2f8f02707d88803da78fd90dce7379b6">→ Notion SOTA Database 바로가기</a></p>
+<hr />
+<p><strong>발행</strong>: 동서대학교 글로컬30 가상융합기술연구원<br />
+<strong>발행일</strong>: 2026년 04월 13일<br />
+<strong>문의</strong>: jsdavid88@g.dongseo.ac.kr</p>
+<hr />
+<p><em>© 2026 동서대학교 가상융합기술연구원</em></p>
+        </main>
+        <footer>
+            <p>© 2026 동서대학교 가상융합기술연구원</p>
+            <p>편집: AI 리서치 어시스턴트 아르카</p>
+        </footer>
+    </div>
+</body>
+</html>

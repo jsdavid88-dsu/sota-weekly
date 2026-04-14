@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔬 가상융합기술연구원 SOTA Weekly</title>
+    <title>SOTA Weekly Report — 2026-W16</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -153,164 +153,77 @@
             <p>동서대학교 글로컬30 | AI·XR·영상 기술 동향</p>
         </header>
         <main>
-            <h1 id="sota-weekly">🔬 가상융합기술연구원 SOTA Weekly</h1>
-<h2 id="2026-4-16-420-426">2026년 4월 16주차 (4/20 ~ 4/26)</h2>
+            <h1 id="sota-weekly-report-2026-w16">SOTA Weekly Report — 2026-W16</h1>
 <blockquote>
-<p><strong>동서대학교 글로컬30 가상융합기술연구원</strong>
-AI·XR·영상 기술 최신 동향 리포트</p>
+<p>수집일: 2026-04-15 | 출처: HuggingFace Daily Papers | 수집 기준: 2026-04-14</p>
 </blockquote>
 <hr />
-<h2 id="1">📌 이번 주 핵심 1선</h2>
-<details>
-<summary><strong>1. MegaStyle: Constructing Diverse and Scalable Style Dataset via Consistent Text-to-Image Style Mappin</strong> — In this paper, we introduce MegaStyle, a novel and scalable </summary>
-<p>In this paper, we introduce MegaStyle, a novel and scalable data curation pipeline that constructs an intra-style consistent, inter-style diverse and high-quality style dataset. We achieve this by leveraging the consistent text-to-image style mapping capability of current large generative models, which can generate images in the same style from a given style description. Building on this foundation, we curate a diverse and balanced prompt gallery with 170K style prompts and 400K content prompts,...</p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>내용</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>📄 링크</td>
-<td><a href="https://huggingface.co/papers/2604.08364">https://huggingface.co/papers/2604.08364...</a></td>
-</tr>
-<tr>
-<td>🏷️ 카테고리</td>
-<td>AI생성</td>
-</tr>
-<tr>
-<td>🎯 관련성</td>
-<td>🔥핵심</td>
-</tr>
-<tr>
-<td>🧪 실증가능성</td>
-<td>🔧커스텀필요</td>
-</tr>
-<tr>
-<td>🏷️ 태그</td>
-<td>HuggingFace, AutoCollect, 한글</td>
-</tr>
-</tbody>
-</table>
-</details>
-<hr />
-<h2 id="ai">🎨 AI생성</h2>
-<details>
-<summary><strong>DMax: Aggressive Parallel Decoding for dLLMs</strong> — We present DMax, a new paradigm for efficient diffusion language models (dLLMs).</summary>
-<p>We present DMax, a new paradigm for efficient diffusion language models (dLLMs). It mitigates error accumulation in parallel decoding, enabling aggressive decoding parallelism while preserving generation quality. Unlike conventional masked dLLMs that decode through a binary mask-to-token transition, DMax reformulates decoding as a progressive self-refinement from mask embeddings to token embeddings. At the core of our approach is On-Policy Uniform Training, a novel training strategy that efficie...</p>
+<h2 id="_1">📊 이번 주 요약</h2>
 <ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.08302">https://huggingface.co/papers/2604.08302...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+<li>수집 논문: 10개 (상위 upvotes 기준)</li>
+<li>주요 카테고리: AI생성(5), 영상(2), 에이전트(3)</li>
+<li>핫 토픽: LLM 양자 코드 생성 벤치마크, 어텐션 싱크 서베이, 통합 영상 생성</li>
 </ul>
-</details>
-<details>
-<summary><strong>Rethinking Generalization in Reasoning SFT: A Conditional Analysis on Optimization, Data, and Model </strong> — A prevailing narrative in LLM post-training holds that supervised finetuning (SF</summary>
-<p>A prevailing narrative in LLM post-training holds that supervised finetuning (SFT) memorizes while reinforcement learning (RL) generalizes. We revisit this claim for reasoning SFT with long chain-of-thought (CoT) supervision and find that cross-domain generalization is not absent but conditional, jointly shaped by optimization dynamics, training data, and base-model capability. Some reported failures are under-optimization artifacts: cross-domain performance first degrades before recovering and ...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.06628">https://huggingface.co/papers/2604.06628...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
 <hr />
-<h2 id="_1">🤖 에이전트</h2>
-<details>
-<summary><strong>KnowU-Bench: Towards Interactive, Proactive, and Personalized Mobile Agent Evaluation</strong> — Personalized mobile agents that infer user preferences and calibrate proactive a</summary>
-<p>Personalized mobile agents that infer user preferences and calibrate proactive assistance hold great promise as everyday digital assistants, yet existing benchmarks fail to capture what this requires. Prior work evaluates preference recovery from static histories or intent prediction from fixed contexts. Neither tests whether an agent can elicit missing preferences through interaction, nor whether it can decide when to intervene, seek consent, or remain silent in a live GUI environment. We intro...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.08455">https://huggingface.co/papers/2604.08455...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
-<details>
-<summary><strong>LPM 1.0: Video-based Character Performance Model</strong> — Performance, the externalization of intent, emotion, and personality through vis</summary>
-<p>Performance, the externalization of intent, emotion, and personality through visual, vocal, and temporal behavior, is what makes a character alive. Learning such performance from video is a promising alternative to traditional 3D pipelines. However, existing video models struggle to jointly achieve high expressiveness, real-time inference, and long-horizon identity stability, a tension we call the performance trilemma. Conversation is the most comprehensive performance scenario, as characters si...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.07823">https://huggingface.co/papers/2604.07823...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
-<details>
-<summary><strong>HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents</strong> — We introduce HY-Embodied-0.</summary>
-<p>We introduce HY-Embodied-0.5, a family of foundation models specifically designed for real-world embodied agents. To bridge the gap between general Vision-Language Models (VLMs) and the demands of embodied agents, our models are developed to enhance the core capabilities required by embodied intelligence: spatial and temporal visual perception, alongside advanced embodied reasoning for prediction, interaction, and planning. The HY-Embodied-0.5 suite comprises two primary variants: an efficient m...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.07430">https://huggingface.co/papers/2604.07430...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
-<details>
-<summary><strong>ClawBench: Can AI Agents Complete Everyday Online Tasks?</strong> — AI agents may be able to automate your inbox, but can they automate other routin</summary>
-<p>AI agents may be able to automate your inbox, but can they automate other routine aspects of your life? Everyday online tasks offer a realistic yet unsolved testbed for evaluating the next generation of AI agents. To this end, we introduce ClawBench, an evaluation framework of 153 simple tasks that people need to accomplish regularly in their lives and work, spanning 144 live platforms across 15 categories, from completing purchases and booking appointments to submitting job applications. These ...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.08523">https://huggingface.co/papers/2604.08523...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
-<details>
-<summary><strong>SkillClaw: Let Skills Evolve Collectively with Agentic Evolver</strong> — Large language model (LLM) agents such as OpenClaw rely on reusable skills to pe</summary>
-<p>Large language model (LLM) agents such as OpenClaw rely on reusable skills to perform complex tasks, yet these skills remain largely static after deployment. As a result, similar workflows, tool usage patterns, and failure modes are repeatedly rediscovered across users, preventing the system from improving with experience. While interactions from different users provide complementary signals about when a skill works or fails, existing systems lack a mechanism to convert such heterogeneous experi...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.08377">https://huggingface.co/papers/2604.08377...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
+<h2 id="_2">📄 논문 목록</h2>
+<h3 id="1-ai-quanbench-llm">1. [AI생성] QuanBench+: LLM 기반 양자 코드 생성을 위한 통합 멀티프레임워크 벤치마크</h3>
+<p><strong>원제:</strong> QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation<br />
+<strong>Upvotes:</strong> 109 ⭐<br />
+<strong>한줄 요약:</strong> LLM이 양자 컴퓨팅 코드를 얼마나 잘 생성하는지 Qiskit·Cirq·PennyLane 등 여러 프레임워크 걸쳐 통합 평가하는 최초의 벤치마크.</p>
 <hr />
-<h2 id="3d">🧊 3D재구성</h2>
-<details>
-<summary><strong>OpenVLThinkerV2: A Generalist Multimodal Reasoning Model for Multi-domain Visual Tasks</strong> — Group Relative Policy Optimization (GRPO) has emerged as the de facto Reinforcem</summary>
-<p>Group Relative Policy Optimization (GRPO) has emerged as the de facto Reinforcement Learning (RL) objective driving recent advancements in Multimodal Large Language Models. However, extending this success to open-source multimodal generalist models remains heavily constrained by two primary challenges: the extreme variance in reward topologies across diverse visual tasks, and the inherent difficulty of balancing fine-grained perception with multi-step reasoning capabilities. To address these iss...</p>
+<h3 id="2-ai">2. [AI생성] 과거는 지나가지 않는다: 메모리 강화 동적 보상 쉐이핑</h3>
+<p><strong>원제:</strong> The Past Is Not Past: Memory-Enhanced Dynamic Reward Shaping<br />
+<strong>Upvotes:</strong> 80 ⭐<br />
+<strong>한줄 요약:</strong> 에이전트가 과거 경험을 메모리로 활용해 보상 함수를 동적으로 조형함으로써 장기 과제에서 성능을 향상시키는 강화학습 프레임워크.</p>
+<hr />
+<h3 id="3-ai">3. [AI생성] 트랜스포머의 어텐션 싱크: 활용·해석·완화에 관한 서베이</h3>
+<p><strong>원제:</strong> Attention Sink in Transformers: A Survey on Utilization, Interpretation and Mitigation<br />
+<strong>Upvotes:</strong> 55 ⭐<br />
+<strong>한줄 요약:</strong> 첫 번째 토큰에 어텐션이 집중되는 '어텐션 싱크' 현상의 원인·영향·해결책을 체계적으로 정리한 종합 서베이.</p>
+<hr />
+<h3 id="4-omnishow-">4. [영상] OmniShow: 멀티모달 조건 통합을 통한 인간-객체 상호작용 영상 생성</h3>
+<p><strong>원제:</strong> OmniShow: Unifying Multimodal Conditions for Human Object Interaction Video Generation<br />
+<strong>Upvotes:</strong> 55 ⭐<br />
+<strong>한줄 요약:</strong> 텍스트·포즈·깊이·마스크 등 다양한 멀티모달 조건을 하나의 프레임워크로 통합해 인간과 객체 간 상호작용 영상을 고품질로 생성하는 모델.</p>
+<hr />
+<h3 id="5-ai-uv">5. [AI생성] 스트립을 토큰으로: 네이티브 UV 세그멘테이션을 이용한 아티스트 메시 생성</h3>
+<p><strong>원제:</strong> Strips as Tokens: Artist Mesh Generation with Native UV Segmentation<br />
+<strong>Upvotes:</strong> 44 ⭐<br />
+<strong>한줄 요약:</strong> 3D 메시의 UV 스트립을 토큰 단위로 처리해 아티스트 워크플로우에 적합한 구조적 메시를 자동 생성하는 생성 모델.</p>
+<hr />
+<h3 id="6-uni-vigu">6. [영상] Uni-ViGU: 확산 기반 영상 생성기를 통한 통합 영상 생성 및 이해</h3>
+<p><strong>원제:</strong> Uni-ViGU: Towards Unified Video Generation and Understanding via A Diffusion-Based Video Generator<br />
+<strong>Upvotes:</strong> 39 ⭐<br />
+<strong>한줄 요약:</strong> 하나의 확산 모델로 영상 생성과 이해(캡셔닝·QA)를 동시에 처리하는 통합 아키텍처 제안.</p>
+<hr />
+<h3 id="7-ai">7. [AI생성] 유사 통합: 엔트로피 프로빙으로 드러난 통합 멀티모달 모델의 발산적 정보 패턴</h3>
+<p><strong>원제:</strong> Pseudo-Unification: Entropy Probing Reveals Divergent Information Patterns in Unified Multimodal Models<br />
+<strong>Upvotes:</strong> 36 ⭐<br />
+<strong>한줄 요약:</strong> 멀티모달 통합 모델이 사실은 모달리티별로 발산된 내부 표현을 가진다는 것을 엔트로피 프로빙으로 밝혀낸 해석 가능성 연구.</p>
+<hr />
+<h3 id="8-codetracer">8. [에이전트] CodeTracer: 에이전트 상태 추적을 향하여</h3>
+<p><strong>원제:</strong> CodeTracer: Towards Traceable Agent States<br />
+<strong>Upvotes:</strong> 29 ⭐<br />
+<strong>한줄 요약:</strong> 코드 실행 에이전트의 내부 상태 변화를 단계별로 추적·기록해 디버깅과 감사를 가능하게 하는 추적 프레임워크.</p>
+<hr />
+<h3 id="9-cocoabench">9. [에이전트] CocoaBench: 실제 환경에서 통합 디지털 에이전트 평가</h3>
+<p><strong>원제:</strong> CocoaBench: Evaluating Unified Digital Agents in the Wild<br />
+<strong>Upvotes:</strong> 28 ⭐<br />
+<strong>한줄 요약:</strong> 브라우저·터미널·앱 등 실제 환경에서 디지털 에이전트의 작업 수행 능력을 포괄적으로 평가하는 새 벤치마크.</p>
+<hr />
+<h3 id="10-llm">10. [에이전트] 뿌리 추적: 사후 학습 LLM의 데이터 계보 규명을 위한 멀티에이전트 프레임워크</h3>
+<p><strong>원제:</strong> Tracing the Roots: A Multi-Agent Framework for Uncovering Data Lineage in Post-Training LLMs<br />
+<strong>Upvotes:</strong> 14 🔥 (핵심)<br />
+<strong>한줄 요약:</strong> 파인튜닝·RLHF 등 사후 학습 과정에서 LLM의 출력 행동이 어떤 훈련 데이터에서 비롯됐는지 멀티에이전트로 역추적하는 데이터 계보 프레임워크.</p>
+<hr />
+<h2 id="_3">🔍 준석 주목 포인트</h2>
 <ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.08539">https://huggingface.co/papers/2604.08539...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
+<li><strong>#5 Strips as Tokens</strong>: 3D 메시 자동 생성 → ComfyUI 커스텀 노드 + DSUComfyCG 파이프라인 연동 가능성 ✨</li>
+<li><strong>#4 OmniShow</strong>: 포즈/마스크 기반 영상 생성 → 부산마법소녀 변신씬 파이프라인에 활용 검토 가치 있음</li>
+<li><strong>#6 Uni-ViGU</strong>: 단일 모델로 생성+이해 통합 → AnimateDiff 대체 후보 모니터링 권장</li>
 </ul>
-</details>
 <hr />
-<h2 id="_2">🎬 영상</h2>
-<details>
-<summary><strong>When Numbers Speak: Aligning Textual Numerals and Visual Instances in Text-to-Video Diffusion Models</strong> — Text-to-video diffusion models have enabled open-ended video synthesis, but ofte</summary>
-<p>Text-to-video diffusion models have enabled open-ended video synthesis, but often struggle with generating the correct number of objects specified in a prompt. We introduce NUMINA , a training-free identify-then-guide framework for improved numerical alignment. NUMINA identifies prompt-layout inconsistencies by selecting discriminative self- and cross-attention heads to derive a countable latent layout. It then refines this layout conservatively and modulates cross-attention to guide regeneratio...</p>
-<ul>
-<li><strong>링크</strong>: <a href="https://huggingface.co/papers/2604.08546">https://huggingface.co/papers/2604.08546...</a></li>
-<li><strong>실증가능성</strong>: 🔧커스텀필요</li>
-</ul>
-</details>
-<hr />
-<h2 id="_3">📊 이번 주 통계</h2>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>수치</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>총 수집</td>
-<td>10개</td>
-</tr>
-<tr>
-<td>🔥 핵심</td>
-<td>1개</td>
-</tr>
-<tr>
-<td>✅ 즉시 실증 가능</td>
-<td>0개</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="_4">🔬 실증 권장 항목</h2>
-<p>코드가 공개되어 <strong>이번 주 내 테스트 가능</strong>한 항목:</p>
-<hr />
-<h2 id="_5">🔗 전체 데이터베이스</h2>
-<p><a href="https://www.notion.so/2f8f02707d88803da78fd90dce7379b6">→ Notion SOTA Database 바로가기</a></p>
-<hr />
-<p><strong>발행</strong>: 동서대학교 글로컬30 가상융합기술연구원<br />
-<strong>발행일</strong>: 2026년 04월 13일<br />
-<strong>문의</strong>: jsdavid88@g.dongseo.ac.kr</p>
-<hr />
-<p><em>© 2026 동서대학교 가상융합기술연구원</em></p>
+<p><em>Generated by 아르카 | SOTA Auto-Collect v1 | 2026-W16</em></p>
         </main>
         <footer>
             <p>© 2026 동서대학교 가상융합기술연구원</p>
